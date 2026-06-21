@@ -49,7 +49,7 @@ export default function Inquiry() {
               
               <div className="space-y-3">
                 <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
-                  Apex Service Commitment
+                  Unique Service Commitment
                 </span>
                 <h2 className="text-3xl font-extrabold font-display text-gray-900 tracking-tight leading-tight">
                   What Happens After Submission?

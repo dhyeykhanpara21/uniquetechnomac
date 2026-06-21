@@ -19,19 +19,19 @@ export default function ContactUs() {
   const contactDetails = [
     {
       title: 'Global Export Headquarters',
-      city: 'Frankfurt, Germany',
+      city: 'Frankfurt Export Office',
       address: 'Lyoner Strasse 15, 60528 Frankfurt am Main, Germany',
       phone: '+49 (69) 1124-001 / +49 (69) 1124-002',
-      email: 'trade@apex-industrial.com',
+      email: 'trade@uniquetechnomech.com',
       hours: 'Mon - Fri: 08:00 - 18:00 CET',
       icon: <Globe2 className="w-5 h-5 text-brand-primary" />
     },
     {
       title: 'Manufacturing & Casting Plant',
-      city: 'Gujarat, India',
+      city: 'Rajkot Plant, India',
       address: 'Plot No. 42-A, GIDC Industrial Estate, Rajkot, Gujarat 360021, India',
-      phone: '+91 281 2410-001 / +91 281 2410-002',
-      email: 'plant@apex-industrial.in',
+      phone: '+91 9173159016 / +91 281 2410-002',
+      email: 'plant@uniquetechnomech.in',
       hours: 'Mon - Sat: 08:00 - 19:30 IST',
       icon: <Landmark className="w-5 h-5 text-brand-primary" />
     }
@@ -163,11 +163,11 @@ export default function ContactUs() {
                 <Compass className="w-8 h-8 text-brand-primary" />
               </div>
               <h3 className="text-xl font-bold font-display text-gray-900 tracking-tight">
-                Apex Certified Facilities Map
+                Unique Techno Mech Facilities Map
               </h3>
               <p className="text-xs text-gray-400 font-sans max-w-sm mx-auto leading-relaxed">
-                European central offices: Lyoner Strasse 15, Frankfurt am Main.<br />
-                Indian fabrication smelting yard: GIDC Estate, Rajkot, Gujarat.
+                Export trade desk: Lyoner Strasse 15, Frankfurt am Main.<br />
+                Fabrication smelting yards & CNC bays: GIDC Estate, Rajkot, Gujarat.
               </p>
               
               <div className="flex gap-4 justify-center items-center pt-2">

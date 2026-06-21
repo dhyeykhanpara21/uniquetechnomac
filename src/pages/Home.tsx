@@ -88,9 +88,9 @@ export default function Home() {
               </div>
 
               {/* Float Experience block */}
-              <div className="absolute bottom-6 left-6 bg-brand-primary/95 backdrop-blur-md text-white p-5 rounded-2xl shadow-xl flex items-center gap-4 border border-white/20 select-none max-w-[280px]">
-                <span className="text-4xl md:text-5xl font-extrabold font-display leading-none">25+</span>
-                <div className="text-xs font-semibold uppercase tracking-widest font-sans leading-relaxed text-blue-100">
+              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-brand-primary/95 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-white/20 select-none max-w-[210px] sm:max-w-[280px]">
+                <span className="text-2xl sm:text-4xl md:text-5xl font-extrabold font-display leading-none">25+</span>
+                <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-widest font-sans leading-relaxed text-blue-100">
                   Years of Heavy Metallurgical Craft
                 </div>
               </div>
@@ -109,16 +109,16 @@ export default function Home() {
                   Company Introduction
                 </span>
                 <h2 className="text-3xl md:text-4xl font-extrabold font-display text-gray-900 leading-tight tracking-tight">
-                  Pioneering Heavy Duty Soil-Tilling & Seeding Implements Globally
+                  Precision Automobile Gears & VMC Machined Components
                 </h2>
               </div>
 
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
-                At Apex Industrial Solutions, our metallurgical forge and advanced engineering divisions manufacture high-performance tools aimed at bolstering farm yields and mining resilience. Using certified heat-treated boron steel, we formulate components capable of working under absolute peak stress scenarios.
+                At Unique Techno Mech, we manufacture high-precision automobile gear box parts, worm shafts, slow speed shafts, sleeves, castings, and custom hydraulic couplers. Serving key tractor brands and leading automakers, we formulate components capable of working under extreme mechanical loads.
               </p>
               
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
-                By fusing precision computer-aided modeling with automated robotic assembly grids, we ensure every rotary tiller, power harrow, and pneumatic seeder passes structural stress tests. 
+                By fusing precision CNC cutting and vertical milling (VMC) with rigorous metrology checks, we ensure every shaft, sleeve, and cast iron component passes strict tolerance standards.
               </p>
 
               <div className="pt-4 flex flex-wrap gap-4 items-center">
@@ -159,11 +159,11 @@ export default function Home() {
               Engineering Advantages
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold font-display text-gray-900 tracking-tight">
-              Why Heavy Ag Cooperatives Choose Apex
+              Why Automobile & Tractor Clients Choose Unique
             </h2>
             <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full" />
             <p className="text-xs text-gray-400 font-sans pt-1">
-              Engineered with extreme steel toughness, high transmission control, and full international safety standards, our machinery yields long-term cost benefits.
+              Engineered with premium alloy steels, strict micrometric tolerances, and verified metrology checks, our gear box parts yield long-term durability.
             </p>
           </div>
 
@@ -207,10 +207,10 @@ export default function Home() {
                 Spotlight Showroom
               </span>
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-gray-900 tracking-tight">
-                Hot Industry Implements
+                Featured Precision Components
               </h2>
               <p className="text-xs text-gray-400 font-sans">
-                Our most sought-after agricultural rotary systems and precision seeders, packed with certified boron steel components and patented gearbox assemblies.
+                Our most sought-after precision gears, CNC machined sleeves, and custom hydraulic couplers, trusted by leading automobile and tractor brands.
               </p>
             </div>
             <div className="shrink-0">
@@ -251,7 +251,7 @@ export default function Home() {
             </h2>
             <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full" />
             <p className="text-xs text-gray-400 font-sans pt-1">
-              Apex supplies heavy components, soil levelers, compact cutters, and gear systems designed for varying industrial parameters.
+              Unique Techno Mech supplies precision shafts, sleeves, gears, castings, and hydraulic actuators designed for custom industrial parameters.
             </p>
           </div>
 
@@ -390,7 +390,7 @@ export default function Home() {
             </h2>
             <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full" />
             <p className="text-xs text-gray-400 font-sans pt-1">
-              Deep look across our advanced forge casting blocks, heavy vertical milling lines, robotic welding grids, and final crop testing grounds.
+              Deep look across our advanced machining centers, vertical milling lines, heavy cast forgings, and final metrology verification units.
             </p>
           </div>
 
@@ -428,39 +428,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 9. CALL TO ACTION CONTAINER */}
-      <section className="relative overflow-hidden bg-brand-primary py-20 text-white border-t border-blue-600/30">
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/10 to-transparent pointer-events-none" />
-        {/* Dynamic Abstract Ring Background */}
-        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-secondary/20 rounded-full blur-[100px] -z-10" />
 
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-white/10 border border-white/20 text-blue-100 text-xs font-bold tracking-widest uppercase rounded-full">
-            Commercial Orders & Exports
-          </span>
-          <h2 className="text-3xl md:text-5xl font-extrabold font-display leading-tight tracking-tight text-white max-w-3xl mx-auto">
-            Ready to Bolster Your Machine Operational Efficiency?
-          </h2>
-          <p className="text-sm text-blue-100 max-w-xl mx-auto font-sans leading-relaxed">
-            Get coordinate blueprints, gear ratio consultation, price schedules, and secure sea-freight timelines curated explicitly for your enterprise setup.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Link
-              to="/inquiry"
-              className="inline-flex items-center gap-2 bg-white text-brand-primary hover:bg-blue-50 hover:shadow-xl font-bold px-8 py-4 rounded-xl transition-all duration-300 uppercase tracking-widest text-xs shadow-md"
-            >
-              <FileCheck className="w-4 h-4" />
-              <span>Get Quotation Sheet</span>
-            </Link>
-            <Link
-              to="/contact-us"
-              className="bg-transparent hover:bg-white/10 text-white border-2 border-white/30 hover:border-white font-semibold px-8 py-3.5 rounded-xl transition-colors uppercase tracking-widest text-xs font-sans"
-            >
-              Consulting Service
-            </Link>
-          </div>
-        </div>
-      </section>
 
       {/* Product Specification popup drawer */}
       <ProductDetailModal

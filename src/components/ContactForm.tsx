@@ -229,7 +229,7 @@ export default function ContactForm() {
               Inquiry Dispatched Successfully!
             </h3>
             <p className="mt-3 text-sm text-gray-500 max-w-sm font-sans leading-relaxed">
-              We appreciate you contacting Apex Industrial Solutions. An expert technician will evaluate your specifications and reply via email within 4-6 business hours.
+              We appreciate you contacting Unique Techno Mech. An expert technician will evaluate your specifications and reply via email within 4-6 business hours.
             </p>
             
             <button

@@ -1,70 +1,119 @@
-import { Product, Testimonial, CoreValue, Industry, TimelineItem, TeamMember, Stat, Feature } from '../types';
+import { Product, Testimonial, Industry, TimelineItem, TeamMember, Stat, Feature } from '../types';
+
+import wormShaftMain from '../../assets/worm_shaft_main.png';
+import wormShaftDetail from '../../assets/worm_shaft_detail.png';
+import cncMain from '../../assets/cnc_main.png';
+import cncDetail from '../../assets/cnc_detail.png';
+import forgingsMain from '../../assets/forgings_main.png';
+import forgingsDetail from '../../assets/forgings_detail.png';
+import tractorMain from '../../assets/tractor_main.png';
+import tractorDetail from '../../assets/tractor_detail.png';
+import hydraulicMain from '../../assets/hydraulic_main.png';
+import hydraulicDetail from '../../assets/hydraulic_detail.png';
 
 export const HERO_SLIDES = [
   {
     id: 'slide-1',
-    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1920&q=80',
-    title: 'High-Capacity Agricultural Tillers',
-    subtitle: 'ENGINEERING EXCELLENCE IN SOIL PREPARATION',
-    description: 'Designed for robust performance, our professional tillers offer unparalleled efficiency, depth optimization, and fuel-saving operations in any soil conditions.',
-    ctaText: 'Explore Machinery',
-    ctaLink: '/products?category=Tillage'
+    image: wormShaftMain,
+    detailImage: wormShaftDetail,
+    title: 'Precision Worm Shafts & Gears',
+    subtitle: 'HEAVY AUTOMOBILE GEAR BOX PARTS',
+    description: 'Manufacturers of precision worm-shafts, slow speed shafts, sleeves, and transmission gear assemblies for automobiles, textile units, and tractors.',
+    ctaText: 'Explore Gears',
+    ctaLink: '/products?category=Gears',
+    badgeText: 'Slow Speed Shafts',
+    badgeIcon: 'Settings2',
+    tabLabel: 'Gears'
   },
   {
     id: 'slide-2',
-    image: 'https://images.unsplash.com/photo-1622359637625-be95a49ec6a0?auto=format&fit=crop&w=1920&q=80',
-    title: 'Next-Generation Smart Seeders & Drills',
-    subtitle: 'PRECISION SEEDBED CONDITIONING',
-    description: 'Empowering smart farming with ultra-exact depth controllers and pneumatic seed flow systems, guaranteeing optimum germination and dynamic crop yields.',
-    ctaText: 'View Seeders',
-    ctaLink: '/products?category=Seeding'
+    image: cncMain,
+    detailImage: cncDetail,
+    title: 'VMC & CNC Machining Solutions',
+    subtitle: 'ADVANCED VERTICAL MACHINING CENTERS',
+    description: 'Equipped with multiple BFW/Jyoti VMC machines and Super Jobber CNC cutters for precision steel alloy shaping with micrometer tolerances.',
+    ctaText: 'View CNC Services',
+    ctaLink: '/products?category=CNC%20Machining',
+    badgeText: 'VMC Machining',
+    badgeIcon: 'Cpu',
+    tabLabel: 'CNC Cutting'
   },
   {
     id: 'slide-3',
-    image: 'https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?auto=format&fit=crop&w=1920&q=80',
-    title: 'Precision Hydraulic Rotary Harrows',
-    subtitle: 'HEAVY TRIPLE-GEAR SYSTEM',
-    description: 'Engineered for fine tilth preparation in single passes. Features anti-clogging multi-speed steel gearboxes and state-of-the-art heavy roller pack systems.',
+    image: forgingsMain,
+    detailImage: forgingsDetail,
+    title: 'Heavy Forgings & Castings',
+    subtitle: 'GRADED CAST IRON & INVESTMENT CASTINGS',
+    description: 'Producing heavy carbon steel forgings, graded cast iron parts, brass components, and stainless steel bar fittings according to client specs.',
     ctaText: 'Get Quote',
-    ctaLink: '/inquiry'
+    ctaLink: '/inquiry',
+    badgeText: 'Graded Cast Iron',
+    badgeIcon: 'ShieldAlert',
+    tabLabel: 'Forgings'
+  },
+  {
+    id: 'slide-4',
+    image: tractorMain,
+    detailImage: tractorDetail,
+    title: 'Automobile & Tractor Spares',
+    subtitle: 'TRACTOR SUB-CONTRACTOR VENDOR',
+    description: 'Registered sub-contractor and vendor supplying high-precision gear box parts, sleeves, and axle shafts to Mahindra, Sonalika, and leading automakers.',
+    ctaText: 'Explore Spares',
+    ctaLink: '/products?category=Auto%20Spares',
+    badgeText: 'Mahindra / Sonalika',
+    badgeIcon: 'Settings2',
+    tabLabel: 'Auto Spares'
+  },
+  {
+    id: 'slide-5',
+    image: hydraulicMain,
+    detailImage: hydraulicDetail,
+    title: 'Delta Hydraulic Systems',
+    subtitle: 'HYDRAULIC COUPLINGS & ACTUATORS',
+    description: 'Bespoke industrial hydraulic pumps, couplers, double-action rams, and custom cylinder assemblies for automotive and agricultural operations.',
+    ctaText: 'View Hydraulics',
+    ctaLink: '/products?category=Hydraulics',
+    badgeText: 'Double-Action Rams',
+    badgeIcon: 'ShieldAlert',
+    tabLabel: 'Hydraulics'
   }
 ];
 
 export const FEATURES: Feature[] = [
   {
     id: 'feat-1',
-    title: 'Japanese Advanced Steel Tech',
-    description: 'Every rotor blades and gears are manufactured using heat-treated boron steel for extra toughness and wear resistance.',
+    title: 'High-Strength Materials',
+    description: 'Every gear shaft is manufactured using premium alloy bar steels and forgings for extra torsional strength and wear resistance.',
     iconName: 'ShieldAlert'
   },
   {
     id: 'feat-2',
-    title: 'Premium Multi-Speed Gearboxes',
-    description: 'Allows easy speed adjustment to match soil density, reducing engine load and optimizing diesel input ratio.',
+    title: 'Precision Machining Limits',
+    description: 'Strict tool calibration ensures gear dimensions pass micrometric checks with zero error margins.',
     iconName: 'Settings2'
   },
   {
     id: 'feat-3',
-    title: 'State-of-the-Art R&D Center',
-    description: 'Rigorous engineering validations and stress simulations conducted under absolute peak soil impedance scenarios.',
+    title: 'Advanced Machine Units',
+    description: 'Operating multiple high-grade VMC machines (BFW/Jyoti) and Super Jobber CNC centers in Rajkot.',
     iconName: 'Cpu'
   },
   {
     id: 'feat-4',
-    title: 'Global Export Footprint',
-    description: 'Proudly serving heavy industries and farmer cooperatives across 45+ countries with certified quality standards.',
+    title: 'Sub-Contractor Vendor',
+    description: 'Experienced sub-contract vendor providing high quality tractor parts for Mahindra, Sonalika, and local markets.',
     iconName: 'Globe2'
   },
   {
     id: 'feat-5',
-    title: '24/7 Field Tech Support',
-    description: 'Your downtime is our clock runtime. We offer on-site maintenance, genuine parts, and quick field replacements.',
+    title: 'Metrology Lab Controls',
+    description: 'Quality checked using high-end Digital Verniers, Dial Indicators, Depth Gauges, and Bore Gauges from Mitutoyo & Baker.',
     iconName: 'Clock'
   },
   {
     id: 'feat-6',
-    title: 'Certified ISO Compliance',
-    description: 'All industrial operations adhere tightly to ISO 9001:2015 and ISO 14001:2015 environmental standards.',
+    title: 'Registered Group Units',
+    description: 'Backed by group companies: Unique Engi Mech, S.G. Engineers, Iconic CNC Cuttings, and Delta Hydrolic.',
     iconName: 'Award'
   }
 ];
@@ -72,230 +121,218 @@ export const FEATURES: Feature[] = [
 export const INDUSTRIES: Industry[] = [
   {
     id: 'ind-1',
-    name: 'Agriculture',
-    description: 'From precision tillage to smart planting solutions, our farm machinery streamlines crop lifecycles globally.',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
-    iconName: 'Sprout'
-  },
-  {
-    id: 'ind-2',
-    name: 'Manufacturing',
-    description: 'Robust smart systems, hydraulic gear rigs, and steel rotors designed for critical assembly configurations.',
+    name: 'Automobile Components',
+    description: 'Supplying gears, transmission shafts, sleeves, and machined forgings for light and heavy motor vehicles.',
     image: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=800&q=80',
     iconName: 'Factory'
   },
   {
-    id: 'ind-3',
-    name: 'Construction',
-    description: 'Heavy duty soil compactors, multi-grade levelers, and grading implements designed to build stable foundations.',
-    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80',
-    iconName: 'HardHat'
+    id: 'ind-2',
+    name: 'Tractor Spares',
+    description: 'Developing heavy-duty tractor components as a subcontractor vendor for major national brands.',
+    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80',
+    iconName: 'Sprout'
   },
   {
-    id: 'ind-4',
-    name: 'Engineering',
-    description: 'Advanced machine designs and customized transmission setups crafted for specific mechanical operations.',
+    id: 'ind-3',
+    name: 'CNC & VMC Solutions',
+    description: 'Providing precise contract vertical milling, cnc cutting, threading, and cylindrical grinding services.',
     image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80',
     iconName: 'Wrench'
   },
   {
+    id: 'ind-4',
+    name: 'Hydraulics & Pumps',
+    description: 'Integrated manufacturing of hydraulic cylinders, double-action rams, and custom fluid couplers.',
+    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=800&q=80',
+    iconName: 'Pickaxe'
+  },
+  {
     id: 'ind-5',
-    name: 'Food Processing',
-    description: 'Industrial grading, sorting machineries, and post-harvest cleaners complying with strict food grade regulations.',
+    name: 'Textile Machinery',
+    description: 'Smelting and cutting main drive gears, sleeves, and slow-speed pulleys for large spinning frames.',
     image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80',
-    iconName: 'Beef'
+    iconName: 'Factory'
   },
   {
     id: 'ind-6',
-    name: 'Mining',
-    description: 'Rock pulverizers, extra-heavy gear couplings and high-wear steel grinding components for excavation rigs.',
-    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=800&q=80',
-    iconName: 'Pickaxe'
+    name: 'Graded Cast Iron',
+    description: 'Precision castings, brass parts, and high-heat carbon steel components for diverse operations.',
+    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80',
+    iconName: 'HardHat'
   }
 ];
 
 export const STATS: Stat[] = [
-  { id: 'stat-1', value: 15400, label: 'Happy Clients', suffix: '+' },
-  { id: 'stat-2', value: 35, label: 'Standard Implements', suffix: '+' },
-  { id: 'stat-3', value: 25, label: 'Years Experience', suffix: '+' },
-  { id: 'stat-4', value: 240, label: 'Premium Distributors', suffix: '+' }
+  { id: 'stat-1', value: 1200, label: 'Delivered Projects', suffix: '+' },
+  { id: 'stat-2', value: 15, label: 'Machining Centers', suffix: '+' },
+  { id: 'stat-3', value: 24, label: 'Years Experience', suffix: '+' },
+  { id: 'stat-4', value: 19, label: 'Active Staff', suffix: '+' }
 ];
 
 export const PRODUCTS: Product[] = [
   {
-    id: 'prod-tiller-pro',
-    name: 'Apex Challenger Rotary Tiller',
-    category: 'Tillage',
-    image: 'https://images.unsplash.com/photo-1594142137910-8b1a8f90bb3e?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Premium dual-speed rotary tiller crafted for medium to heavy clay soils with supreme depth control.',
-    longDesc: 'The Apex Challenger Rotary Tiller redefines field soil conditioning. Crafted from ultra-strong structural steel and equipped with high-performance boron steel blades, it provides consistent tilth depth up to 10 inches. Features an enclosed double-lip oil bath chain drive, preventing mud ingress under wet conditions, and a multi-speed heavy gearbox designed for variable tractor power inputs.',
+    id: 'prod-worm-gear',
+    name: 'Precision Worm Gear Shaft',
+    category: 'Gears',
+    image: wormShaftMain,
+    shortDesc: 'Premium automobile gearbox parts crafted from hardened alloy steel with high-torque capacity.',
+    longDesc: 'Our Precision Worm Gear Shafts are specifically developed for heavy transmission configurations. Machined using certified high-tensile alloy bar steel, they offer excellent wear resistance and silent operations under continuous loads. Ideal for automobile gearboxes, steering units, and industrial reduction systems.',
     specifications: {
-      'Tractor Power': '45 - 75 HP',
-      'Working Width': '1.8m - 2.5m',
-      'No. of Blades': '42 - 54',
-      'Blades Type': 'L-Type / J-Type (Boron Steel)',
-      'Transmission': 'Multi-speed Dual Gear Drive',
-      'Rotor Speed': '210 / 240 RPM',
-      'Weight': '420 kg - 510 kg'
+      'Material': 'Case Hardened Alloy Bar Steel',
+      'Hardness': '50 - 55 HRC (Oil Quenched)',
+      'Module Range': 'M1.0 - M6.0',
+      'Helix Angle': 'Right Hand / Left Hand (Precision Cut)',
+      'Tolerance': 'ISO Grade 6 / DIN 3962',
+      'Applications': 'Automobile Steering & Gearboxes'
     },
-    relatedProductIds: ['prod-harrow-ultra', 'prod-seeder-smart']
+    relatedProductIds: ['prod-tractor-parts', 'prod-textile-gear']
   },
   {
-    id: 'prod-harrow-ultra',
-    name: 'Atlas-Hydra Power Harrow',
-    category: 'Tillage',
-    image: 'https://images.unsplash.com/photo-1530263003720-749b657dbd13?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Professional duty harrow designed for speed-bed preparation in high-scale agricultural sectors.',
-    longDesc: 'Engineered specifically for heavy agricultural applications, the Atlas-Hydra achieves perfect soil leveling in a single sweep. Its contra-rotating blade system pulverizes dense clods without overturning fertile topsoil. Complete with an integrated packer roller and spring-loaded leveling boards, it guarantees premium uniformity prior to seeding operations.',
+    id: 'prod-tractor-parts',
+    name: 'Tractor Gear Box Parts',
+    category: 'Auto Spares',
+    image: tractorMain,
+    shortDesc: 'Registered subcontractor gear systems and sleeves matching Mahindra & Sonalika tractor dimensions.',
+    longDesc: 'Developed to withstand rigorous agricultural stresses, our Tractor Gear Box Parts are precision cut on CNC toolheads. Every batch passes strict micrometer inspections to ensure exact compliance with vendor parameters. Features smooth gear mesh profiles, minimizing mechanical transmission losses.',
     specifications: {
-      'Tractor Power': '90 - 150 HP',
-      'Working Width': '3.0m - 4.5m',
-      'No. of Rotors': '12 - 18',
-      'Maximum Depth': '12 inches',
-      'Roller Type': 'Cage Roller / Packer Roller',
-      'Weight': '1150 kg'
+      'Tractor Brand': 'Mahindra / Sonalika / Universal Fit',
+      'Part Types': 'Slow Speed Shaft, Main Drive Sleeve',
+      'Smelting Matrix': 'High Carbon Structural Forgings',
+      'Machining Unit': 'VMC BFW / Jyoti Array',
+      'Grinding': 'Cylindrical Ground (within 0.01mm)',
+      'Wear Protection': 'Case Carburized Heat Treatment'
     },
-    relatedProductIds: ['prod-tiller-pro', 'prod-seeder-smart']
+    relatedProductIds: ['prod-worm-gear', 'prod-stainless-sleeve']
   },
   {
-    id: 'prod-seeder-smart',
-    name: 'Zephyr-Pneumatic Smart Seeder',
-    category: 'Seeding',
-    image: 'https://images.unsplash.com/photo-1574359411659-15573a27f812?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Pneumatic seed drill system with ultra-accurate seed spacing and adjustable depth mechanism.',
-    longDesc: 'Zephyr Pneumatic guarantees zero seed waste. With custom smart row calibrators and pressurized airflow seed delivery, each seed is deposited at exact horizontal intervals and vertical depths. Equipped with a digital monitoring controller that connects directly to modern tractor terminals via ISO-BUS sync systems.',
+    id: 'prod-cast-iron',
+    name: 'Graded Cast Iron Smeltings',
+    category: 'Forgings',
+    image: forgingsMain,
+    shortDesc: 'Premium graded cast iron and carbon steel investment castings built to custom blueprints.',
+    longDesc: 'We supply high-grade cast iron casings, brass fittings, and stainless steel investment castings. Utilizing automated gas-fired furnaces, our casting structures exhibit uniform molecular density, preventing air pocket fractures under high-pressure applications.',
     specifications: {
-      'Tractor Power': '75 - 110 HP',
-      'No. of Rows': '8 - 12 Rows',
-      'Hopper Capacity': '850 Litres',
-      'Metering System': 'Dynamic Fluted Roller',
-      'Row Spacing': 'Adjustable (15cm - 30cm)',
-      'Working Speed': '10 - 14 km/h'
+      'Cast Grades': 'FG 200 / FG 260 / Spheroidal Graphite',
+      'Materials': 'Cast Iron, Stainless Steel, Brass Alloys',
+      'Tolerance Class': 'ISO 8062-3 DCTG6',
+      'Weight Range': '0.5 kg - 45 kg per unit',
+      'Surfacing': 'Shot Blasted & Anti-Rust Lubricated',
+      'Inspection': 'Bore Gauge & Vernier Caliper Verified'
     },
-    relatedProductIds: ['prod-harrow-ultra', 'prod-mulcher-heavy']
+    relatedProductIds: ['prod-alloy-bars', 'prod-stainless-sleeve']
   },
   {
-    id: 'prod-mulcher-heavy',
-    name: 'Titan Crop Residue Mulcher',
-    category: 'Crop Protection',
-    image: 'https://images.unsplash.com/photo-1472214222541-d510753a4907?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Heavy-duty pulverizer for cotton stalks, wheat straw, sugarcane, and thick orchard prunings.',
-    longDesc: 'The Titan Mulcher represents mechanical force at its peak. Developed for heavy post-harvest land cleaning, it easily chops thick crop residue into micronized organic layout, accelerating natural decomposition and enriching soil composition. Equipped with electronically balanced thick rotor walls and hydraulic adjustable tail doors.',
+    id: 'prod-textile-gear',
+    name: 'Textile Parts Main Drive Gear',
+    category: 'Gears',
+    image: cncDetail,
+    shortDesc: 'High durability main drive spur gears and slow-speed shafts optimized for spinning machinery.',
+    longDesc: 'Designed to handle continuous multi-shift operations in textile mills, these main drive spur gears provide uniform rotational speeds. Machined using precision shapers and CNC threaders to eliminate structural vibration and drag.',
     specifications: {
-      'Tractor Power': '55 - 90 HP',
-      'Cutting Width': '1.8m - 2.4m',
-      'No. of Flails': '24 - 36 (Y-Type Heavy)',
-      'Rotor Diameter': '194 mm',
-      'Cutting Height': '10mm - 80mm',
-      'Weight': '600 kg - 720 kg'
+      'Machinery': 'Ring Spinning & Carding Frames',
+      'Type': 'Spur / Helical Gears',
+      'Material': 'Medium Carbon Alloy Steel / Brass',
+      'Outer Diameter': 'Up to 250 mm',
+      'Keyway': 'CNC Broached / Slotted',
+      'Teeth Profile': 'Involute (DIN 3967)'
     },
-    relatedProductIds: ['prod-tiller-pro', 'prod-shredder-orchard']
+    relatedProductIds: ['prod-worm-gear', 'prod-brass-parts']
   },
   {
-    id: 'prod-sprayer-premium',
-    name: 'AeroGlide Mounted Boom Sprayer',
-    category: 'Crop Protection',
-    image: 'https://images.unsplash.com/photo-1628157582853-a796fa650a6a?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Advanced fluid sprayer with auto-balancing triple nozzles and dynamic boom heights.',
-    longDesc: 'AeroGlide Sprayer brings state-of-the-art protection. It integrates an Italian diaphragm pump coupled with high-density UV-stabilized polyethylene chemical tanks. Standard models incorporate auto-leveling suspension systems preventing nozzle skew over slopes and uneven soil contours.',
+    id: 'prod-hydraulic-coupling',
+    name: 'Delta Hydraulic Ram Piston',
+    category: 'Hydraulics',
+    image: hydraulicMain,
+    shortDesc: 'Double-action hydraulic cylinder couplings and ram pistons with polished chrome shafts.',
+    longDesc: 'Delta Hydrolic cylinder rams are built to provide consistent load lift capacities. Features mirror-polished hard chrome-plated steel rods and high-durability double-lip rubber seals, eliminating hydraulic fluid leaks under extreme pressure cycles.',
     specifications: {
-      'Tank Capacity': '600 / 800 / 1000 Litres',
-      'Boom Width': '12m - 18m',
-      'Pump Capacity': '120 LPM (Diaphragm)',
-      'Operating Pressure': '20 - 45 Bar',
-      'Nozzle Holder': 'Triple Quick-Jet Turn',
-      'Control Valves': '5-Section Solenoid Pack'
+      'Operation': 'Double-Action / Single-Action Ram',
+      'Working Pressure': '160 - 250 Bar',
+      'Rod Treatment': 'Hard Chrome Plated (25-30 Micron)',
+      'Seal Matrix': 'Polyurethane Double Lip',
+      'Bore Diameter': 'Dia. 40mm - 120mm',
+      'End Fitting': 'Threaded / Swivel Eye joint'
     },
-    relatedProductIds: ['prod-seeder-smart', 'prod-mulcher-heavy']
+    relatedProductIds: ['prod-tractor-parts', 'prod-stainless-sleeve']
   },
   {
-    id: 'prod-shredder-orchard',
-    name: 'Orchard-Master Bio-Shredder',
-    category: 'Crop Protection',
-    image: 'https://images.unsplash.com/photo-1500485035595-cbe6f645feb1?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Compact offset chopper optimized for close row vineyards and high-density fruit orchards.',
-    longDesc: 'Custom-designed for narrow workspaces. The Orchard-Master features heavy offset hydraulic shifting, allowing high efficiency operations under hanging rows without scraping tree trunks. Reinforced steel chambers withstand dense stone and thick branch impacts easily.',
+    id: 'prod-alloy-bars',
+    name: 'Machined Alloy Bar Components',
+    category: 'CNC Machining',
+    image: cncMain,
+    shortDesc: 'Precision shafts, spindles, and custom spacing sleeves machined from graded carbon bar steel.',
+    longDesc: 'Our Machined Alloy Bar Components are manufactured on multiple vertical machining centers. Excellent dimensional stability makes them suitable for direct assembly configurations in pump housings and engine blocks.',
     specifications: {
-      'Tractor Power': '35 - 55 HP',
-      'Working Width': '1.4m - 1.8m',
-      'Hydraulic Offset': 'Up to 450 mm',
-      'No. of Hammers': '14 - 18',
-      'Skids': 'Depth Adjustable Side Runners',
-      'Roller Diameter': '140 mm'
+      'Machine Made': 'BFW VMC / Super Jobber CNC',
+      'Capacity': 'Dia. up to 300mm x L 450mm',
+      'Material': 'En8 / En9 / En24 Graded Steel Bars',
+      'Thread Class': 'ISO Metric M3 to M24 (Threading Machine)',
+      'Alignment Limit': 'Parallelism within 15 Microns',
+      'Least Count': 'Mitutoyo Digitally Verified'
     },
-    relatedProductIds: ['prod-mulcher-heavy', 'prod-tiller-pro']
+    relatedProductIds: ['prod-stainless-sleeve', 'prod-brass-parts']
   },
   {
-    id: 'prod-planter-potato',
-    name: 'Pluto-Row Semi-Automatic Planter',
-    category: 'Seeding',
-    image: 'https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Automatic mechanical planter designed for high rate seed damage mitigation and uniform ridge forming.',
-    longDesc: 'Engineered for potato and heavy bulb planting. Pluto-Row combines deep soil furrow-making, exact bulb drop intervals, fertilizer application, and soil ridge layout creation into a unified automatic operational cycle, reducing manual farm labor costs by 95%.',
+    id: 'prod-brass-parts',
+    name: 'Precision Lathe Brass Fitting',
+    category: 'CNC Machining',
+    image: cncDetail,
+    shortDesc: 'Threaded brass sleeves, bushings, and fluid couplers turned on high speed automatic lathes.',
+    longDesc: 'We manufacture customized brass bushings and couplers for fluid lines and mechanical joints. Made from premium free-cutting brass bar stock, ensuring smooth threads and high corrosion resistance.',
     specifications: {
-      'Rows': '2 Rows / 4 Rows',
-      'Tractor Power': '50 - 80 HP',
-      'Cup Size': 'Standard (Adjustable inserts)',
-      'Row Spacing': '60cm - 75cm',
-      'Planting Spacing': '18cm - 34cm',
-      'Weight': '480 kg '
+      'Material': 'Free Cutting Brass Grade I / II',
+      'Threads': 'BSP, NPT, Metric (M03 to M24)',
+      'Tolerance': 'Linear within 0.02 mm',
+      'Finishing': 'Natural / Acid Washed / Nickel Plated',
+      'Machining': 'High-Speed Automatic Lathe'
     },
-    relatedProductIds: ['prod-seeder-smart', 'prod-harrow-ultra']
+    relatedProductIds: ['prod-alloy-bars', 'prod-stainless-sleeve']
   },
   {
-    id: 'prod-plow-mouldboard',
-    name: 'Ares Hydraulic Reversible Plough',
-    category: 'Tillage',
-    image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80',
-    shortDesc: 'Heavy-duty reversible mouldboard plow featuring precise hydraulic turnover and safety shear system.',
-    longDesc: 'Formulated for primary tillage and weed disposal. The Ares Reversible Plow buries stubble completely to allow premium organic transformation. Incorporates an automatic hydraulic system for automatic directional indexing at the end of soil lanes.',
+    id: 'prod-stainless-sleeve',
+    name: 'Stainless Steel Bar Sleeve',
+    category: 'CNC Machining',
+    image: hydraulicDetail,
+    shortDesc: 'Corrosion resistant stainless steel sleeves and spacers ground on centreless grinders.',
+    longDesc: 'Our Stainless Steel Bar Sleeves are ground using advanced centreless grinding setups to ensure precise concentricity. Extremely smooth surface finish reduces friction on rotating shafts, extending bearing lifespans.',
     specifications: {
-      'Furrows': '3 Bottom / 4 Bottom',
-      'Under-frame Clearance': '75 cm',
-      'Working Depth': '25cm - 35cm',
-      'Shear Bolt Protection': 'Standard M16 high-tensile',
-      'Turnover System': 'Dual Action Hydraulic Ram',
-      'Required Power': '80 - 130 HP'
+      'Material': 'SS 304 / SS 316 / SS 410',
+      'Outside Diameter': 'Ground up to Dia. 100.00 mm',
+      'Concentricity': 'Within 8 Microns',
+      'Surface Roughness': 'Ra 0.4 Micron or better',
+      'Grinder Unit': 'Centreless Grinding Machine (Scarlo)'
     },
-    relatedProductIds: ['prod-tiller-pro', 'prod-harrow-ultra']
+    relatedProductIds: ['prod-alloy-bars', 'prod-brass-parts']
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
-    name: 'Robert Vance',
-    role: 'Agricultural Operations Manager',
-    company: 'Vance & Sons Farming Corp',
+    name: 'Amit Patel',
+    role: 'Procurement Specialist',
+    company: 'AgriDrive Tractor Parts Ltd',
     rating: 5,
-    comment: 'The Apex Challenger Rotary Tiller has completely changed our seedbed prep. We slashed fuel consumption by 15% and cut our soil prepping time in half. Build quality of the steel frames is bulletproof.',
+    comment: 'Unique Techno Mech has been our on-line vendor for tractor gear sleeves for 4 years. Their rating on delivery and quality is excellent. Mahindra subcontractor specs are always matched perfectly.',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=80'
   },
   {
     id: 'test-2',
-    name: 'Devendra Patel',
-    role: 'Managing Director',
-    company: 'Patel Agro Export Enterprises',
+    name: 'Heinrich Schmidt',
+    role: 'Lead Project Engineer',
+    company: 'EuroMech Gear Systems GmbH',
     rating: 5,
-    comment: 'We have been exporting and using these machines under extreme tropical soil conditions. The boron steel rotor assemblies show virtually no wear after 3 seasons. Brilliant customer support response as well.',
+    comment: 'Exceptional precision on case carburized worm gears. Standard alignment check results have been flawless. The cylindrical ground surfaces are within specified ISO limits.',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80'
   },
   {
     id: 'test-3',
-    name: 'Gabriela Rossi',
-    role: 'Lead Mechanical Engineer',
-    company: 'EuroTerra Agritech',
+    name: 'Dileep Sanghani',
+    role: 'Foundry Director',
+    company: 'Saurashtra Castings & Forgings',
     rating: 5,
-    comment: 'From an engineering viewpoint, the double-lip oil seal assemblies and the bearing seats of their power harrows are exceptionally well-tight. Highly recommended for heavy farming contractors.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80'
-  },
-  {
-    id: 'test-4',
-    name: 'Marcus Thorne',
-    role: 'Operations Supervisor',
-    company: 'Pacific Mining & Aggregates',
-    rating: 5,
-    comment: 'We integrated custom boron gear couplings from their industrial line for our quarry screening rigs. High resilience, minimal heat fatigue, and great engineering backing.',
+    comment: 'We outsource VMC finish machining to Unique Techno Mech. Their BFW VMC machines handle high-density carbon steel blocks easily, delivering precise alignments on every consignment.',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80'
   }
 ];
@@ -303,133 +340,133 @@ export const TESTIMONIALS: Testimonial[] = [
 export const GALLERY = [
   {
     id: 'gal-1',
-    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Precision Farm Trials',
-    category: 'Field Operations'
+    image: wormShaftMain,
+    title: 'Worm Shaft Turning',
+    category: 'Gears'
   },
   {
     id: 'gal-2',
-    image: 'https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?auto=format&fit=crop&w=600&h=400&q=80',
-    title: 'Boron Steel Forge Unit',
-    category: 'Manufacturing'
+    image: cncMain,
+    title: 'BFW VMC Setup',
+    category: 'CNC Machining'
   },
   {
     id: 'gal-3',
-    image: 'https://images.unsplash.com/photo-1622359637625-be95a49ec6a0?auto=format&fit=crop&w=600&h=800&q=80',
-    title: 'ISO Quality Checks',
-    category: 'Testing'
+    image: forgingsMain,
+    title: 'Graded Castings',
+    category: 'Forgings'
   },
   {
     id: 'gal-4',
-    image: 'https://images.unsplash.com/photo-1594142137910-8b1a8f90bb3e?auto=format&fit=crop&w=600&h=450&q=80',
-    title: 'Cnc Rotor Cutting',
-    category: 'Manufacturing'
+    image: tractorMain,
+    title: 'Mahindra Shafts',
+    category: 'Auto Spares'
   },
   {
     id: 'gal-5',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=600&h=400&q=80',
-    title: 'Wheat Seeding Systems',
-    category: 'Field Operations'
+    image: hydraulicMain,
+    title: 'Delta Rams Assembly',
+    category: 'Hydraulics'
   },
   {
     id: 'gal-6',
-    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=600&h=600&q=80',
-    title: 'Foundation Levellers',
-    category: 'Testing'
+    image: wormShaftDetail,
+    title: 'Micrometer Checking',
+    category: 'Gears'
   },
   {
     id: 'gal-7',
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&h=700&q=80',
-    title: 'Robotic Welding Line',
-    category: 'Manufacturing'
+    image: cncDetail,
+    title: 'CNC Spindle Cut',
+    category: 'CNC Machining'
   },
   {
     id: 'gal-8',
-    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=600&h=400&q=80',
-    title: 'Custom Gear Rig Assembly',
-    category: 'Engineering'
+    image: forgingsDetail,
+    title: 'Forging Core Smelt',
+    category: 'Forgings'
   }
 ];
 
 export const TIMELINE: TimelineItem[] = [
   {
     id: 'time-1',
-    year: '2001',
-    title: 'Inception of Apex Forge',
-    description: 'Began as a precision blacksmithing core facility producing custom tillage harrow discs for regional distributors.'
+    year: '2002',
+    title: 'Unique Inception',
+    description: 'Established Unique Techno Mech in Rajkot, Gujarat, beginning custom manual lathe operations with a staff of 4.'
   },
   {
     id: 'time-2',
-    year: '2007',
-    title: 'Semi-Automatic Assembly Induction',
-    description: 'Inundated local markets with the Challenger Series Tillers, scaling production capacity to 4,000 components annually.'
+    year: '2008',
+    title: 'CNC Units Commissioned',
+    description: 'Acquired first automatic CNC lathe units and expanded vendor supply to local automobile subcontracts.'
   },
   {
     id: 'time-3',
-    year: '2013',
-    title: 'Strategic Export Division Founded',
-    description: 'Secured official ISO 9001 certifications. Pioneered regional trade partnerships across East Europe and Asia-Pacific.'
+    year: '2014',
+    title: 'GIDC Vavdi Relocation',
+    description: 'Relocated to Vavdi Road Corner, Rajkot, expanding corporate footprint to include S.G. Engineers and Unique Engi Mech.'
   },
   {
     id: 'time-4',
-    year: '2019',
-    title: 'Smart Agricultural R&D Center',
-    description: 'Launched pneumatic smart planting technology syncing location indicators directly to precision farming systems.'
+    year: '2020',
+    title: 'Advanced VMC Array',
+    description: 'Commissioned multiple vertical machining centers (VMC BFW/Jyoti) and introduced digital metrology control systems.'
   },
   {
     id: 'time-5',
     year: '2026',
-    title: 'Pioneering Carbon-Neutral Manufacturing',
-    description: 'Operating solar-powered heavy pressing arrays and recycling 94% of metal residue into next-generation components.'
+    title: 'Delta Hydraulics Launch',
+    description: 'Formed Delta Hydrolic division, offering integrated double-action ram pistons and specialized gear shafts.'
   }
 ];
 
 export const TEAM: TeamMember[] = [
   {
     id: 'team-1',
-    name: 'Vikramjit Singh',
-    role: 'Chairman & Managing Director',
+    name: 'Dhaval Vaishnani',
+    role: 'Director & Metallurgical Lead',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Founder with 30+ years in mechanical metallurgical development. Under his direction, Apex grew from a rural furnace plant to a global agricultural machinery export leader.'
+    bio: 'metallurgical developer with 20+ years of industrial experience. He manages technical product development, vendor agreements, and custom client dimensions.'
   },
   {
     id: 'team-2',
-    name: 'Dr. Alistair Ross',
-    role: 'Chief Technical Officer',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Ph.D. in Agricultural Robotics and Metallurgy. He oversees the automated smart-seeder projects and carbon-neutral casting R&D operations.'
+    name: 'Dimple Vaishnani',
+    role: 'Director of Operations',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&h=300&q=80',
+    bio: 'Oversees day-to-day manufacturing layouts across the GIDC Rajkot plants, managing raw alloy inventory, casting safety protocols, and staff allocations.'
   },
   {
     id: 'team-3',
-    name: 'Elena Vostrikov',
-    role: 'Director of Global Trade',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Pioneered partnerships across 38 international farm syndicates. Oversees custom trade clearances, supply chains, and multinational distributor frameworks.'
+    name: 'Nikunj Patel',
+    role: 'Works Manager',
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&h=300&q=80',
+    bio: 'Controls operations across all CNC, VMC, and shaping machine bays, scheduling shifts for 15+ skilled laborers to maintain on-line delivery cycles.'
   },
   {
     id: 'team-4',
-    name: 'Rajen K. Malhotra',
-    role: 'Head of Quality Control',
+    name: 'Rahul Patel',
+    role: 'Head of Quality Inspection',
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Maintains extreme zero-defect standards for heavy boron components. Has led the mechanical stress laboratory for over twelve years.'
+    bio: 'Directs the metrology check station, certifying component diameters using calibrated Mitutoyo digital verniers, Baker depth gauges, and bore dials.'
   }
 ];
 
 export const FAQS = [
   {
-    question: 'How do I select the exact tiller configuration for my tractor horsepower (HP)?',
-    answer: 'Standard rotary tillers require approximately 10 HP per foot of tillage width. Our product catalogues and specific details pages list the optimal Tractor Power range. For instance, the Apex Challenger (1.8m width) operates perfectly under 45 to 75 HP tractors. Additionally, our sales experts can suggest the precise gearbox ratio for your tractor RPM.'
+    question: 'What types of gears and shafts are you specialized in manufacturing?',
+    answer: 'Unique Techno Mech specializes in manufacturing worm shafts, slow speed shafts, sleeves, transmission spur gears, helical gears, and textile drive gears. We act as sub-contractor vendors for automobile parts and tractor gear box systems (matching Mahindra and Sonalika dimensions).'
   },
   {
-    question: 'Are genuine wear-and-tear replacement parts readily accessible internationally?',
-    answer: 'Yes. We maintain centralized warehouses with certified premium distributor hubs in Europe, Americas, South Asia, and the Middle East. Blades, gearbox gears, bearings, and hydraulic seal kits are guaranteed to ship within 24 hours of notification from anywhere.'
+    question: 'What is your machining capacity for vertical milling (VMC) and CNC operations?',
+    answer: 'Our manufacturing units are equipped with 4 VMC machines (BFW/Jyoti) and 2 CNC machines (Super Jobber XL). Our processing capacity is up to Dia. 300.00 mm x L 450.00 mm. We also operate threading machines (M3 to M24), shaper tools, and centreless grinders (up to Dia. 100.00 mm).'
   },
   {
-    question: 'What warranties are allocated with your industrial machinery range?',
-    answer: 'Everything in our heavy-production implement array carries a standard 24-month structural warranty, including structural steel welds and heavy multi-speed gearboxes. Rotor blades and friction plates are treated as typical wear assets and enjoy separate manufacturing integrity guarantees.'
+    question: 'How do you guarantee quality tolerances on customized alloy steel components?',
+    answer: 'We maintain strict metrology controls using premium digital measuring instruments (Mitutoyo and Baker). Our digital verniers, micrometers, and bore gauges have least counts as low as 0.001 mm. Standard inspection logs are compiled for every dispatch batch.'
   },
   {
-    question: 'Can you customize tillage row spacing or seed cup dimensions for special crop grades?',
-    answer: 'Absolutely. Our R&D center specializes in bespoke design configurations. Through our Inquiry and Contact forms, you can submit customized layout requirements, and our engineering division will generate specialized blueprints for validation prior to fabrication.'
+    question: 'Where are your manufacturing plants located, and can we order custom forgings?',
+    answer: 'All our group units (Unique Engi Mech, S.G. Engineers, Iconic CNC Cuttings, and Delta Hydrolic) are located in Rajkot, Gujarat (India). Yes, we manufacture custom forgings, graded cast iron castings, brass components, and SS sleeves based on client blueprints. You can submit dimensions via our Inquiry Form.'
   }
 ];

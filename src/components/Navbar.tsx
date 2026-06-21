@@ -63,12 +63,12 @@ export default function Navbar() {
                 <span className={`text-lg md:text-xl font-extrabold font-display tracking-tight leading-none ${
                   isHomePage && !isScrolled ? 'text-white' : 'text-gray-900'
                 }`}>
-                  APEX <span className={`${isHomePage && !isScrolled ? 'text-blue-200' : 'text-brand-primary'}`}>INDUSTRIAL</span>
+                  UNIQUE <span className={`${isHomePage && !isScrolled ? 'text-blue-200' : 'text-brand-primary'}`}>TECHNO MECH</span>
                 </span>
                 <span className={`text-[9px] uppercase tracking-widest font-sans font-bold leading-none mt-1 ${
                   isHomePage && !isScrolled ? 'text-blue-200/80' : 'text-gray-400'
                 }`}>
-                  Machinery & Metallurgy
+                  Gears & CNC Machining
                 </span>
               </div>
             </Link>
@@ -154,8 +154,8 @@ export default function Navbar() {
                     <Landmark className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-md font-bold font-display text-gray-900 leading-none">APEX INDUSTRIAL</h4>
-                    <span className="text-[9px] uppercase tracking-widest text-gray-400 font-sans font-bold block mt-1">Global Standard Implements</span>
+                    <h4 className="text-md font-bold font-display text-gray-900 leading-none">UNIQUE TECHNO MECH</h4>
+                    <span className="text-[9px] uppercase tracking-widest text-gray-400 font-sans font-bold block mt-1">Global Standard Components</span>
                   </div>
                 </div>
 
@@ -187,7 +187,7 @@ export default function Navbar() {
                   <span>Request Quotation</span>
                 </Link>
                 <p className="mt-4 text-[10px] text-gray-400 text-center font-sans tracking-wide">
-                  © 2026 Apex Industrial Solutions
+                  © 2026 Unique Techno Mech
                 </p>
               </div>
 

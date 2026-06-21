@@ -33,15 +33,15 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <span className="text-md md:text-lg font-extrabold font-display tracking-tight leading-none text-white">
-                APEX <span className="text-brand-secondary">INDUSTRIAL</span>
+                UNIQUE <span className="text-brand-secondary">TECHNO MECH</span>
               </span>
               <span className="text-[8px] uppercase tracking-widest font-sans font-bold leading-none mt-1 text-blue-200">
-                Machinery & Metallurgy
+                Gears & CNC Machining
               </span>
             </div>
           </Link>
           <p className="text-xs text-blue-100 max-w-sm leading-relaxed">
-            Apex Industrial leads in creating boron-steel soil implements, pneumatic smart seeders, and specialized metallurgical gear solutions across forty-five countries.
+            Unique Techno Mech leads in creating high-strength worm gears, VMC parts, subcontractor tractor spares, and specialized metallurgical casting solutions.
           </p>
           {/* Social Icons Row */}
           <div className="flex items-center gap-3 pt-2">
@@ -178,14 +178,14 @@ export default function Footer() {
         
         {/* Core Address / Contact snapshot */}
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6 text-[11px] text-blue-200">
-          <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> Frankfurt, Hesse, Germany</span>
-          <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> +49 (69) 1124-001</span>
-          <span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> trade@apex-industrial.com</span>
+          <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> Rajkot, Gujarat, India</span>
+          <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> +91 9173159016</span>
+          <span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> trade@uniquetechnomech.com</span>
         </div>
 
         {/* Copyright claims */}
         <div className="text-[11px] text-center md:text-right text-blue-300 font-medium tracking-wide">
-          © 2026 Apex Industrial Solutions Ltd. All rights reserved. • ISO 9001:2015 Registered
+          © 2026 Unique Techno Mech. All rights reserved. • Established 2002
         </div>
 
       </div>

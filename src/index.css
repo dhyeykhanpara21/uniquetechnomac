@@ -12,6 +12,9 @@
   --color-brand-accent: #0D47A1;
   --color-brand-bg: #F5F9FF;
   --color-brand-text: #1F2937;
+
+  /* Custom Animations */
+  --animate-spin-slow: spin 20s linear infinite;
 }
 
 /* Custom Base / Global Styles */

@@ -49,13 +49,13 @@ export default function Products() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-3">
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200">
-            Apex Machinery Showroom
+            Unique Components Showroom
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold font-display tracking-tight text-white leading-tight">
-            Our Certified Industrial Implements
+            Our Certified Industrial Gearsets & Spares
           </h1>
           <p className="text-xs sm:text-sm text-blue-100 max-w-xl mx-auto font-sans">
-            Explore our line of heat-treated soil preparation tools, pneumatic smart tillage drills, and specialized agricultural accessories.
+            Explore our line of precision worm shafts, slow speed shafts, VMC machined steel components, and graded castings.
           </p>
         </div>
       </section>

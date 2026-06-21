@@ -62,7 +62,7 @@ export default function FloatingButtons() {
 
       {/* Sticky WhatsApp Chat Link */}
       <motion.a
-        href="https://wa.me/911234567890?text=Hello%20Apex%20Industrial%20Solutions!%20I%20am%20interested%20in%20your%20industrial%20machinery."
+        href="https://wa.me/9173159016?text=Hello%20Unique%20Techno%20Mech!%20I%20am%20interested%20in%20your%20automotive%20gears%20and%20machined%20components."
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0.9, opacity: 0 }}

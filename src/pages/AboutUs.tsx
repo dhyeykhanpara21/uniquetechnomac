@@ -14,7 +14,7 @@ export default function AboutUs() {
     {
       id: 'val-1',
       title: 'Structural Toughness',
-      desc: 'We enforce raw materials testing, selecting certified high-heat carbon and boron steels for every agricultural blade.',
+      desc: 'We enforce raw materials testing, selecting certified high-tensile alloy steels and forgings for every machined component.',
       icon: <Flame className="w-6 h-6 text-brand-primary" />
     },
     {
@@ -26,7 +26,7 @@ export default function AboutUs() {
     {
       id: 'val-3',
       title: 'Co-Operative Trust',
-      desc: 'Our clients are food producers, heavy-industrial cooperatives, and distributors. We align are prices to support them.',
+      desc: 'Our clients are automobile makers, tractor companies, and industrial cooperatives. We align our prices to support them.',
       icon: <Award className="w-6 h-6 text-brand-primary" />
     }
   ];
@@ -45,13 +45,13 @@ export default function AboutUs() {
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/5 to-transparent pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-3">
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200">
-            About Apex Industrial
+            About Unique Techno Mech
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold font-display tracking-tight text-white leading-tight">
-            Our Mission, Values & Metallurgical Heritage
+            Our Mission, Values & Industrial Heritage
           </h1>
           <p className="text-xs sm:text-sm text-blue-100 max-w-xl mx-auto font-sans">
-            Learn about how a precision German-Indo blacksmithing core grew into a global heavy-implements export conglomerate.
+            Learn about how our precision machine shop expanded into a leading automotive gear and VMC component manufacturer.
           </p>
         </div>
       </section>
@@ -82,19 +82,19 @@ export default function AboutUs() {
               </div>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Founded in 2001, Apex Industrial Solutions began with a singular focus: engineer agricultural tillage components that don't shatter under dry clay pressure. Over twenty-five years, we scaled our smelting arrays, implemented advanced hydraulic testing benches, and designed fully integrated assemblies.
+                Founded in 2002, Unique Techno Mech began with a singular focus: engineer high-precision automobile and transmission gear box components in Rajkot, Gujarat. Over more than two decades, we scaled our vertical machining centers (VMC), CNC lathes, grinding machinery, and casting networks to support major automotive clients.
               </p>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Today, our components are forged using advanced high-wear boron alloy matrices and heat-treatment cycles. We operate automated welding chains and ISO stress-validation tracks to certify every unit shipped to European, American, and global distributors.
+                Today, our components are machined from certified alloy bar steel and robust forgings. We operate multiple VMC BFW/Jyoti units, threading lines, and centreless grinders to supply gears, sleeves, brass parts, and hydraulic cylinders under strict metrology checking protocols.
               </p>
 
               <div className="p-5.5 bg-blue-50/70 border-l-4 border-brand-primary rounded-r-2xl font-sans mt-4">
                 <p className="text-xs text-gray-600 font-medium leading-relaxed italic">
-                  "We don't simply assemble machinery. We analyze soil friction coefficient structures to build components that increase tractor fuel efficiency and reduce replacement cycles."
+                  "We don't simply shape metal. We ensure strict micrometric alignment and surface integrity to supply parts that support the smooth operation of engines and transmissions."
                 </p>
                 <span className="text-[10px] uppercase font-bold text-brand-accent tracking-wider block mt-2.5">
-                  — Vikramjit Singh, Chairman
+                  — Dhaval Vaishnani, Director
                 </span>
               </div>
             </motion.div>
@@ -110,7 +110,7 @@ export default function AboutUs() {
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-blue-50/50 aspect-video max-h-[380px]">
                 <img
                   src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=800&q=80"
-                  alt="Apex Forge Smelting Station"
+                  alt="Unique Techno Mech Machine Shop"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
                 />
@@ -143,12 +143,12 @@ export default function AboutUs() {
                   Our Corporate Mission
                 </h3>
                 <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                  Provide global farmers and heavy developers with high-durability, energy-efficient soil preparation and seeding equipment. We dedicate 15% of our operating margins to metallurgy R&D, designing carbon-neutral manufacturing models.
+                  Provide automobile, tractor, and heavy industrial clients with high-durability, precision-engineered gears, shafts, sleeves, castings, and hydraulics. We dedicate significant resources to manufacturing excellence, continuously improving our component design standards.
                 </p>
               </div>
               <ul className="mt-6 space-y-2 text-xs font-semibold text-gray-600 font-sans">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Zero debris raw boron smelting</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> CNC robotic manufacturing tolerances</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Zero-defect alloy bar machining</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Precision CNC & VMC manufacturing tolerances</li>
               </ul>
             </motion.div>
 
@@ -168,12 +168,12 @@ export default function AboutUs() {
                   Our Corporate Vision
                 </h3>
                 <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                  Acknowledge as the absolute benchmark in smart implement metallurgy internationally by 2030, operating solar-powered steel pressing chains with carbon-recovery mechanisms, ensuring efficient agricultural outputs.
+                  Be recognized as the leading global partner for precision automotive gears, shafts, castings, and hydraulic systems by 2030, operating state-of-the-art VMC and CNC production lines that guarantee supreme structural integrity.
                 </p>
               </div>
               <ul className="mt-6 space-y-2 text-xs font-semibold text-gray-600 font-sans">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Pure carbon neutral production grids</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Global ISO-BUS terminal synchrony</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> State-of-the-art machining centers</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Micrometric quality inspection controls</li>
               </ul>
             </motion.div>
 
@@ -245,7 +245,7 @@ export default function AboutUs() {
                     </div>
                   </div>
 
-                  <div className="w-none md:w-1/2" />
+                  <div className="hidden md:block md:w-1/2" />
                 </motion.div>
               );
             })}
@@ -269,21 +269,21 @@ export default function AboutUs() {
               <div className="space-y-1.5">
                 <span className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-brand-primary/10 border border-brand-primary/20 rounded-md text-[10px] font-bold tracking-wider text-brand-primary uppercase">
                   <Factory className="w-3.5 h-3.5" />
-                  Smelting & Forge Operations
+                  Machining & Forge Operations
                 </span>
                 <h2 className="text-3xl font-extrabold font-display text-gray-900 tracking-tight leading-tight">
-                  High-Carbon Metallurgy Processing Arrays
+                  High-Precision Metallurgy Processing Arrays
                 </h2>
               </div>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Our plant grounds are equipped with precision electrical induction heaters, hydraulic presses capable of applying up to 1,200 metric tons of force, and CNC high-speed vertical machining rigs.
+                Our plant grounds are equipped with precision machining tools, high-speed vertical machining centers (VMCs), and CNC lathes capable of achieving tight tolerances on complex designs.
               </p>
 
               <div className="space-y-3 font-sans text-xs sm:text-sm text-gray-600 font-semibold">
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
-                  <span>Boron Content Calibration (0.003% exact compliance ratios)</span>
+                  <span>Alloy steel caliber checks (exact compliance ratios)</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
@@ -291,7 +291,7 @@ export default function AboutUs() {
                 </div>
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
-                  <span>Robotic MIG welding stations for perfect, void-less seam joints</span>
+                  <span>Calibrated metrology checks using Mitutoyo and Baker instruments</span>
                 </div>
               </div>
 
@@ -300,7 +300,7 @@ export default function AboutUs() {
                   to="/inquiry"
                   className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-accent text-white font-bold px-6 py-3 rounded-lg shadow-md transition-all text-xs uppercase tracking-wider group"
                 >
-                  <span>Request Smelting Logs</span>
+                  <span>Request Technical Specs</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -366,7 +366,7 @@ export default function AboutUs() {
           
           <div className="text-center max-w-xl mx-auto mb-16 space-y-2">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
-              Apex Board
+              Unique Board
             </span>
             <h2 className="text-3xl font-extrabold font-display text-gray-900 tracking-tight leading-tight">
               Our Leadership & Board of Directors
@@ -416,10 +416,10 @@ export default function AboutUs() {
             Partner with us
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold font-display leading-tight tracking-tight text-white max-w-2xl mx-auto">
-            Design Your Next Bespoke Implement Array With Us
+            Partner With Us For High-Precision Automotive Components
           </h2>
           <p className="text-sm text-blue-100 max-w-xl mx-auto font-sans leading-relaxed">
-            Our smelting division handles customization orders with direct structural stress certifications. Request are metallurgy manuals or submit specific dimension drawings.
+            Our manufacturing divisions handle custom machining and casting orders based on client blueprints. Request technical specifications or submit specific drawings.
           </p>
           <div className="pt-4 flex flex-wrap justify-center gap-4">
             <Link
