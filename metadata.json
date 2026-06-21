@@ -1,0 +1,6 @@
+{
+  "name": "Apex Industrial Solutions",
+  "description": "Premium responsive corporate industrial website specializing in high-performance machinery, agricultural engineering, and custom manufacturing solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
