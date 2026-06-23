@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { motion, AnimatePresence } from 'motion/react';
-import { 
-  ShieldAlert, Settings2, Cpu, Globe2, Clock, Award, 
+import { motion } from 'motion/react';
+import {
+  ShieldAlert, Settings2, Cpu, Globe2, Clock, Award,
   Sprout, Factory, HardHat, Wrench, Pickaxe, Landmark,
-  ArrowRight, Quote, Heart, Star, ChevronLeft, ChevronRight, FileCheck 
+  ArrowRight
 } from 'lucide-react';
 
-import { FEATURES, INDUSTRIES, PRODUCTS, TESTIMONIALS, GALLERY } from '../data/websiteData';
+import { FEATURES, INDUSTRIES, PRODUCTS, GALLERY } from '../data/websiteData';
 import { Product } from '../types';
 
 import HeroSlider from '../components/HeroSlider';
 import CounterSection from '../components/CounterSection';
 import ProductCard from '../components/ProductCard';
 import ProductDetailModal from '../components/ProductDetailModal';
+import { StaggerTestimonials } from '../components/StaggerTestimonials';
 
 // Static Icon Mappers
 const getFeatureIcon = (name: string) => {
@@ -43,22 +44,12 @@ const getIndustryIcon = (name: string) => {
 export default function Home() {
   const navigate = useNavigate();
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [activeTestimonial, setActiveTestimonial] = useState(0);
-
   // Take the first 3 products for featured listing
   const featuredProducts = PRODUCTS.slice(0, 3);
 
-  const prevTestimonial = () => {
-    setActiveTestimonial((prev) => (prev === 0 ? TESTIMONIALS.length - 1 : prev - 1));
-  };
-
-  const nextTestimonial = () => {
-    setActiveTestimonial((prev) => (prev === TESTIMONIALS.length - 1 ? 0 : prev + 1));
-  };
-
   return (
     <div className="bg-white min-h-screen">
-      
+
       {/* 1. HERO SLIDER */}
       <HeroSlider />
 
@@ -66,7 +57,7 @@ export default function Home() {
       <section className="py-20 md:py-28 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            
+
             {/* Image side with solid border frame and soft background shadow */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -77,7 +68,7 @@ export default function Home() {
             >
               <div className="absolute -top-4 -left-4 w-2/3 h-2/3 border-t-4 border-l-4 border-brand-primary rounded-tl-3xl -z-10 hidden sm:block" />
               <div className="absolute -bottom-4 -right-4 w-2/3 h-2/3 border-b-4 border-r-4 border-brand-secondary rounded-br-3xl -z-10 hidden sm:block" />
-              
+
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-blue-50/50 max-h-[480px]">
                 <img
                   src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80"
@@ -116,7 +107,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
                 At Unique Techno Mech, we manufacture high-precision automobile gear box parts, worm shafts, slow speed shafts, sleeves, castings, and custom hydraulic couplers. Serving key tractor brands and leading automakers, we formulate components capable of working under extreme mechanical loads.
               </p>
-              
+
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
                 By fusing precision CNC cutting and vertical milling (VMC) with rigorous metrology checks, we ensure every shaft, sleeve, and cast iron component passes strict tolerance standards.
               </p>
@@ -152,7 +143,7 @@ export default function Home() {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          
+
           {/* Header banner */}
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
@@ -199,7 +190,7 @@ export default function Home() {
       {/* 4. FEATURED PRODUCTS HIGHLIGHT */}
       <section className="py-20 md:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           {/* Header Row */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 border-b border-blue-50 pb-6">
             <div className="space-y-3 max-w-2xl text-left">
@@ -241,7 +232,7 @@ export default function Home() {
       {/* 5. INDUSTRIES WE SERVE */}
       <section className="py-20 bg-brand-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
               Application Domains
@@ -301,86 +292,30 @@ export default function Home() {
       {/* 6. STATISTICS COUNTER SECTION */}
       <CounterSection />
 
-      {/* 7. CLIENT TESTIMONIALS (Slider structure) */}
+      {/* 7. CLIENT TESTIMONIALS (Staggered Theme) */}
       <section className="py-20 md:py-28 bg-white overflow-hidden">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
               Client Feedback
             </span>
-            <h2 className="text-3xl md:text-3xl font-extrabold font-display text-gray-900 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold font-display text-gray-900 tracking-tight">
               Testimonials From Real Operators
             </h2>
             <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full" />
-          </div>
-
-          <div className="relative bg-brand-bg border border-blue-50 rounded-3xl p-8 md:p-12 shadow-md shadow-blue-900/[0.02]">
-            <Quote className="absolute top-6 left-6 text-blue-200/50 w-24 h-24 stroke-1 shrink-0 select-none pointer-events-none" />
-            
-            {/* Slide active cards */}
-            <div className="relative z-10 min-h-[180px] flex flex-col justify-between">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeTestimonial}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.4 }}
-                  className="space-y-6"
-                >
-                  <p className="text-sm md:text-md font-sans text-gray-600 italic leading-relaxed text-center font-medium md:px-6">
-                    "{TESTIMONIALS[activeTestimonial].comment}"
-                  </p>
-                  
-                  {/* Profile section */}
-                  <div className="flex flex-col items-center text-center">
-                    <img
-                      src={TESTIMONIALS[activeTestimonial].avatar}
-                      alt={TESTIMONIALS[activeTestimonial].name}
-                      referrerPolicy="no-referrer"
-                      className="w-14 h-14 rounded-full border-2 border-brand-primary object-cover mb-3 shadow-md"
-                    />
-                    <h4 className="text-base font-bold text-gray-900 font-display">
-                      {TESTIMONIALS[activeTestimonial].name}
-                    </h4>
-                    <span className="text-xs text-gray-400 font-sans">
-                      {TESTIMONIALS[activeTestimonial].role} • <strong className="text-brand-primary">{TESTIMONIALS[activeTestimonial].company}</strong>
-                    </span>
-                    <div className="flex items-center gap-1.5 mt-2">
-                      {[...Array(TESTIMONIALS[activeTestimonial].rating)].map((_, idx) => (
-                        <Star key={idx} className="w-3.5 h-3.5 text-yellow-400 fill-yellow-400" />
-                      ))}
-                    </div>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Slide triggers buttons */}
-            <div className="absolute right-6 bottom-6 flex items-center gap-2 z-20">
-              <button
-                onClick={prevTestimonial}
-                className="p-1.5 rounded-lg border border-blue-100 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-all text-gray-500 hover:scale-105 cursor-pointer"
-                aria-label="Previous Testimonial"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <button
-                onClick={nextTestimonial}
-                className="p-1.5 rounded-lg border border-blue-100 hover:border-brand-primary hover:bg-brand-primary hover:text-white transition-all text-gray-500 hover:scale-105 cursor-pointer"
-                aria-label="Next Testimonial"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
+            <p className="text-xs text-gray-400 font-sans pt-1">
+              Read how our precision gears, custom shafts, and hydraulic spare parts help tractor builders and automotive assembly lines run efficiently.
+            </p>
           </div>
         </div>
+
+        <StaggerTestimonials />
       </section>
 
       {/* 8. LATEST GALLERY (Masonry Grid with hover effects) */}
       <section className="py-20 bg-brand-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
               Production Portfolio
@@ -411,7 +346,7 @@ export default function Home() {
                   referrerPolicy="no-referrer"
                   className="zoom-hover-img w-full h-full object-cover"
                 />
-                
+
                 {/* Information Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white select-none">
                   <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Landmark, FileCheck } from 'lucide-react';
+import { Menu, X, FileCheck } from 'lucide-react';
+import logo from '../../images/logo.jpeg';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,11 +55,11 @@ export default function Navbar() {
             
             {/* Logo left */}
             <Link to="/" className="flex items-center gap-2.5 group">
-              <div className={`p-2.5 rounded-xl transition-colors ${
-                isHomePage && !isScrolled ? 'bg-white/10 text-white' : 'bg-brand-primary text-white'
-              }`}>
-                <Landmark className="w-5.5 h-5.5" />
-              </div>
+              <img
+                src={logo}
+                alt="Unique Techno Mech Logo"
+                className="w-10 h-10 object-contain rounded-xl"
+              />
               <div className="flex flex-col">
                 <span className={`text-lg md:text-xl font-extrabold font-display tracking-tight leading-none ${
                   isHomePage && !isScrolled ? 'text-white' : 'text-gray-900'
@@ -150,9 +151,11 @@ export default function Navbar() {
             >
               <div className="space-y-8 pt-16">
                 <div className="flex items-center gap-2 border-b border-blue-50 pb-5">
-                  <div className="p-2 bg-brand-primary/10 text-brand-primary rounded-xl">
-                    <Landmark className="w-5 h-5" />
-                  </div>
+                  <img
+                    src={logo}
+                    alt="Unique Techno Mech Logo"
+                    className="w-10 h-10 object-contain rounded-xl"
+                  />
                   <div>
                     <h4 className="text-md font-bold font-display text-gray-900 leading-none">UNIQUE TECHNO MECH</h4>
                     <span className="text-[9px] uppercase tracking-widest text-gray-400 font-sans font-bold block mt-1">Global Standard Components</span>

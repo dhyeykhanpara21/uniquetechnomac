@@ -1,12 +1,184 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
-import { Landmark, Mail, Phone, MapPin, Youtube, Facebook, Linkedin, Twitter, ArrowRight, Loader2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Youtube, Facebook, Linkedin, Twitter, ArrowRight, Loader2 } from 'lucide-react';
+import { cn } from '../lib/utils';
+import logo from '../../images/logo.jpeg';
+
+export const TextHoverEffect = ({
+  text,
+  duration,
+  className,
+  cursor,
+  hovered,
+  svgRef,
+  automatic,
+}: {
+  text: string;
+  duration?: number;
+  className?: string;
+  cursor: { x: number; y: number };
+  hovered: boolean;
+  svgRef: React.RefObject<SVGSVGElement | null>;
+  automatic?: boolean;
+}) => {
+  const [maskPosition, setMaskPosition] = useState({ cx: "600", cy: "100" });
+
+  useEffect(() => {
+    if (svgRef.current && cursor.x !== null && cursor.y !== null) {
+      const svgRect = svgRef.current.getBoundingClientRect();
+      const localX = ((cursor.x - svgRect.left) / svgRect.width) * 1200;
+      const localY = ((cursor.y - svgRect.top) / svgRect.height) * 200;
+      setMaskPosition({
+        cx: `${localX}`,
+        cy: `${localY}`,
+      });
+    }
+  }, [cursor, svgRef]);
+
+  const gradientAnimate = hovered
+    ? maskPosition
+    : automatic
+    ? { cx: [0, 1200, 0], cy: 100 }
+    : { cx: 600, cy: 100 };
+
+  const gradientTransition = hovered
+    ? { duration: duration ?? 0.15, ease: "easeOut" }
+    : automatic
+    ? { repeat: Infinity, duration: 10, ease: "easeInOut" }
+    : { duration: 0.5 };
+
+  return (
+    <svg
+      ref={svgRef}
+      width="100%"
+      height="100%"
+      viewBox="0 0 1200 200"
+      xmlns="http://www.w3.org/2000/svg"
+      className={cn("select-none uppercase", className)}
+    >
+      <defs>
+        <linearGradient
+          id="textGradient"
+          gradientUnits="userSpaceOnUse"
+          x1="0"
+          y1="0"
+          x2="1200"
+          y2="0"
+        >
+          {(hovered || automatic) && (
+            <>
+              <stop offset="0%" stopColor="#3ca2fa" />
+              <stop offset="25%" stopColor="#60a5fa" />
+              <stop offset="50%" stopColor="#ffffff" />
+              <stop offset="75%" stopColor="#93c5fd" />
+              <stop offset="100%" stopColor="#1E88E5" />
+            </>
+          )}
+        </linearGradient>
+
+        <motion.radialGradient
+          id="revealMask"
+          gradientUnits="userSpaceOnUse"
+          r="150"
+          initial={{ cx: 600, cy: 100 }}
+          animate={gradientAnimate}
+          transition={gradientTransition}
+        >
+          <stop offset="0%" stopColor="white" />
+          <stop offset="100%" stopColor="black" />
+        </motion.radialGradient>
+
+        <mask id="textMask">
+          <rect
+            x="0"
+            y="0"
+            width="100%"
+            height="100%"
+            fill="url(#revealMask)"
+          />
+        </mask>
+
+        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="5" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <text
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        strokeWidth="1.2"
+        fontSize="85"
+        className="fill-transparent stroke-white/10 font-[Outfit] font-extrabold tracking-widest leading-none"
+        style={{ opacity: (hovered || automatic) ? 0.6 : 0.25, transition: 'opacity 0.3s ease' }}
+      >
+        {text}
+      </text>
+      <motion.text
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        strokeWidth="1.2"
+        fontSize="85"
+        className="fill-transparent stroke-[#3ca2fa] font-[Outfit] font-extrabold tracking-widest leading-none opacity-45"
+        initial={{ strokeDashoffset: 1200, strokeDasharray: 1200 }}
+        animate={{
+          strokeDashoffset: 0,
+          strokeDasharray: 1200,
+        }}
+        transition={{
+          duration: 3.5,
+          ease: "easeInOut",
+        }}
+      >
+        {text}
+      </motion.text>
+      <text
+        x="50%"
+        y="50%"
+        textAnchor="middle"
+        dominantBaseline="middle"
+        fill="url(#textGradient)"
+        stroke="url(#textGradient)"
+        strokeWidth="1"
+        mask="url(#textMask)"
+        filter="url(#glow)"
+        fontSize="85"
+        className="font-[Outfit] font-extrabold tracking-widest leading-none"
+      >
+        {text}
+      </text>
+    </svg>
+  );
+};
+
+export const FooterBackgroundGradient = () => {
+  return (
+    <div
+      className="absolute inset-0 z-0"
+      style={{
+        background:
+          "radial-gradient(125% 125% at 50% 10%, #0F0F1166 50%, #3ca2fa33 100%)",
+      }}
+    />
+  );
+};
 
 export default function Footer() {
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+
+  const footerRef = useRef<HTMLElement>(null);
+  const svgRef = useRef<SVGSVGElement>(null);
+  const [cursor, setCursor] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(false);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,16 +193,35 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-brand-accent text-white border-t border-blue-950 font-sans relative overflow-hidden pt-16 md:pt-20 pb-8">
+    <footer
+      ref={footerRef}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
+      className="bg-brand-accent text-white border-t border-blue-950 font-sans relative overflow-hidden pt-16 md:pt-20 pb-8"
+    >
+      <FooterBackgroundGradient />
+      {/* Large Brand Visual Watermark in the background */}
+      <div className="absolute bottom-0 left-0 w-full h-[150px] sm:h-[220px] md:h-[300px] lg:h-[360px] z-0 overflow-hidden pointer-events-none select-none opacity-20">
+        <TextHoverEffect 
+          text="UNIQUE TECHNO MECH" 
+          cursor={cursor}
+          hovered={hovered}
+          svgRef={svgRef}
+          automatic={true}
+        />
+      </div>
       {/* Footer Top Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 border-b border-blue-900/60 pb-16">
         
         {/* Brand Information Section */}
         <div className="space-y-5">
           <Link to="/" className="flex items-center gap-2">
-            <div className="p-2.5 bg-brand-primary text-white rounded-xl">
-              <Landmark className="w-5 h-5" />
-            </div>
+            <img
+              src={logo}
+              alt="Unique Techno Mech Logo"
+              className="w-10 h-10 object-contain rounded-xl bg-white p-1"
+            />
             <div className="flex flex-col">
               <span className="text-md md:text-lg font-extrabold font-display tracking-tight leading-none text-white">
                 UNIQUE <span className="text-brand-secondary">TECHNO MECH</span>

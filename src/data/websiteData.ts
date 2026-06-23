@@ -334,6 +334,33 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     comment: 'We outsource VMC finish machining to Unique Techno Mech. Their BFW VMC machines handle high-density carbon steel blocks easily, delivering precise alignments on every consignment.',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=120&h=120&q=80'
+  },
+  {
+    id: 'test-4',
+    name: 'Rajesh Kumar',
+    role: 'Plant Manager',
+    company: 'Shriram Automotives',
+    rating: 5,
+    comment: 'The custom slow speed shafts and gear sleeves from Unique Techno Mech have drastically reduced our assembly line rejection rates. Exceptional precision!',
+    avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=120&h=120&q=80'
+  },
+  {
+    id: 'test-5',
+    name: 'Sarah Jenkins',
+    role: 'Operations Director',
+    company: 'Apex Hydraulic Machinery',
+    rating: 5,
+    comment: "We've been sourcing double-action hydraulic rams from their Delta division. The hard chrome plating and seal quality are top-notch.",
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80'
+  },
+  {
+    id: 'test-6',
+    name: 'Mansukh Bhai',
+    role: 'Founder',
+    company: 'Rajkot Gear Tech',
+    rating: 5,
+    comment: 'Their VMC and CNC subcontracting services are highly reliable. Having group companies with deep industry expertise under one roof is a massive advantage.',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&h=120&q=80'
   }
 ];
 
