@@ -58,7 +58,7 @@ export default function Navbar() {
               <img
                 src={logo}
                 alt="Unique Techno Mech Logo"
-                className="w-10 h-10 object-contain rounded-xl"
+                className="w-15 h-15 object-contain rounded-xl"
               />
               <div className="flex flex-col">
                 <span className={`text-lg md:text-xl font-extrabold font-display tracking-tight leading-none ${
