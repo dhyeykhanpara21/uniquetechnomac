@@ -58,7 +58,7 @@ export default function Navbar() {
               <img
                 src={logo}
                 alt="Unique Techno Mech Logo"
-                className="w-15 h-15 object-contain rounded-xl"
+                className="w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-xl"
               />
               <div className="flex flex-col">
                 <span className={`text-lg md:text-xl font-extrabold font-display tracking-tight leading-none ${
@@ -150,17 +150,6 @@ export default function Navbar() {
               className="absolute right-0 top-0 bottom-0 w-4/5 max-w-xs bg-white text-gray-900 p-6 flex flex-col justify-between shadow-2xl border-l border-blue-50"
             >
               <div className="space-y-8 pt-16">
-                <div className="flex items-center gap-2 border-b border-blue-50 pb-5">
-                  <img
-                    src={logo}
-                    alt="Unique Techno Mech Logo"
-                    className="w-10 h-10 object-contain rounded-xl"
-                  />
-                  <div>
-                    <h4 className="text-md font-bold font-display text-gray-900 leading-none">UNIQUE TECHNO MECH</h4>
-                    <span className="text-[9px] uppercase tracking-widest text-gray-400 font-sans font-bold block mt-1">Global Standard Components</span>
-                  </div>
-                </div>
 
                 <div className="flex flex-col gap-4 font-sans font-semibold text-lg text-gray-700">
                   {navLinks.map((link) => (

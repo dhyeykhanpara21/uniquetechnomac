@@ -19,7 +19,7 @@ export default function FloatingButtons() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 flex flex-col gap-3.5 z-40">
+    <div className="fixed bottom-6 right-6 flex flex-col gap-3.5 z-30">
       
       {/* Scroll To Top Button */}
       <AnimatePresence>
