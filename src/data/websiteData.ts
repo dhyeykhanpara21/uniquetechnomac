@@ -26,26 +26,24 @@ import precisionEngineeringMain from '../../images/pricion engineering.jpeg';
 import downstreamTargetMain from '../../images/downstream target sector.jpeg';
 import automotiveAutoMain from '../../images/Automotive & Auto Components.jpeg';
 import dieMoldMain from '../../images/Die & Mold Making.jpeg';
-
-// Infinite Scroll Gallery Images
-import leverPlates from '../../images/infinite scrroll/Hand Pallet Lever Plates.jpeg';
-import mainShaft from '../../images/infinite scrroll/Hand Pallet Spares Part Main saft 35 x 285.jpeg';
-import pin16x41 from '../../images/infinite scrroll/Hand Pallet Spares Part Pin 16 x 41.jpeg';
-import pin16x85 from '../../images/infinite scrroll/Hand Pallet Spares Part pin 16 x 85(2).jpeg';
-import truckBracket from '../../images/infinite scrroll/Hand Pallet Truck Bracket.jpeg';
-import oilSealKit from '../../images/infinite scrroll/Hand Pallet Truck Oil Seal Kit and Parts.jpeg';
-import pin25x176 from '../../images/infinite scrroll/Hand Pallet Truck Pin 25 x 176.jpeg';
-import truckPump from '../../images/infinite scrroll/Hand Pallet Truck Pump.jpeg';
-import releaseValve from '../../images/infinite scrroll/Hand Pallet Truck Release Valve.jpeg';
-import heavyDutyTruck from '../../images/infinite scrroll/Heavy Duty Hand Pallet Truck.jpeg';
-import paddlePinShaft from '../../images/infinite scrroll/Paddle Pin Shaft Pallet Truck Part (1).jpeg';
-import pistonBush from '../../images/infinite scrroll/Piston Bush Pallet Truck Part.jpeg';
-import platformTruck from '../../images/infinite scrroll/Platform Hand Truck.jpeg';
-import puWheels from '../../images/infinite scrroll/Pu Hand Pallet Truck Wheels.jpeg';
-import pumpPiston from '../../images/infinite scrroll/Pump Piston Hand Pallet 18 x 100.jpeg';
-import rollerLinkingPlate from '../../images/infinite scrroll/ROLLER LINKING PLATE Pallet Truck Part.jpeg';
-import hexNut from '../../images/infinite scrroll/SS304 M14 Hex Nut.jpeg';
-import palletSpring from '../../images/infinite scrroll/Stainles Steel Hand Pallet Spring.jpeg';
+import is1 from '../../images/infinite scrroll/Hand Pallet Lever Plates.jpeg';
+import is2 from '../../images/infinite scrroll/Hand Pallet Spares Part Main saft 35 x 285.jpeg';
+import is3 from '../../images/infinite scrroll/Hand Pallet Spares Part Pin 16 x 41.jpeg';
+import is4 from '../../images/infinite scrroll/Hand Pallet Spares Part pin 16 x 85(2).jpeg';
+import is5 from '../../images/infinite scrroll/Hand Pallet Truck Bracket.jpeg';
+import is6 from '../../images/infinite scrroll/Hand Pallet Truck Oil Seal Kit and Parts.jpeg';
+import is7 from '../../images/infinite scrroll/Hand Pallet Truck Pin 25 x 176.jpeg';
+import is8 from '../../images/infinite scrroll/Hand Pallet Truck Pump.jpeg';
+import is9 from '../../images/infinite scrroll/Hand Pallet Truck Release Valve.jpeg';
+import is10 from '../../images/infinite scrroll/Heavy Duty Hand Pallet Truck.jpeg';
+import is11 from '../../images/infinite scrroll/Paddle Pin Shaft Pallet Truck Part (1).jpeg';
+import is12 from '../../images/infinite scrroll/Piston Bush Pallet Truck Part.jpeg';
+import is13 from '../../images/infinite scrroll/Platform Hand Truck.jpeg';
+import is14 from '../../images/infinite scrroll/Pu Hand Pallet Truck Wheels.jpeg';
+import is15 from '../../images/infinite scrroll/Pump Piston Hand Pallet 18 x 100.jpeg';
+import is16 from '../../images/infinite scrroll/ROLLER LINKING PLATE Pallet Truck Part.jpeg';
+import is17 from '../../images/infinite scrroll/SS304 M14 Hex Nut.jpeg';
+import is18 from '../../images/infinite scrroll/Stainles Steel Hand Pallet Spring.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -409,111 +407,111 @@ export const TESTIMONIALS: Testimonial[] = [
 export const GALLERY = [
   {
     id: 'gal-1',
-    image: leverPlates,
-    title: 'Lever Plates',
-    category: 'Pallet Spares'
+    image: is1,
+    title: 'Hand Pallet Lever Plates',
+    category: 'Lever Plates'
   },
   {
     id: 'gal-2',
-    image: mainShaft,
-    title: 'Main Shaft 35x285',
-    category: 'Pallet Spares'
+    image: is2,
+    title: 'Main Shaft 35 x 285',
+    category: 'Shafts'
   },
   {
     id: 'gal-3',
-    image: pin16x41,
-    title: 'Pin 16x41',
-    category: 'Pallet Spares'
+    image: is3,
+    title: 'Pin 16 x 41',
+    category: 'Pins'
   },
   {
     id: 'gal-4',
-    image: pin16x85,
-    title: 'Pin 16x85',
-    category: 'Pallet Spares'
+    image: is4,
+    title: 'Pin 16 x 85',
+    category: 'Pins'
   },
   {
     id: 'gal-5',
-    image: truckBracket,
-    title: 'Truck Bracket',
-    category: 'Pallet Spares'
+    image: is5,
+    title: 'Hand Pallet Truck Bracket',
+    category: 'Brackets'
   },
   {
     id: 'gal-6',
-    image: oilSealKit,
+    image: is6,
     title: 'Oil Seal Kit & Parts',
-    category: 'Pallet Spares'
+    category: 'Seals'
   },
   {
     id: 'gal-7',
-    image: pin25x176,
-    title: 'Pin 25x176',
-    category: 'Pallet Spares'
+    image: is7,
+    title: 'Pin 25 x 176',
+    category: 'Pins'
   },
   {
     id: 'gal-8',
-    image: truckPump,
-    title: 'Hydraulic Pump',
-    category: 'Pallet Spares'
+    image: is8,
+    title: 'Hand Pallet Truck Pump',
+    category: 'Pumps'
   },
   {
     id: 'gal-9',
-    image: releaseValve,
-    title: 'Release Valve',
-    category: 'Pallet Spares'
+    image: is9,
+    title: 'Hand Pallet Release Valve',
+    category: 'Valves'
   },
   {
     id: 'gal-10',
-    image: heavyDutyTruck,
+    image: is10,
     title: 'Heavy Duty Pallet Truck',
-    category: 'Material Handling'
+    category: 'Pallet Trucks'
   },
   {
     id: 'gal-11',
-    image: paddlePinShaft,
+    image: is11,
     title: 'Paddle Pin Shaft',
-    category: 'Pallet Spares'
+    category: 'Pins'
   },
   {
     id: 'gal-12',
-    image: pistonBush,
-    title: 'Piston Bushing',
-    category: 'Pallet Spares'
+    image: is12,
+    title: 'Piston Bushing Spares',
+    category: 'Bushes'
   },
   {
     id: 'gal-13',
-    image: platformTruck,
+    image: is13,
     title: 'Platform Hand Truck',
-    category: 'Material Handling'
+    category: 'Hand Trucks'
   },
   {
     id: 'gal-14',
-    image: puWheels,
-    title: 'PU Wheels',
-    category: 'Pallet Spares'
+    image: is14,
+    title: 'PU Pallet Truck Wheels',
+    category: 'Wheels'
   },
   {
     id: 'gal-15',
-    image: pumpPiston,
-    title: 'Pump Piston 18x100',
-    category: 'Pallet Spares'
+    image: is15,
+    title: 'Pump Piston 18 x 100',
+    category: 'Pistons'
   },
   {
     id: 'gal-16',
-    image: rollerLinkingPlate,
+    image: is16,
     title: 'Roller Linking Plate',
-    category: 'Pallet Spares'
+    category: 'Plates'
   },
   {
     id: 'gal-17',
-    image: hexNut,
+    image: is17,
     title: 'SS304 M14 Hex Nut',
-    category: 'Pallet Spares'
+    category: 'Nuts'
   },
   {
     id: 'gal-18',
-    image: palletSpring,
-    title: 'Stainless Steel Spring',
-    category: 'Pallet Spares'
+    image: is18,
+    title: 'Stainless Pallet Spring',
+    category: 'Springs'
   }
 ];
 
