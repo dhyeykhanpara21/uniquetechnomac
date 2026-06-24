@@ -13,6 +13,13 @@ import hydraulicDetail from '../../assets/hydraulic_detail.png';
 import reelHydraulicMain from '../../images/ReelHydrolicHandPalletTruck.jpeg';
 import platformHandTruckMain from '../../images/PlatformHandTruck.jpeg';
 import releaseValveMain from '../../images/HandPalletTruckReleasevalve.jpeg';
+import reelHydraulic2 from '../../images/ReelHydrolicHandPalletTruck2.jpeg';
+import reelHydraulic3 from '../../images/ReelHydrolicHandPalletTruck3.jpeg';
+import reelHydraulic4 from '../../images/ReelHydrolicHandPalletTruck4.jpeg';
+import platformHandTruck2 from '../../images/PlatformHandTruck2.jpeg';
+import platformHandTruck3 from '../../images/PlatformHandTruck3.jpeg';
+import releaseValve2 from '../../images/HandPalletTruckReleasevalve2.jpeg';
+import releaseValve3 from '../../images/HandPalletTruckReleasevalve3.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -179,6 +186,7 @@ export const PRODUCTS: Product[] = [
     name: 'Reel Hydraulic Hand Pallet Truck',
     category: 'Hydraulic Hand Pallet Trucks',
     image: reelHydraulicMain,
+    images: [reelHydraulicMain, reelHydraulic2, reelHydraulic3, reelHydraulic4],
     shortDesc: 'Hydraulic Hand Pallet Truck enables safe, efficient lifting and transportation of palletized goods.',
     longDesc: 'is a manual material-handling equipment used to lift and move palletized goods over short distances. It is widely used in warehouses, factories, logistics centers, and retail stores for loading, unloading, and transporting heavy materials. The forks are placed under the pallet, and the handle is pumped to lift the load using a hydraulic system. The operator can then easily move the pallet and lower it safely at the desired location. It is durable, cost-effective, and improves workplace efficiency.',
     specifications: {
@@ -200,6 +208,7 @@ export const PRODUCTS: Product[] = [
     name: 'Platform Hand Truck',
     category: 'Platform Hand Trucks',
     image: platformHandTruckMain,
+    images: [platformHandTruckMain, platformHandTruck2, platformHandTruck3],
     shortDesc: 'Platform Hand Truck enables easy transportation of boxes, cartons, and materials efficiently daily.',
     longDesc: 'is a versatile material-handling trolley designed for transporting boxes, cartons, tools, and other goods with ease. It is widely used in warehouses, factories, retail stores, offices, and logistics centers for moving loads efficiently. Simply place the items on the platform and push or pull the truck using the ergonomic handle. Its sturdy platform, smooth-rolling wheels, and durable construction help reduce manual effort and improve productivity.',
     specifications: {
@@ -218,6 +227,7 @@ export const PRODUCTS: Product[] = [
     name: 'Hand Pallet Truck Release valve',
     category: 'Forgings',
     image: releaseValveMain,
+    images: [releaseValveMain, releaseValve2, releaseValve3],
     shortDesc: 'Release Valve provides smooth hydraulic control, prevents oil leaks, and ensures safe fork lowering.',
     longDesc: 'Release Valve is an important spare part used in hydraulic hand pallet trucks to control lifting and lowering operations. It helps maintain proper hydraulic pressure, ensuring smooth and safe movement of loads. Replacing a damaged or worn-out valve restores the trucks performance, prevents oil leakage, and allows the forks to lower smoothly and safely',
     specifications: {

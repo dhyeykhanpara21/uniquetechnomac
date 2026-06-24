@@ -1,7 +1,8 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Product } from '../types';
-import { X, FileSpreadsheet, Send, ArrowRight, ShieldCheck, Check } from 'lucide-react';
+import { X, FileSpreadsheet, Send, ArrowRight, ShieldCheck, Check, ChevronLeft, ChevronRight } from 'lucide-react';
 import { PRODUCTS } from '../data/websiteData';
 
 interface ProductDetailModalProps {
@@ -13,10 +14,21 @@ interface ProductDetailModalProps {
 export default function ProductDetailModal({ product, onClose, onSelectProduct }: ProductDetailModalProps) {
   if (!product) return null;
 
+  const [activeImgIndex, setActiveImgIndex] = useState(0);
+
+  // Reset image index when switching products
+  useEffect(() => {
+    setActiveImgIndex(0);
+  }, [product.id]);
+
   // Retrieve matching related items from the dataset
   const relatedProducts = PRODUCTS.filter((p) =>
     product.relatedProductIds.includes(p.id)
   );
+
+  // Prepare images array
+  const images = product.images || [product.image];
+  const currentImage = images[activeImgIndex];
 
   return (
     <AnimatePresence>
@@ -58,14 +70,65 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
             
             {/* Top Row: Picture left, Intro right */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
-              {/* Product Close-up Frame */}
-              <div className="relative rounded-2xl overflow-hidden aspect-video bg-white border border-blue-100 max-h-[300px]">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-contain p-4"
-                />
+              {/* Product Close-up Frame with Slideshow Controls */}
+              <div className="space-y-3">
+                <div className="relative rounded-2xl overflow-hidden aspect-video bg-white border border-blue-100 max-h-[300px] flex items-center justify-center group/nav">
+                  <img
+                    src={currentImage}
+                    alt={product.name}
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-contain p-4 transition-all duration-300"
+                  />
+
+                  {/* Left & Right Navigation Arrows (only if multiple images exist) */}
+                  {images.length > 1 && (
+                    <>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveImgIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+                        }}
+                        className="absolute left-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-700 hover:text-brand-primary shadow-md transition-all border border-gray-100 opacity-0 group-hover/nav:opacity-100 cursor-pointer flex items-center justify-center"
+                        aria-label="Previous image"
+                      >
+                        <ChevronLeft className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setActiveImgIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+                        }}
+                        className="absolute right-3 p-2 rounded-full bg-white/80 hover:bg-white text-gray-700 hover:text-brand-primary shadow-md transition-all border border-gray-100 opacity-0 group-hover/nav:opacity-100 cursor-pointer flex items-center justify-center"
+                        aria-label="Next image"
+                      >
+                        <ChevronRight className="w-4 h-4" />
+                      </button>
+                    </>
+                  )}
+                </div>
+
+                {/* Thumbnails Row (only if multiple images exist) */}
+                {images.length > 1 && (
+                  <div className="flex gap-2 overflow-x-auto py-1">
+                    {images.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setActiveImgIndex(idx)}
+                        className={`relative w-16 h-12 rounded-lg overflow-hidden bg-white shrink-0 border-2 transition-all cursor-pointer p-0.5 ${
+                          activeImgIndex === idx
+                            ? 'border-brand-primary'
+                            : 'border-gray-100 hover:border-gray-300'
+                        }`}
+                      >
+                        <img
+                          src={img}
+                          alt={`${product.name} Thumbnail ${idx + 1}`}
+                          className="w-full h-full object-contain"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Product Context */}

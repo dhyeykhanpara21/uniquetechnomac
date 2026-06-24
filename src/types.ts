@@ -3,6 +3,7 @@ export interface Product {
   name: string;
   category: string;
   image: string;
+  images?: string[];
   shortDesc: string;
   longDesc: string;
   specifications: Record<string, string>;
