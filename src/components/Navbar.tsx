@@ -74,7 +74,7 @@ export default function Navbar() {
                 <span className={`text-[9px] uppercase tracking-widest font-sans font-bold leading-none mt-1 ${
                   isHomePage && !isScrolled ? 'text-blue-200/80' : 'text-gray-400'
                 }`}>
-                  Gears & CNC Machining
+                  All Type of CNC & CAD-CAM WORKS
                 </span>
               </div>
             </Link>

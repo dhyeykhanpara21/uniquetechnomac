@@ -27,6 +27,25 @@ import downstreamTargetMain from '../../images/downstream target sector.jpeg';
 import automotiveAutoMain from '../../images/Automotive & Auto Components.jpeg';
 import dieMoldMain from '../../images/Die & Mold Making.jpeg';
 
+import scrollImg1 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM (1).jpeg';
+import scrollImg2 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM (2).jpeg';
+import scrollImg3 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM.jpeg';
+import scrollImg4 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.26 PM (1).jpeg';
+import scrollImg5 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.26 PM.jpeg';
+import scrollImg6 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.27 PM (1).jpeg';
+import scrollImg7 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.27 PM.jpeg';
+import scrollImg8 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM (1).jpeg';
+import scrollImg9 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM (2).jpeg';
+import scrollImg10 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM.jpeg';
+import scrollImg11 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.29 PM (1).jpeg';
+import scrollImg12 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.29 PM.jpeg';
+import scrollImg13 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM (1).jpeg';
+import scrollImg14 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM (2).jpeg';
+import scrollImg15 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM.jpeg';
+import scrollImg16 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.15 PM (1).jpeg';
+import scrollImg17 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.15 PM.jpeg';
+import scrollImg18 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.16 PM.jpeg';
+
 export const HERO_SLIDES = [
   {
     id: 'slide-1',
@@ -387,54 +406,24 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const GALLERY = [
-  {
-    id: 'gal-1',
-    image: wormShaftMain,
-    title: 'Worm Shaft Turning',
-    category: 'Gears'
-  },
-  {
-    id: 'gal-2',
-    image: cncMain,
-    title: 'BFW VMC Setup',
-    category: 'CNC Machining'
-  },
-  {
-    id: 'gal-3',
-    image: forgingsMain,
-    title: 'Graded Castings',
-    category: 'Forgings'
-  },
-  {
-    id: 'gal-4',
-    image: tractorMain,
-    title: 'Mahindra Shafts',
-    category: 'Auto Spares'
-  },
-  {
-    id: 'gal-5',
-    image: hydraulicMain,
-    title: 'Delta Rams Assembly',
-    category: 'Hydraulics'
-  },
-  {
-    id: 'gal-6',
-    image: wormShaftDetail,
-    title: 'Micrometer Checking',
-    category: 'Gears'
-  },
-  {
-    id: 'gal-7',
-    image: cncDetail,
-    title: 'CNC Spindle Cut',
-    category: 'CNC Machining'
-  },
-  {
-    id: 'gal-8',
-    image: forgingsDetail,
-    title: 'Forging Core Smelt',
-    category: 'Forgings'
-  }
+  { id: 'gal-1', image: scrollImg1, title: 'Precision CNC Lathe Turning', category: 'CNC Machining' },
+  { id: 'gal-2', image: scrollImg2, title: 'High-Tolerance VMC Milling', category: 'CNC Machining' },
+  { id: 'gal-3', image: scrollImg3, title: 'Heavy Gear Box Spares', category: 'Gears' },
+  { id: 'gal-4', image: scrollImg4, title: 'Alloy Steel Axle Sleeves', category: 'Auto Spares' },
+  { id: 'gal-5', image: scrollImg5, title: 'Graded Cast Iron Smelting', category: 'Forgings' },
+  { id: 'gal-6', image: scrollImg6, title: 'Double-Action Hydraulic Ram', category: 'Hydraulics' },
+  { id: 'gal-7', image: scrollImg7, title: 'High-Speed Automatic Lathe', category: 'CNC Machining' },
+  { id: 'gal-8', image: scrollImg8, title: 'Free-Cutting Brass Bushings', category: 'CNC Machining' },
+  { id: 'gal-9', image: scrollImg9, title: 'Centreless Grinding Spindle', category: 'CNC Machining' },
+  { id: 'gal-10', image: scrollImg10, title: 'Hydraulic Pallet Truck Pump', category: 'Material Handling' },
+  { id: 'gal-11', image: scrollImg11, title: 'Heavy-Duty Folding Platform', category: 'Material Handling' },
+  { id: 'gal-12', image: scrollImg12, title: 'Brass Release Valve Core', category: 'Hydraulics' },
+  { id: 'gal-13', image: scrollImg13, title: 'Industrial Transmission Shaft', category: 'Gears' },
+  { id: 'gal-14', image: scrollImg14, title: 'Custom Forging Mold Frame', category: 'Die & Mold Making' },
+  { id: 'gal-15', image: scrollImg15, title: 'Downstream Piping Spares', category: 'Downstream' },
+  { id: 'gal-16', image: scrollImg16, title: 'Calibrated Metrology Check', category: 'Quality Control' },
+  { id: 'gal-17', image: scrollImg17, title: 'Finished Gear Box Assemblies', category: 'Gears' },
+  { id: 'gal-18', image: scrollImg18, title: 'Vavdi Workshop Production', category: 'Machining' }
 ];
 
 export const TIMELINE: TimelineItem[] = [
