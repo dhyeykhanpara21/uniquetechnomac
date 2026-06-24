@@ -337,8 +337,8 @@ export default function Home() {
         {/* Marquee Wrapper with side gradient masks */}
         <div className="relative w-full marquee-container space-y-6 md:space-y-8">
           {/* Left and Right Edge Fade Gradients */}
-          <div className="absolute inset-y-0 left-0 w-16 md:w-48 bg-gradient-to-r from-brand-bg to-transparent pointer-events-none z-10" />
-          <div className="absolute inset-y-0 right-0 w-16 md:w-48 bg-gradient-to-l from-brand-bg to-transparent pointer-events-none z-10" />
+          <div className="absolute inset-y-0 left-0 w-6 sm:w-16 md:w-48 bg-gradient-to-r from-brand-bg to-transparent pointer-events-none z-10" />
+          <div className="absolute inset-y-0 right-0 w-6 sm:w-16 md:w-48 bg-gradient-to-l from-brand-bg to-transparent pointer-events-none z-10" />
 
           {/* Row 1: Scrolling Left */}
           <div className="flex overflow-hidden w-full select-none">
