@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUp, MessageCircle, FileText } from 'lucide-react';
+import indiamartLogo from '../../images/indiamart.png';
 
 export default function FloatingButtons() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -59,6 +60,27 @@ export default function FloatingButtons() {
           </span>
         </Link>
       </motion.div>
+
+      {/* Sticky IndiaMART Link */}
+      <motion.a
+        href="https://www.indiamart.com/unique-techno-mech-rajkot/"
+        target="_blank"
+        rel="noopener noreferrer"
+        initial={{ scale: 0.9, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1.1 }}
+        className="p-2.5 bg-slate-100 hover:bg-slate-200 text-gray-700 rounded-full shadow-lg hover:shadow-slate-300/40 hover:scale-110 transition-all border border-slate-300 flex items-center justify-center cursor-pointer pointer-events-auto relative group"
+        title="View IndiaMART Profile"
+      >
+        <img
+          src={indiamartLogo}
+          alt="IndiaMART Logo"
+          className="w-9 h-9 object-contain"
+        />
+        <span className="absolute right-[115%] bg-teal-800 text-white py-1 px-3.5 text-xs font-semibold rounded-lg shadow-md border border-white/10 hidden md:block whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+          IndiaMART Store
+        </span>
+      </motion.a>
 
       {/* Sticky WhatsApp Chat Link */}
       <motion.a
