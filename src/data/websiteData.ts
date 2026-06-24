@@ -27,24 +27,25 @@ import downstreamTargetMain from '../../images/downstream target sector.jpeg';
 import automotiveAutoMain from '../../images/Automotive & Auto Components.jpeg';
 import dieMoldMain from '../../images/Die & Mold Making.jpeg';
 
-import scrollImg1 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM (1).jpeg';
-import scrollImg2 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM (2).jpeg';
-import scrollImg3 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.25 PM.jpeg';
-import scrollImg4 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.26 PM (1).jpeg';
-import scrollImg5 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.26 PM.jpeg';
-import scrollImg6 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.27 PM (1).jpeg';
-import scrollImg7 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.27 PM.jpeg';
-import scrollImg8 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM (1).jpeg';
-import scrollImg9 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM (2).jpeg';
-import scrollImg10 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.28 PM.jpeg';
-import scrollImg11 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.29 PM (1).jpeg';
-import scrollImg12 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.29 PM.jpeg';
-import scrollImg13 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM (1).jpeg';
-import scrollImg14 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM (2).jpeg';
-import scrollImg15 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.01.30 PM.jpeg';
-import scrollImg16 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.15 PM (1).jpeg';
-import scrollImg17 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.15 PM.jpeg';
-import scrollImg18 from '../../images/infinite scrroll/WhatsApp Image 2026-06-24 at 12.03.16 PM.jpeg';
+// Infinite Scroll Gallery Images
+import leverPlates from '../../images/infinite scrroll/Hand Pallet Lever Plates.jpeg';
+import mainShaft from '../../images/infinite scrroll/Hand Pallet Spares Part Main saft 35 x 285.jpeg';
+import pin16x41 from '../../images/infinite scrroll/Hand Pallet Spares Part Pin 16 x 41.jpeg';
+import pin16x85 from '../../images/infinite scrroll/Hand Pallet Spares Part pin 16 x 85(2).jpeg';
+import truckBracket from '../../images/infinite scrroll/Hand Pallet Truck Bracket.jpeg';
+import oilSealKit from '../../images/infinite scrroll/Hand Pallet Truck Oil Seal Kit and Parts.jpeg';
+import pin25x176 from '../../images/infinite scrroll/Hand Pallet Truck Pin 25 x 176.jpeg';
+import truckPump from '../../images/infinite scrroll/Hand Pallet Truck Pump.jpeg';
+import releaseValve from '../../images/infinite scrroll/Hand Pallet Truck Release Valve.jpeg';
+import heavyDutyTruck from '../../images/infinite scrroll/Heavy Duty Hand Pallet Truck.jpeg';
+import paddlePinShaft from '../../images/infinite scrroll/Paddle Pin Shaft Pallet Truck Part (1).jpeg';
+import pistonBush from '../../images/infinite scrroll/Piston Bush Pallet Truck Part.jpeg';
+import platformTruck from '../../images/infinite scrroll/Platform Hand Truck.jpeg';
+import puWheels from '../../images/infinite scrroll/Pu Hand Pallet Truck Wheels.jpeg';
+import pumpPiston from '../../images/infinite scrroll/Pump Piston Hand Pallet 18 x 100.jpeg';
+import rollerLinkingPlate from '../../images/infinite scrroll/ROLLER LINKING PLATE Pallet Truck Part.jpeg';
+import hexNut from '../../images/infinite scrroll/SS304 M14 Hex Nut.jpeg';
+import palletSpring from '../../images/infinite scrroll/Stainles Steel Hand Pallet Spring.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -406,24 +407,114 @@ export const TESTIMONIALS: Testimonial[] = [
 ];
 
 export const GALLERY = [
-  { id: 'gal-1', image: scrollImg1, title: 'Precision CNC Lathe Turning', category: 'CNC Machining' },
-  { id: 'gal-2', image: scrollImg2, title: 'High-Tolerance VMC Milling', category: 'CNC Machining' },
-  { id: 'gal-3', image: scrollImg3, title: 'Heavy Gear Box Spares', category: 'Gears' },
-  { id: 'gal-4', image: scrollImg4, title: 'Alloy Steel Axle Sleeves', category: 'Auto Spares' },
-  { id: 'gal-5', image: scrollImg5, title: 'Graded Cast Iron Smelting', category: 'Forgings' },
-  { id: 'gal-6', image: scrollImg6, title: 'Double-Action Hydraulic Ram', category: 'Hydraulics' },
-  { id: 'gal-7', image: scrollImg7, title: 'High-Speed Automatic Lathe', category: 'CNC Machining' },
-  { id: 'gal-8', image: scrollImg8, title: 'Free-Cutting Brass Bushings', category: 'CNC Machining' },
-  { id: 'gal-9', image: scrollImg9, title: 'Centreless Grinding Spindle', category: 'CNC Machining' },
-  { id: 'gal-10', image: scrollImg10, title: 'Hydraulic Pallet Truck Pump', category: 'Material Handling' },
-  { id: 'gal-11', image: scrollImg11, title: 'Heavy-Duty Folding Platform', category: 'Material Handling' },
-  { id: 'gal-12', image: scrollImg12, title: 'Brass Release Valve Core', category: 'Hydraulics' },
-  { id: 'gal-13', image: scrollImg13, title: 'Industrial Transmission Shaft', category: 'Gears' },
-  { id: 'gal-14', image: scrollImg14, title: 'Custom Forging Mold Frame', category: 'Die & Mold Making' },
-  { id: 'gal-15', image: scrollImg15, title: 'Downstream Piping Spares', category: 'Downstream' },
-  { id: 'gal-16', image: scrollImg16, title: 'Calibrated Metrology Check', category: 'Quality Control' },
-  { id: 'gal-17', image: scrollImg17, title: 'Finished Gear Box Assemblies', category: 'Gears' },
-  { id: 'gal-18', image: scrollImg18, title: 'Vavdi Workshop Production', category: 'Machining' }
+  {
+    id: 'gal-1',
+    image: leverPlates,
+    title: 'Lever Plates',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-2',
+    image: mainShaft,
+    title: 'Main Shaft 35x285',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-3',
+    image: pin16x41,
+    title: 'Pin 16x41',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-4',
+    image: pin16x85,
+    title: 'Pin 16x85',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-5',
+    image: truckBracket,
+    title: 'Truck Bracket',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-6',
+    image: oilSealKit,
+    title: 'Oil Seal Kit & Parts',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-7',
+    image: pin25x176,
+    title: 'Pin 25x176',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-8',
+    image: truckPump,
+    title: 'Hydraulic Pump',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-9',
+    image: releaseValve,
+    title: 'Release Valve',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-10',
+    image: heavyDutyTruck,
+    title: 'Heavy Duty Pallet Truck',
+    category: 'Material Handling'
+  },
+  {
+    id: 'gal-11',
+    image: paddlePinShaft,
+    title: 'Paddle Pin Shaft',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-12',
+    image: pistonBush,
+    title: 'Piston Bushing',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-13',
+    image: platformTruck,
+    title: 'Platform Hand Truck',
+    category: 'Material Handling'
+  },
+  {
+    id: 'gal-14',
+    image: puWheels,
+    title: 'PU Wheels',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-15',
+    image: pumpPiston,
+    title: 'Pump Piston 18x100',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-16',
+    image: rollerLinkingPlate,
+    title: 'Roller Linking Plate',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-17',
+    image: hexNut,
+    title: 'SS304 M14 Hex Nut',
+    category: 'Pallet Spares'
+  },
+  {
+    id: 'gal-18',
+    image: palletSpring,
+    title: 'Stainless Steel Spring',
+    category: 'Pallet Spares'
+  }
 ];
 
 export const TIMELINE: TimelineItem[] = [
