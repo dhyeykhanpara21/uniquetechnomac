@@ -54,7 +54,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-14 md:h-16">
             
             {/* Logo left */}
-            <Link to="/" className="flex items-center gap-2.5 group">
+            <Link
+              to="/"
+              className={`flex items-center gap-2.5 group transition-opacity duration-300 ${
+                mobileMenuOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
+              }`}
+            >
               <img
                 src={logo}
                 alt="Unique Techno Mech Logo"
