@@ -21,7 +21,8 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.5 }}
-      className="zoom-hover-parent bg-white rounded-2xl overflow-hidden border border-blue-50/70 shadow-lg shadow-blue-900/[0.03] hover:shadow-xl hover:shadow-blue-900/[0.06] hover:border-blue-100 flex flex-col h-full group"
+      onClick={() => onViewDetails(product)}
+      className="zoom-hover-parent bg-white rounded-2xl overflow-hidden border border-blue-50/70 shadow-lg shadow-blue-900/[0.03] hover:shadow-xl hover:shadow-blue-900/[0.06] hover:border-blue-100 flex flex-col h-full group cursor-pointer"
     >
       {/* Product Image Section */}
       <div className="relative aspect-video w-full overflow-hidden bg-white border-b border-gray-100">
@@ -39,7 +40,7 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
 
       {/* Main Structural Information */}
       <div className="p-5 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold text-gray-900 font-display tracking-tight hover:text-brand-primary transition-colors cursor-pointer" onClick={() => onViewDetails(product)}>
+        <h3 className="text-xl font-bold text-gray-900 font-display tracking-tight hover:text-brand-primary transition-colors">
           {product.name}
         </h3>
         
@@ -66,7 +67,11 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
         {/* CTA Button Actions Container */}
         <div className="mt-6 pt-4 border-t border-blue-50/70 grid grid-cols-2 gap-3 items-center">
           <button
-            onClick={() => onViewDetails(product)}
+            onClick={(e) => {
+              // Action is handled by card onClick, but keep button click active
+              e.stopPropagation();
+              onViewDetails(product);
+            }}
             className="w-full py-2.5 px-3 border border-blue-100 hover:border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white font-semibold text-xs rounded-lg transition-all duration-200 uppercase tracking-wider flex items-center justify-center gap-1 cursor-pointer"
           >
             <span>Specs Sheet</span>
@@ -75,6 +80,9 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
           
           <Link
             to={`/inquiry?product=${product.id}`}
+            onClick={(e) => {
+              e.stopPropagation();
+            }}
             className="w-full py-2.5 px-3 bg-brand-primary hover:bg-brand-accent text-white font-bold text-xs rounded-lg shadow-sm hover:shadow-brand-primary/20 transition-all duration-200 uppercase tracking-wider text-center flex items-center justify-center gap-1 group"
           >
             <span>Inquire Now</span>

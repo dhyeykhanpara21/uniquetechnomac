@@ -20,6 +20,12 @@ import platformHandTruck2 from '../../images/PlatformHandTruck2.jpeg';
 import platformHandTruck3 from '../../images/PlatformHandTruck3.jpeg';
 import releaseValve2 from '../../images/HandPalletTruckReleasevalve2.jpeg';
 import releaseValve3 from '../../images/HandPalletTruckReleasevalve3.jpeg';
+import materialHandlingMain from '../../images/material handling equipment.jpeg';
+import capitalGoodsMain from '../../images/Capital goods & Industiral machinery.jpeg';
+import precisionEngineeringMain from '../../images/pricion engineering.jpeg';
+import downstreamTargetMain from '../../images/downstream target sector.jpeg';
+import automotiveAutoMain from '../../images/Automotive & Auto Components.jpeg';
+import dieMoldMain from '../../images/Die & Mold Making.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -131,44 +137,44 @@ export const FEATURES: Feature[] = [
 export const INDUSTRIES: Industry[] = [
   {
     id: 'ind-1',
-    name: 'Automobile Components',
-    description: 'Supplying gears, transmission shafts, sleeves, and machined forgings for light and heavy motor vehicles.',
-    image: 'https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=800&q=80',
+    name: 'Material Handling Equipment',
+    description: 'Manufacturing premium manual material handling systems, including hydraulic hand pallet trucks, heavy-duty platform trolleys, and precision pump spares.',
+    image: materialHandlingMain,
     iconName: 'Factory'
   },
   {
     id: 'ind-2',
-    name: 'Tractor Spares',
-    description: 'Developing heavy-duty tractor components as a subcontractor vendor for major national brands.',
-    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=800&q=80',
-    iconName: 'Sprout'
+    name: 'Capital Goods & Industrial Machinery',
+    description: 'Developing high-precision capital goods, heavy transmission spares, and critical machinery components for diverse industrial sectors.',
+    image: capitalGoodsMain,
+    iconName: 'Factory'
   },
   {
     id: 'ind-3',
-    name: 'CNC & VMC Solutions',
-    description: 'Providing precise contract vertical milling, cnc cutting, threading, and cylindrical grinding services.',
-    image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80',
+    name: 'Precision Engineering & Job Work Sector',
+    description: 'Providing high-tolerance custom machining, CNC/VMC job works, and precision contract turning services built to exact client specifications.',
+    image: precisionEngineeringMain,
     iconName: 'Wrench'
   },
   {
     id: 'ind-4',
-    name: 'Hydraulics & Pumps',
-    description: 'Integrated manufacturing of hydraulic cylinders, double-action rams, and custom fluid couplers.',
-    image: 'https://images.unsplash.com/photo-1537462715879-360eeb61a0bc?auto=format&fit=crop&w=800&q=80',
+    name: 'Downstream Target Sector',
+    description: 'Supplying high-integrity valves, custom piping spares, and precision mechanical assemblies for downstream processing and refining industries.',
+    image: downstreamTargetMain,
     iconName: 'Pickaxe'
   },
   {
     id: 'ind-5',
-    name: 'Textile Machinery',
-    description: 'Smelting and cutting main drive gears, sleeves, and slow-speed pulleys for large spinning frames.',
-    image: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80',
+    name: 'Automotive & Auto Components',
+    description: 'Manufacturing high-precision gear box parts, transmission shafts, and custom axle sleeves for tractors and light/heavy motor vehicles.',
+    image: automotiveAutoMain,
     iconName: 'Factory'
   },
   {
     id: 'ind-6',
-    name: 'Graded Cast Iron',
-    description: 'Precision castings, brass parts, and high-heat carbon steel components for diverse operations.',
-    image: 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&w=800&q=80',
+    name: 'Die & Mold Making',
+    description: 'Developing premium forging dies, casting molds, and precision industrial tooling engineered using advanced CNC and VMC setups.',
+    image: dieMoldMain,
     iconName: 'HardHat'
   }
 ];
