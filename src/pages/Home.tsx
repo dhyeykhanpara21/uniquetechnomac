@@ -15,6 +15,7 @@ import CounterSection from '../components/CounterSection';
 import ProductCard from '../components/ProductCard';
 import ProductDetailModal from '../components/ProductDetailModal';
 import { StaggerTestimonials } from '../components/StaggerTestimonials';
+import cardImage from '../../images/card.jpeg';
 
 // Static Icon Mappers
 const getFeatureIcon = (name: string) => {
@@ -75,7 +76,7 @@ export default function Home() {
 
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-blue-50/50 max-h-[480px]">
                 <img
-                  src="../images/card.jpeg"
+                  src={cardImage}
                   alt="Industrial Forge Assembly"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
