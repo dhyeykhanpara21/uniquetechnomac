@@ -227,7 +227,7 @@ export default function Footer() {
                 UNIQUE <span className="text-brand-secondary">TECHNO MECH</span>
               </span>
               <span className="text-[8px] uppercase tracking-widest font-sans font-bold leading-none mt-1 text-blue-200">
-                Gears & CNC Machining
+                ALL TYPE OF CNC & CAD-CAM WORKS
               </span>
             </div>
           </Link>
