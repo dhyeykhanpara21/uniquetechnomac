@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import {
-  ShieldAlert, Settings2, Cpu, Globe2, Clock, Award,
+  Settings2, Clock, Award,
   Sprout, Factory, HardHat, Wrench, Pickaxe, Landmark,
-  ArrowRight
+  ArrowRight, ShieldCheck
 } from 'lucide-react';
 
 import { FEATURES, INDUSTRIES, PRODUCTS, GALLERY } from '../data/websiteData';
@@ -19,11 +19,11 @@ import { StaggerTestimonials } from '../components/StaggerTestimonials';
 // Static Icon Mappers
 const getFeatureIcon = (name: string) => {
   switch (name) {
-    case 'ShieldAlert': return <ShieldAlert className="w-7 h-7 text-brand-primary shrink-0" />;
     case 'Settings2': return <Settings2 className="w-7 h-7 text-brand-primary shrink-0 animate-spin-slow" />;
-    case 'Cpu': return <Cpu className="w-7 h-7 text-brand-primary shrink-0" />;
-    case 'Globe2': return <Globe2 className="w-7 h-7 text-brand-primary shrink-0" />;
+    case 'ShieldCheck': return <ShieldCheck className="w-7 h-7 text-brand-primary shrink-0" />;
     case 'Clock': return <Clock className="w-7 h-7 text-brand-primary shrink-0" />;
+    case 'Wrench': return <Wrench className="w-7 h-7 text-brand-primary shrink-0" />;
+    case 'Factory': return <Factory className="w-7 h-7 text-brand-primary shrink-0" />;
     case 'Award': return <Award className="w-7 h-7 text-brand-primary shrink-0" />;
     default: return <Settings2 className="w-7 h-7 text-brand-primary" />;
   }
@@ -46,6 +46,10 @@ export default function Home() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   // Take the first 3 products for featured listing
   const featuredProducts = PRODUCTS.slice(0, 3);
+
+  // Split gallery items into two distinct rows for scrolling
+  const firstRowItems = GALLERY;
+  const secondRowItems = [...GALLERY.slice(4), ...GALLERY.slice(0, 4)];
 
   return (
     <div className="bg-white min-h-screen">
@@ -71,7 +75,7 @@ export default function Home() {
 
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-blue-50/50 max-h-[480px]">
                 <img
-                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80"
+                  src="../images/card.jpeg"
                   alt="Industrial Forge Assembly"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover"
@@ -79,11 +83,11 @@ export default function Home() {
               </div>
 
               {/* Float Experience block */}
-              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-brand-primary/95 backdrop-blur-md text-white p-4 sm:p-5 rounded-2xl shadow-xl flex items-center gap-3 sm:gap-4 border border-white/20 select-none max-w-[210px] sm:max-w-[280px]">
-                <span className="text-2xl sm:text-4xl md:text-5xl font-extrabold font-display leading-none">25+</span>
-                <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-widest font-sans leading-relaxed text-blue-100">
+              <div className="">
+                {/* <span className="text-2xl sm:text-4xl md:text-5xl font-extrabold font-display leading-none">25+</span> */}
+                {/* <div className="text-[9px] sm:text-xs font-semibold uppercase tracking-widest font-sans leading-relaxed text-blue-100">
                   Years of Heavy Metallurgical Craft
-                </div>
+                </div> */}
               </div>
             </motion.div>
 
@@ -105,11 +109,11 @@ export default function Home() {
               </div>
 
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
-                At Unique Techno Mech, we manufacture high-precision automobile gear box parts, worm shafts, slow speed shafts, sleeves, castings, and custom hydraulic couplers. Serving key tractor brands and leading automakers, we formulate components capable of working under extreme mechanical loads.
+                  
               </p>
 
               <p className="text-sm text-gray-500 leading-relaxed font-sans">
-                By fusing precision CNC cutting and vertical milling (VMC) with rigorous metrology checks, we ensure every shaft, sleeve, and cast iron component passes strict tolerance standards.
+                Unique Techno Mech specializes in manufacturing high-precision machined components, hand pallet truck parts, and custom engineering solutions. Backed by advanced CNC & VMC technology, in-house production, and rigorous quality standards, we deliver reliable, durable, and cost-effective products for the automotive, material handling, agricultural, and industrial sectors with a commitment to precision and timely delivery.
               </p>
 
               <div className="pt-4 flex flex-wrap gap-4 items-center">
@@ -312,11 +316,10 @@ export default function Home() {
         <StaggerTestimonials />
       </section>
 
-      {/* 8. LATEST GALLERY (Masonry Grid with hover effects) */}
-      <section className="py-20 bg-brand-bg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
+      {/* 8. LATEST GALLERY (Infinite Scrolling Double-Row Marquee) */}
+      <section className="py-20 bg-brand-bg overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+          <div className="text-center max-w-2xl mx-auto space-y-3">
             <span className="text-xs font-bold uppercase tracking-widest text-brand-secondary">
               Production Portfolio
             </span>
@@ -328,36 +331,116 @@ export default function Home() {
               Deep look across our advanced machining centers, vertical milling lines, heavy cast forgings, and final metrology verification units.
             </p>
           </div>
+        </div>
 
-          {/* Grid Layout masonry-like style */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {GALLERY.map((gal) => (
-              <motion.div
-                key={gal.id}
-                initial={{ opacity: 0, y: 25 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.15 }}
-                transition={{ duration: 0.5 }}
-                className="zoom-hover-parent relative rounded-2xl overflow-hidden shadow-md group h-[220px] sm:h-[260px] border border-blue-50/50 cursor-pointer"
-              >
-                <img
-                  src={gal.image}
-                  alt={gal.title}
-                  referrerPolicy="no-referrer"
-                  className="zoom-hover-img w-full h-full object-cover"
-                />
+        {/* Marquee Wrapper with side gradient masks */}
+        <div className="relative w-full marquee-container space-y-6 md:space-y-8">
+          {/* Left and Right Edge Fade Gradients */}
+          <div className="absolute inset-y-0 left-0 w-16 md:w-48 bg-gradient-to-r from-brand-bg to-transparent pointer-events-none z-10" />
+          <div className="absolute inset-y-0 right-0 w-16 md:w-48 bg-gradient-to-l from-brand-bg to-transparent pointer-events-none z-10" />
 
-                {/* Information Overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white select-none">
-                  <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">
-                    {gal.category}
-                  </span>
-                  <h4 className="text-sm md:text-base font-bold font-display text-white mt-1">
-                    {gal.title}
-                  </h4>
+          {/* Row 1: Scrolling Left */}
+          <div className="flex overflow-hidden w-full select-none">
+            <div className="flex shrink-0 gap-6 pr-6 animate-marquee-left">
+              {firstRowItems.map((gal) => (
+                <div
+                  key={`r1-1-${gal.id}`}
+                  className="zoom-hover-parent relative rounded-2xl overflow-hidden shadow-md group w-[280px] sm:w-[340px] h-[200px] sm:h-[240px] shrink-0 border border-blue-50/50 cursor-pointer"
+                >
+                  <img
+                    src={gal.image}
+                    alt={gal.title}
+                    referrerPolicy="no-referrer"
+                    className="zoom-hover-img w-full h-full object-cover"
+                  />
+                  {/* Information Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                    <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">
+                      {gal.category}
+                    </span>
+                    <h4 className="text-sm md:text-base font-bold font-display text-white mt-1">
+                      {gal.title}
+                    </h4>
+                  </div>
                 </div>
-              </motion.div>
-            ))}
+              ))}
+            </div>
+            <div className="flex shrink-0 gap-6 pr-6 animate-marquee-left" aria-hidden="true">
+              {firstRowItems.map((gal) => (
+                <div
+                  key={`r1-2-${gal.id}`}
+                  className="zoom-hover-parent relative rounded-2xl overflow-hidden shadow-md group w-[280px] sm:w-[340px] h-[200px] sm:h-[240px] shrink-0 border border-blue-50/50 cursor-pointer"
+                >
+                  <img
+                    src={gal.image}
+                    alt={gal.title}
+                    referrerPolicy="no-referrer"
+                    className="zoom-hover-img w-full h-full object-cover"
+                  />
+                  {/* Information Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                    <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">
+                      {gal.category}
+                    </span>
+                    <h4 className="text-sm md:text-base font-bold font-display text-white mt-1">
+                      {gal.title}
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Row 2: Scrolling Right */}
+          <div className="flex overflow-hidden w-full select-none">
+            <div className="flex shrink-0 gap-6 pr-6 animate-marquee-right">
+              {secondRowItems.map((gal) => (
+                <div
+                  key={`r2-1-${gal.id}`}
+                  className="zoom-hover-parent relative rounded-2xl overflow-hidden shadow-md group w-[280px] sm:w-[340px] h-[200px] sm:h-[240px] shrink-0 border border-blue-50/50 cursor-pointer"
+                >
+                  <img
+                    src={gal.image}
+                    alt={gal.title}
+                    referrerPolicy="no-referrer"
+                    className="zoom-hover-img w-full h-full object-cover"
+                  />
+                  {/* Information Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                    <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">
+                      {gal.category}
+                    </span>
+                    <h4 className="text-sm md:text-base font-bold font-display text-white mt-1">
+                      {gal.title}
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex shrink-0 gap-6 pr-6 animate-marquee-right" aria-hidden="true">
+              {secondRowItems.map((gal) => (
+                <div
+                  key={`r2-2-${gal.id}`}
+                  className="zoom-hover-parent relative rounded-2xl overflow-hidden shadow-md group w-[280px] sm:w-[340px] h-[200px] sm:h-[240px] shrink-0 border border-blue-50/50 cursor-pointer"
+                >
+                  <img
+                    src={gal.image}
+                    alt={gal.title}
+                    referrerPolicy="no-referrer"
+                    className="zoom-hover-img w-full h-full object-cover"
+                  />
+                  {/* Information Overlay on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-accent/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5 text-white">
+                    <span className="text-[10px] font-bold text-blue-200 uppercase tracking-widest font-sans">
+                      {gal.category}
+                    </span>
+                    <h4 className="text-sm md:text-base font-bold font-display text-white mt-1">
+                      {gal.title}
+                    </h4>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>

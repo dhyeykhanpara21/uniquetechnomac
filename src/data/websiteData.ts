@@ -82,38 +82,38 @@ export const HERO_SLIDES = [
 export const FEATURES: Feature[] = [
   {
     id: 'feat-1',
-    title: 'High-Strength Materials',
+    title: 'Precision Engineering with Modern Machinery',
     description: 'Every gear shaft is manufactured using premium alloy bar steels and forgings for extra torsional strength and wear resistance.',
-    iconName: 'ShieldAlert'
-  },
-  {
-    id: 'feat-2',
-    title: 'Precision Machining Limits',
-    description: 'Strict tool calibration ensures gear dimensions pass micrometric checks with zero error margins.',
     iconName: 'Settings2'
   },
   {
+    id: 'feat-2',
+    title: 'Premium Quality Raw Materials',
+    description: 'We use high-grade alloy steels and certified raw materials to ensure maximum strength, durability, wear resistance, and long service life of every component.',
+    iconName: 'ShieldCheck'
+  },
+  {
     id: 'feat-3',
-    title: 'Advanced Machine Units',
-    description: 'Operating multiple high-grade VMC machines (BFW/Jyoti) and Super Jobber CNC centers in Rajkot.',
-    iconName: 'Cpu'
-  },
-  {
-    id: 'feat-4',
-    title: 'Sub-Contractor Vendor',
-    description: 'Experienced sub-contract vendor providing high quality tractor parts for Mahindra, Sonalika, and local markets.',
-    iconName: 'Globe2'
-  },
-  {
-    id: 'feat-5',
-    title: 'Metrology Lab Controls',
-    description: 'Quality checked using high-end Digital Verniers, Dial Indicators, Depth Gauges, and Bore Gauges from Mitutoyo & Baker.',
+    title: 'On-Time Delivery Commitment',
+    description: 'Our streamlined manufacturing process and efficient production planning enable us to deliver orders on schedule, helping customers maintain uninterrupted operations.',
     iconName: 'Clock'
   },
   {
+    id: 'feat-4',
+    title: 'Expertise in Critical Job Works',
+    description: 'We undertake critical and precision job works requiring tight tolerances, intricate machining, and strict quality standards for automotive, material handling, and industrial sectors.',
+    iconName: 'Wrench'
+  },
+  {
+    id: 'feat-5',
+    title: 'In-House Manufacturing Facility',
+    description: 'All hand pallet truck parts are manufactured in our own facility, ensuring better quality control, faster production cycles, and consistent product performance.',
+    iconName: 'Factory'
+  },
+  {
     id: 'feat-6',
-    title: 'Registered Group Units',
-    description: 'Backed by group companies: Unique Engi Mech, S.G. Engineers, Iconic CNC Cuttings, and Delta Hydrolic.',
+    title: 'Quality Assurance & Inspection',
+    description: 'Each component undergoes rigorous quality inspection using precision measuring instruments to ensure dimensional accuracy and compliance with customer specifications.',
     iconName: 'Award'
   }
 ];

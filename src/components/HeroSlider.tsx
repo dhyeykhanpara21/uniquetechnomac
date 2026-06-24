@@ -36,7 +36,7 @@ export default function HeroSlider() {
   const currentSlide = HERO_SLIDES[activeIndex];
 
   return (
-    <div className="relative w-full min-h-[85vh] lg:min-h-0 lg:h-[85vh] flex flex-col justify-between bg-gradient-to-br from-slate-950 via-slate-900 to-brand-accent/40 overflow-hidden pt-24 pb-12 lg:pt-32 lg:pb-8 border-b border-white/5">
+    <div className="relative w-full min-h-[85vh] lg:min-h-[85vh] flex flex-col justify-between bg-gradient-to-br from-slate-950 via-slate-900 to-brand-accent/40 overflow-hidden pt-24 pb-12 lg:pt-32 lg:pb-8 border-b border-white/5">
       {/* Background Tech Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(#1e88e5_1px,transparent_1px)] [background-size:32px_32px] opacity-15 pointer-events-none" />
       
@@ -84,7 +84,7 @@ export default function HeroSlider() {
                 </p>
 
                 {/* Action Buttons */}
-                <div className="pt-2 flex flex-wrap items-center gap-4">
+                <div className="pt-2 mb-6 sm:mb-8 flex flex-wrap items-center gap-4">
                   <Link
                     to={currentSlide.ctaLink}
                     className="inline-flex items-center gap-2 bg-brand-secondary hover:bg-brand-primary text-white font-bold px-7 py-4 rounded-xl shadow-lg hover:shadow-brand-primary/25 transition-all duration-300 uppercase text-xs tracking-wider group"
