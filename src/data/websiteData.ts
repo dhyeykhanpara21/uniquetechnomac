@@ -183,7 +183,7 @@ export const STATS: Stat[] = [
   { id: 'stat-1', value: 425, label: 'Delivered Projects', suffix: '+' },
   { id: 'stat-2', value: 15, label: 'Machining Centers', suffix: '+' },
   { id: 'stat-3', value: 14, label: 'Years Experience', suffix: '+' },
-  { id: 'stat-4', value: 20, label: 'Active Staff', suffix: '+' }
+  { id: 'stat-4', value: 13, label: 'Active Staff', suffix: '+' }
 ];
 
 export const PRODUCTS: Product[] = [
