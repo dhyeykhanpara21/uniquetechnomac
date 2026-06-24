@@ -59,12 +59,12 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
             {/* Top Row: Picture left, Intro right */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-start">
               {/* Product Close-up Frame */}
-              <div className="relative rounded-2xl overflow-hidden aspect-video bg-brand-bg border border-blue-50 max-h-[300px]">
+              <div className="relative rounded-2xl overflow-hidden aspect-video bg-white border border-blue-100 max-h-[300px]">
                 <img
                   src={product.image}
                   alt={product.name}
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-4"
                 />
               </div>
 
@@ -85,10 +85,7 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
                     <ShieldCheck className="w-4 h-4" />
                     Custom-build eligible
                   </span>
-                  <span className="inline-flex items-center gap-1 text-xs text-green-600 font-medium font-sans">
-                    <ShieldCheck className="w-4 h-4" />
-                    2-Year Warranty standard
-                  </span>
+              
                 </div>
               </div>
             </div>
@@ -104,14 +101,14 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
                 {Object.entries(product.specifications).map(([key, val], i) => (
                   <div
                     key={key}
-                    className={`flex justify-between items-center px-4 py-3 rounded-lg border text-sm transition-all ${
+                    className={`flex justify-between items-start gap-4 px-4 py-3 rounded-lg border text-sm transition-all ${
                       i % 2 === 0
                         ? 'bg-brand-bg/50 border-blue-50/55'
                         : 'bg-white border-blue-50/55'
                     }`}
                   >
-                    <span className="text-gray-400 font-medium">{key}</span>
-                    <span className="text-gray-900 font-bold">{val}</span>
+                    <span className="text-gray-400 font-medium shrink-0">{key}</span>
+                    <span className="text-gray-900 font-bold text-right break-words">{val}</span>
                   </div>
                 ))}
               </div>
@@ -136,12 +133,12 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
                       }}
                       className="flex items-center gap-4 p-3 rounded-xl border border-blue-50/40 hover:border-brand-primary/40 bg-brand-bg/30 hover:bg-white cursor-pointer transition-all duration-300 group"
                     >
-                      <div className="w-16 h-12 rounded-lg overflow-hidden bg-white shrink-0">
+                      <div className="w-16 h-12 rounded-lg overflow-hidden bg-white shrink-0 border border-gray-100">
                         <img
                           src={rel.image}
                           alt={rel.name}
                           referrerPolicy="no-referrer"
-                          className="w-full h-full object-cover transition-transform group-hover:scale-105 duration-300"
+                          className="w-full h-full object-contain p-1 transition-transform group-hover:scale-105 duration-300"
                         />
                       </div>
                       <div className="flex-grow min-w-0">

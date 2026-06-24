@@ -24,12 +24,12 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
       className="zoom-hover-parent bg-white rounded-2xl overflow-hidden border border-blue-50/70 shadow-lg shadow-blue-900/[0.03] hover:shadow-xl hover:shadow-blue-900/[0.06] hover:border-blue-100 flex flex-col h-full group"
     >
       {/* Product Image Section */}
-      <div className="relative aspect-video w-full overflow-hidden bg-brand-bg">
+      <div className="relative aspect-video w-full overflow-hidden bg-white border-b border-gray-100">
         <img
           src={product.image}
           alt={product.name}
           referrerPolicy="no-referrer"
-          className="zoom-hover-img w-full h-full object-cover"
+          className="zoom-hover-img w-full h-full object-contain p-4"
         />
         {/* Category Label Overlay */}
         <span className="absolute top-4 left-4 bg-brand-accent/90 backdrop-blur-md text-white text-xs font-bold font-sans tracking-widest px-3 py-1 rounded-md uppercase border border-white/10 shadow-sm z-10">
@@ -55,9 +55,9 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
           </div>
           <div className="grid grid-cols-1 gap-1.5 pt-1">
             {specKeys.map((key) => (
-              <div key={key} className="flex justify-between items-center text-gray-600">
-                <span className="text-gray-400 font-medium">{key}:</span>
-                <span className="text-gray-900 font-semibold">{product.specifications[key]}</span>
+              <div key={key} className="flex justify-between items-start gap-4 text-gray-600">
+                <span className="text-gray-400 font-medium shrink-0">{key}:</span>
+                <span className="text-gray-900 font-semibold text-right break-words">{product.specifications[key]}</span>
               </div>
             ))}
           </div>

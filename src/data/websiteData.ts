@@ -10,6 +10,9 @@ import tractorMain from '../../assets/tractor_main.png';
 import tractorDetail from '../../assets/tractor_detail.png';
 import hydraulicMain from '../../assets/hydraulic_main.png';
 import hydraulicDetail from '../../assets/hydraulic_detail.png';
+import reelHydraulicMain from '../../images/ReelHydrolicHandPalletTruck.jpeg';
+import platformHandTruckMain from '../../images/PlatformHandTruck.jpeg';
+import releaseValveMain from '../../images/HandPalletTruckReleasevalve.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -173,52 +176,55 @@ export const STATS: Stat[] = [
 export const PRODUCTS: Product[] = [
   {
     id: 'prod-worm-gear',
-    name: 'Precision Worm Gear Shaft',
-    category: 'Gears',
-    image: wormShaftMain,
-    shortDesc: 'Premium automobile gearbox parts crafted from hardened alloy steel with high-torque capacity.',
-    longDesc: 'Our Precision Worm Gear Shafts are specifically developed for heavy transmission configurations. Machined using certified high-tensile alloy bar steel, they offer excellent wear resistance and silent operations under continuous loads. Ideal for automobile gearboxes, steering units, and industrial reduction systems.',
+    name: 'Reel Hydraulic Hand Pallet Truck',
+    category: 'Hydraulic Hand Pallet Trucks',
+    image: reelHydraulicMain,
+    shortDesc: 'Hydraulic Hand Pallet Truck enables safe, efficient lifting and transportation of palletized goods.',
+    longDesc: 'is a manual material-handling equipment used to lift and move palletized goods over short distances. It is widely used in warehouses, factories, logistics centers, and retail stores for loading, unloading, and transporting heavy materials. The forks are placed under the pallet, and the handle is pumped to lift the load using a hydraulic system. The operator can then easily move the pallet and lower it safely at the desired location. It is durable, cost-effective, and improves workplace efficiency.',
     specifications: {
-      'Material': 'Case Hardened Alloy Bar Steel',
-      'Hardness': '50 - 55 HRC (Oil Quenched)',
-      'Module Range': 'M1.0 - M6.0',
-      'Helix Angle': 'Right Hand / Left Hand (Precision Cut)',
-      'Tolerance': 'ISO Grade 6 / DIN 3962',
-      'Applications': 'Automobile Steering & Gearboxes'
+      'Part Type': 'Pump',
+      'Material': 'Brass',
+      'Capacity / Load Capacity': '5 ton (5000 kg)',
+      'Reel Diameter Capacity': '400 mm - 1200 mm',
+      'Fork Length': '1150 mm / 1220 mm',
+      'Fork Width': '550 mm / 685 mm',
+      'Min Fork Height': '75 mm',
+      'Max Fork Height': '185 mm - 200 mm',
+      'Wheel Material': 'Nylon, Polyurethane (PU), or Rubber',
+      'Wheel Hardness': '85 to 95 Shore A'
     },
     relatedProductIds: ['prod-tractor-parts', 'prod-textile-gear']
   },
   {
     id: 'prod-tractor-parts',
-    name: 'Tractor Gear Box Parts',
-    category: 'Auto Spares',
-    image: tractorMain,
-    shortDesc: 'Registered subcontractor gear systems and sleeves matching Mahindra & Sonalika tractor dimensions.',
-    longDesc: 'Developed to withstand rigorous agricultural stresses, our Tractor Gear Box Parts are precision cut on CNC toolheads. Every batch passes strict micrometer inspections to ensure exact compliance with vendor parameters. Features smooth gear mesh profiles, minimizing mechanical transmission losses.',
+    name: 'Platform Hand Truck',
+    category: 'Platform Hand Trucks',
+    image: platformHandTruckMain,
+    shortDesc: 'Platform Hand Truck enables easy transportation of boxes, cartons, and materials efficiently daily.',
+    longDesc: 'is a versatile material-handling trolley designed for transporting boxes, cartons, tools, and other goods with ease. It is widely used in warehouses, factories, retail stores, offices, and logistics centers for moving loads efficiently. Simply place the items on the platform and push or pull the truck using the ergonomic handle. Its sturdy platform, smooth-rolling wheels, and durable construction help reduce manual effort and improve productivity.',
     specifications: {
-      'Tractor Brand': 'Mahindra / Sonalika / Universal Fit',
-      'Part Types': 'Slow Speed Shaft, Main Drive Sleeve',
-      'Smelting Matrix': 'High Carbon Structural Forgings',
-      'Machining Unit': 'VMC BFW / Jyoti Array',
-      'Grinding': 'Cylindrical Ground (within 0.01mm)',
-      'Wear Protection': 'Case Carburized Heat Treatment'
+      'Category': 'Platform Trolley',
+      'Product Type': 'Folding Platform Trolley',
+      'Material':    'Heavy-duty Plastic/PVC (Platform) and Powder-coated Steel (Handle)',
+      'Number Of Wheels': '4 (2 fixed front wheels, 2 swivel rear wheels)',
+      'Load Capacity': '150 kg or 300 kg',
+      'Platform Size': '730 mm x 470 mm (150 kg) / 900 mm x 600 mm (300 kg)',
+      'Operating Type': 'Manual Push / Pull'
     },
     relatedProductIds: ['prod-worm-gear', 'prod-stainless-sleeve']
   },
   {
     id: 'prod-cast-iron',
-    name: 'Graded Cast Iron Smeltings',
+    name: 'Hand Pallet Truck Release valve',
     category: 'Forgings',
-    image: forgingsMain,
-    shortDesc: 'Premium graded cast iron and carbon steel investment castings built to custom blueprints.',
-    longDesc: 'We supply high-grade cast iron casings, brass fittings, and stainless steel investment castings. Utilizing automated gas-fired furnaces, our casting structures exhibit uniform molecular density, preventing air pocket fractures under high-pressure applications.',
+    image: releaseValveMain,
+    shortDesc: 'Release Valve provides smooth hydraulic control, prevents oil leaks, and ensures safe fork lowering.',
+    longDesc: 'Release Valve is an important spare part used in hydraulic hand pallet trucks to control lifting and lowering operations. It helps maintain proper hydraulic pressure, ensuring smooth and safe movement of loads. Replacing a damaged or worn-out valve restores the trucks performance, prevents oil leakage, and allows the forks to lower smoothly and safely',
     specifications: {
-      'Cast Grades': 'FG 200 / FG 260 / Spheroidal Graphite',
-      'Materials': 'Cast Iron, Stainless Steel, Brass Alloys',
-      'Tolerance Class': 'ISO 8062-3 DCTG6',
-      'Weight Range': '0.5 kg - 45 kg per unit',
-      'Surfacing': 'Shot Blasted & Anti-Rust Lubricated',
-      'Inspection': 'Bore Gauge & Vernier Caliper Verified'
+      'Part Type': 'Pump',
+      'Material': 'Brass',
+      'Brand': 'Utm',
+      'Capacity': '5 ton'
     },
     relatedProductIds: ['prod-alloy-bars', 'prod-stainless-sleeve']
   },
