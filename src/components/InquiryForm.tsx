@@ -40,6 +40,9 @@ export default function InquiryForm() {
     if (!formData.name || !formData.email || !formData.productId || !formData.company || !formData.phone || !formData.city || !formData.state || !formData.message || !formData.quantity) return;
     
     setLoading(true);
+
+    const productName = PRODUCTS.find(p => p.id === formData.productId)?.name || formData.productId;
+    const { productId, ...submitData } = formData;
     
     fetch("https://formsubmit.co/ajax/vaishnani_d@yahoo.in", {
       method: "POST",
@@ -48,7 +51,8 @@ export default function InquiryForm() {
         'Accept': 'application/json'
       },
       body: JSON.stringify({
-        ...formData,
+        ...submitData,
+        productName: productName,
         _subject: `New Inquiry from ${formData.name} - Unique Techno Mech`,
         _cc: "dhyeykhanpara21@gmail.com",
         _autoresponse: `Thank you for your inquiry, ${formData.name}! Our team at Unique Techno Mech has received your message and will prepare a formal commercial offer within 12 hours.`

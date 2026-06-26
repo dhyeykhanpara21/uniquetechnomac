@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ShieldCheck, FileCheck, Landmark, Globe } from 'lucide-react';
+import { ShieldCheck, FileCheck, Landmark, Globe, Settings, Sparkles } from 'lucide-react';
 
 import Breadcrumbs from '../components/Breadcrumbs';
 import InquiryForm from '../components/InquiryForm';
@@ -15,23 +15,65 @@ export default function Inquiry() {
   return (
     <div className="bg-white min-h-screen pt-20 font-sans">
       
-      {/* Header Banner */}
-      <section className="relative py-20 bg-gradient-to-r from-brand-accent to-brand-primary text-white overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-            <line strokeDasharray="5 5" x1="0" y1="0" x2="100%" y2="100%" stroke="currentColor" strokeWidth="1" />
-          </svg>
+      {/* Dynamic Header Banner */}
+      <section className="relative py-24 lg:py-32 overflow-hidden bg-brand-primary flex items-center justify-center min-h-[40vh]">
+        {/* Abstract Background with animated shapes */}
+        <div className="absolute inset-0 z-0 bg-brand-primary">
+          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-400/20 via-brand-primary to-brand-accent opacity-80"></div>
+          {/* Animated Grid Pattern */}
+          <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')] [mask-image:linear-gradient(to_bottom,white,transparent)]" />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-3">
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-blue-200">
-            Request Quotation
-          </span>
-          <h1 className="text-3xl md:text-5xl font-extrabold font-display tracking-tight text-white leading-tight">
-            Initiate Commercial Quotation
-          </h1>
-          <p className="text-xs sm:text-sm text-blue-100 max-w-xl mx-auto font-sans">
+
+        {/* Floating Industrial Elements */}
+        <motion.div
+          animate={{ rotate: 360 }}
+          transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
+          className="absolute -right-32 -top-32 text-white/5 z-0 pointer-events-none"
+        >
+          <Settings size={400} strokeWidth={0.5} />
+        </motion.div>
+        <motion.div
+          animate={{ rotate: -360 }}
+          transition={{ duration: 80, repeat: Infinity, ease: "linear" }}
+          className="absolute -left-24 -bottom-24 text-white/5 z-0 pointer-events-none"
+        >
+          <Settings size={300} strokeWidth={0.5} />
+        </motion.div>
+
+        {/* Content Container */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-xl mb-6"
+          >
+            <Sparkles className="w-4 h-4 text-white" />
+            <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white">
+              Request Quotation
+            </span>
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold font-display tracking-tight text-white leading-[1.15] max-w-4xl drop-shadow-2xl"
+          >
+            Initiate Commercial <br className="hidden md:block"/> 
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-secondary to-blue-200">
+              Quotation
+            </span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-6 text-sm sm:text-base md:text-lg text-blue-100/90 max-w-2xl mx-auto font-sans font-medium leading-relaxed"
+          >
             Specify your machinery requirements. Our smelting engineering division will generate a comprehensive technical proposal.
-          </p>
+          </motion.p>
         </div>
       </section>
 
