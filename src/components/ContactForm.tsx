@@ -25,7 +25,7 @@ export default function ContactForm() {
     
     setLoading(true);
     
-    fetch("https://formsubmit.co/ajax/vaishnani_d@yahoo.in", {
+    fetch("https://formsubmit.co/ajax/dhyey2112004@gmail.com", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
