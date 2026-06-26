@@ -24,8 +24,21 @@ export default function ContactForm() {
     if (!formData.name || !formData.email || !formData.message) return;
     
     setLoading(true);
-    // Simulate real high-performing server transit
-    setTimeout(() => {
+    
+    fetch("https://formsubmit.co/ajax/dhyeykhanpara21@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        ...formData,
+        _subject: `New Contact Message from ${formData.name} - Unique Techno Mech`,
+        _autoresponse: `Thank you for contacting us, ${formData.name}! We have received your message and our team will get back to you as soon as possible.`
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
       setLoading(false);
       setSuccess(true);
       setFormData({
@@ -36,7 +49,12 @@ export default function ContactForm() {
         subject: '',
         message: ''
       });
-    }, 1500);
+    })
+    .catch(error => {
+      setLoading(false);
+      console.error("Form submission error:", error);
+      alert("There was an error sending your message. Please try again.");
+    });
   };
 
   return (
