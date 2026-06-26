@@ -37,7 +37,7 @@ export default function InquiryForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.productId) return;
+    if (!formData.name || !formData.email || !formData.productId || !formData.company || !formData.phone || !formData.city || !formData.state || !formData.message || !formData.quantity) return;
     
     setLoading(true);
     
@@ -117,7 +117,7 @@ export default function InquiryForm() {
 
           <div className="relative">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-widest pl-1 block mb-2">
-              Company / Association
+              Company / Association <span className="text-red-500">*</span>
             </label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
@@ -126,6 +126,7 @@ export default function InquiryForm() {
               <input
                 type="text"
                 name="company"
+                required
                 value={formData.company}
                 onChange={handleChange}
                 placeholder="e.g. Agro Co-op India"
@@ -182,7 +183,7 @@ export default function InquiryForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="relative">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-widest pl-1 block mb-2">
-              City
+              City <span className="text-red-500">*</span>
             </label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
@@ -191,6 +192,7 @@ export default function InquiryForm() {
               <input
                 type="text"
                 name="city"
+                required
                 value={formData.city}
                 onChange={handleChange}
                 placeholder="e.g. Frankfurt / Mumbai"
@@ -201,7 +203,7 @@ export default function InquiryForm() {
 
           <div className="relative">
             <label className="text-xs font-semibold text-gray-500 uppercase tracking-widest pl-1 block mb-2">
-              State / Region
+              State / Region <span className="text-red-500">*</span>
             </label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
@@ -210,6 +212,7 @@ export default function InquiryForm() {
               <input
                 type="text"
                 name="state"
+                required
                 value={formData.state}
                 onChange={handleChange}
                 placeholder="e.g. Hesse / Maharashtra"
@@ -271,7 +274,7 @@ export default function InquiryForm() {
         {/* Message */}
         <div className="relative">
           <label className="text-xs font-semibold text-gray-500 uppercase tracking-widest pl-1 block mb-2">
-            Detailed Technical Requirements
+            Detailed Technical Requirements <span className="text-red-500">*</span>
           </label>
           <div className="relative">
             <span className="absolute left-3 top-4 text-gray-400">
@@ -279,6 +282,7 @@ export default function InquiryForm() {
             </span>
             <textarea
               name="message"
+              required
               rows={4}
               value={formData.message}
               onChange={handleChange}
