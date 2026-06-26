@@ -65,7 +65,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           <img
             src={testimonial.avatar}
             alt={testimonial.name}
-            className="mb-4 h-14 w-12 bg-gray-100 object-cover object-top rounded-md"
+            className="mb-4 h-14 w-24 bg-white p-1 object-contain object-center rounded-md"
             style={{
               boxShadow: isCenter ? "3px 3px 0px #1E88E5" : "3px 3px 0px #e5e7eb"
             }}
