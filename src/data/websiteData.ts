@@ -10,22 +10,22 @@ import tractorMain from '../../assets/tractor_main.png';
 import tractorDetail from '../../assets/tractor_detail.png';
 import hydraulicMain from '../../assets/hydraulic_main.png';
 import hydraulicDetail from '../../assets/hydraulic_detail.png';
-import reelHydraulicMain from '../../images/ReelHydrolicHandPalletTruck.jpeg';
-import platformHandTruckMain from '../../images/PlatformHandTruck.jpeg';
-import releaseValveMain from '../../images/HandPalletTruckReleasevalve.jpeg';
-import reelHydraulic2 from '../../images/ReelHydrolicHandPalletTruck2.jpeg';
-import reelHydraulic3 from '../../images/ReelHydrolicHandPalletTruck3.jpeg';
-import reelHydraulic4 from '../../images/ReelHydrolicHandPalletTruck4.jpeg';
-import platformHandTruck2 from '../../images/PlatformHandTruck2.jpeg';
-import platformHandTruck3 from '../../images/PlatformHandTruck3.jpeg';
-import releaseValve2 from '../../images/HandPalletTruckReleasevalve2.jpeg';
-import releaseValve3 from '../../images/HandPalletTruckReleasevalve3.jpeg';
-import materialHandlingMain from '../../images/material handling equipment.jpeg';
-import capitalGoodsMain from '../../images/Capital goods & Industiral machinery.jpeg';
-import precisionEngineeringMain from '../../images/pricion engineering.jpeg';
-import downstreamTargetMain from '../../images/downstream target sector.jpeg';
-import automotiveAutoMain from '../../images/Automotive & Auto Components.jpeg';
-import dieMoldMain from '../../images/Die & Mold Making.jpeg';
+import reelHydraulicMain from '../../images/homepage/ReelHydrolicHandPalletTruck.jpeg';
+import platformHandTruckMain from '../../images/homepage/PlatformHandTruck.jpeg';
+import releaseValveMain from '../../images/homepage/HandPalletTruckReleasevalve.jpeg';
+import reelHydraulic2 from '../../images/homepage/ReelHydrolicHandPalletTruck2.jpeg';
+import reelHydraulic3 from '../../images/homepage/ReelHydrolicHandPalletTruck3.jpeg';
+import reelHydraulic4 from '../../images/homepage/ReelHydrolicHandPalletTruck4.jpeg';
+import platformHandTruck2 from '../../images/homepage/PlatformHandTruck2.jpeg';
+import platformHandTruck3 from '../../images/homepage/PlatformHandTruck3.jpeg';
+import releaseValve2 from '../../images/homepage/HandPalletTruckReleasevalve2.jpeg';
+import releaseValve3 from '../../images/homepage/HandPalletTruckReleasevalve3.jpeg';
+import materialHandlingMain from '../../images/homepage/material handling equipment.jpeg';
+import capitalGoodsMain from '../../images/homepage/Capital goods & Industiral machinery.jpeg';
+import precisionEngineeringMain from '../../images/homepage/pricion engineering.jpeg';
+import downstreamTargetMain from '../../images/homepage/downstream target sector.jpeg';
+import automotiveAutoMain from '../../images/homepage/Automotive & Auto Components.jpeg';
+import dieMoldMain from '../../images/homepage/Die & Mold Making.jpeg';
 import is1 from '../../images/infinite scrroll/Hand Pallet Lever Plates.jpeg';
 import is2 from '../../images/infinite scrroll/Hand Pallet Spares Part Main saft 35 x 285.jpeg';
 import is3 from '../../images/infinite scrroll/Hand Pallet Spares Part Pin 16 x 41.jpeg';
@@ -558,29 +558,15 @@ export const TEAM: TeamMember[] = [
     id: 'team-1',
     name: 'Dhaval Vaishnani',
     role: 'Director & Metallurgical Lead',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&h=300&q=80',
+    image: '/images/about us/dhaval.png',
     bio: 'metallurgical developer with 20+ years of industrial experience. He manages technical product development, vendor agreements, and custom client dimensions.'
   },
   {
     id: 'team-2',
-    name: 'Dimple Vaishnani',
+    name: 'Dimpal Vaishnani',
     role: 'Director of Operations',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&h=300&q=80',
+    image: '/images/about us/dimpal.png',
     bio: 'Oversees day-to-day manufacturing layouts across the GIDC Rajkot plants, managing raw alloy inventory, casting safety protocols, and staff allocations.'
-  },
-  {
-    id: 'team-3',
-    name: 'Nikunj Patel',
-    role: 'Works Manager',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Controls operations across all CNC, VMC, and shaping machine bays, scheduling shifts for 15+ skilled laborers to maintain on-line delivery cycles.'
-  },
-  {
-    id: 'team-4',
-    name: 'Rahul Patel',
-    role: 'Head of Quality Inspection',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&h=300&q=80',
-    bio: 'Directs the metrology check station, certifying component diameters using calibrated Mitutoyo digital verniers, Baker depth gauges, and bore dials.'
   }
 ];
 

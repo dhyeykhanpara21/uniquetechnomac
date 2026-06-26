@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, FileCheck } from 'lucide-react';
-import logo from '../../images/logo.jpeg';
+import logo from '../../images/homepage/logo.jpeg';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

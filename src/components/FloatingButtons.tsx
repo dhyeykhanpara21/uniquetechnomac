@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUp, MessageCircle, FileText } from 'lucide-react';
-import indiamartLogo from '../../images/indiamart.png';
+import indiamartLogo from '../../images/homepage/indiamart.png';
 
 export default function FloatingButtons() {
   const [showScrollTop, setShowScrollTop] = useState(false);

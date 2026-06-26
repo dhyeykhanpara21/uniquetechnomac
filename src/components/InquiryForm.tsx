@@ -35,15 +35,46 @@ export default function InquiryForm() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.productId) return;
     
     setLoading(true);
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/dhyeykhanpara21@gmail.com", {
+        method: "POST",
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          phone: formData.phone,
+          city: formData.city,
+          state: formData.state,
+          product: PRODUCTS.find(p => p.id === formData.productId)?.name || formData.productId,
+          quantity: formData.quantity,
+          message: formData.message,
+          _subject: `New Technical Inquiry from ${formData.name}`,
+          _autoresponse: "Thank you for contacting Unique Techno Mech! We have received your quotation request. Our metallurgical and technical team is reviewing your requirements and will get back to you with a formal commercial offer within 12 hours.",
+          _template: "table"
+        })
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+      } else {
+        alert("There was a problem submitting your inquiry. Please try again later.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred while submitting. Please check your connection.");
+    } finally {
       setLoading(false);
-      setSuccess(true);
-    }, 1400);
+    }
   };
 
   const handleCloseSuccess = () => {

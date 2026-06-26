@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { TIMELINE, TEAM } from '../data/websiteData';
 import { 
   Target, Eye, Heart, Award, ShieldCheck, Factory, Lightbulb, 
-  ArrowRight, Users, CheckCircle, Flame, Sparkles, LayoutGrid, Settings
+  ArrowRight, Users, CheckCircle, Flame, Sparkles, LayoutGrid, Settings, MapPin
 } from 'lucide-react';
 
 import Breadcrumbs from '../components/Breadcrumbs';
@@ -57,10 +57,12 @@ export default function AboutUs() {
   ];
 
   const factoryPhotos = [
-    "https://images.unsplash.com/photo-1565439390238-d64e9a05b38a?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1504917595217-d4f3b26c7102?auto=format&fit=crop&w=800&q=80"
+    "/images/about us/fullphoto.jpeg",
+    "/images/about us/factory2.jpeg",
+    "/images/about us/factory3.jpeg",
+    "/images/about us/factory4.jpeg",
+    "/images/about us/office2.jpeg",
+    "/images/about us/fullphoto2.jpeg"
   ];
 
   return (
@@ -184,22 +186,20 @@ export default function AboutUs() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6 }}
-              className="relative grid grid-cols-2 gap-4"
+              className="relative flex flex-col gap-6"
             >
-              <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
+              <div className="rounded-2xl overflow-hidden shadow-xl w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1592417817098-8f3d6eb18865?auto=format&fit=crop&w=600&q=80"
-                  alt="Precision Machining"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  src="/images/about us/factory1.jpeg"
+                  alt="Unique Techno Mech Factory"
+                  className="w-full h-auto hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5] mt-8">
+              <div className="rounded-2xl overflow-hidden shadow-xl w-full">
                 <img
-                  src="https://images.unsplash.com/photo-1565034946487-077786996e27?auto=format&fit=crop&w=600&q=80"
-                  alt="Industrial Components"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  src="/images/about us/office1.jpeg"
+                  alt="Unique Techno Mech Office"
+                  className="w-full h-auto hover:scale-105 transition-transform duration-500"
                 />
               </div>
             </motion.div>
@@ -232,7 +232,7 @@ export default function AboutUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className={`rounded-2xl overflow-hidden shadow-lg border border-blue-50/50 group relative ${index === 0 || index === 3 ? 'lg:col-span-2 aspect-video' : 'aspect-square lg:aspect-auto'}`}
+                className={`rounded-2xl overflow-hidden shadow-lg border border-blue-50/50 group relative ${index === 0 || index === 5 ? 'lg:col-span-2 aspect-video' : 'aspect-square lg:aspect-auto'}`}
               >
                 <div className="absolute inset-0 bg-brand-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                 <img
@@ -437,14 +437,32 @@ export default function AboutUs() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.55 }}
-              className="rounded-3xl overflow-hidden shadow-2xl border border-blue-50/55 aspect-video max-h-[380px]"
+              className="rounded-3xl overflow-hidden shadow-2xl border border-blue-50/55 bg-white flex flex-col h-[380px]"
             >
-              <img
-                src="https://images.unsplash.com/photo-1485083269755-a7b559a4fe5e?auto=format&fit=crop&w=800&q=80"
-                alt="Smelting furnace"
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
+              <div className="p-6 md:p-8 bg-brand-bg flex-shrink-0 flex items-start gap-4">
+                <div className="w-10 h-10 rounded-xl bg-brand-primary text-white flex items-center justify-center shrink-0 shadow-md">
+                  <MapPin className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold font-display text-gray-900 mb-2">Visit Our Factory</h3>
+                  <p className="text-xs sm:text-sm font-sans text-gray-600 leading-relaxed">
+                    Nr.150 ft Ring road & Vavdi road corner,<br/>
+                    Opp. Punit Nagar Water Tank,<br/>
+                    B/h. Vavdi Health Center and word Office,<br/>
+                    Opp. Jio Mobile Tower, Vavdi,<br/>
+                    Rajkot - 360004.
+                  </p>
+                </div>
+              </div>
+              <div className="flex-grow w-full relative bg-gray-200">
+                <iframe
+                  src="https://maps.google.com/maps?q=Unique%20Techno%20Mech,%20Vavdi,%20Rajkot%20-%20360004&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  className="absolute inset-0 w-full h-full border-0"
+                  allowFullScreen={true}
+                  loading="lazy"
+                  title="Factory Location Map"
+                ></iframe>
+              </div>
             </motion.div>
 
           </div>
@@ -527,7 +545,7 @@ export default function AboutUs() {
             <div className="w-16 h-1 bg-brand-primary mx-auto rounded-full mt-2" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 max-w-3xl mx-auto">
             {TEAM.map((member, i) => (
               <motion.div
                 key={member.id}
@@ -542,7 +560,7 @@ export default function AboutUs() {
                     src={member.image}
                     alt={member.name}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-full object-contain object-bottom p-4 transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-5 flex flex-col flex-grow text-left space-y-2">

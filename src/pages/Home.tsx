@@ -15,7 +15,7 @@ import CounterSection from '../components/CounterSection';
 import ProductCard from '../components/ProductCard';
 import ProductDetailModal from '../components/ProductDetailModal';
 import { StaggerTestimonials } from '../components/StaggerTestimonials';
-import cardImage from '../../images/card.jpeg';
+import cardImage from '../../images/homepage/card.jpeg';
 
 // Static Icon Mappers
 const getFeatureIcon = (name: string) => {

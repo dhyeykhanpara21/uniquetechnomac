@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Mail, Phone, MapPin, Youtube, Facebook, Linkedin, Twitter, ArrowRight, Loader2 } from 'lucide-react';
 import { cn } from '../lib/utils';
-import logo from '../../images/logo.jpeg';
+import logo from '../../images/homepage/logo.jpeg';
 
 export const TextHoverEffect = ({
   text,
