@@ -25,7 +25,7 @@ export default function ContactForm() {
     
     setLoading(true);
     
-    fetch("https://formsubmit.co/ajax/dhyeykhanpara21@gmail.com", {
+    fetch("https://formsubmit.co/ajax/vaishnani_d@yahoo.in", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -34,6 +34,7 @@ export default function ContactForm() {
       body: JSON.stringify({
         ...formData,
         _subject: `New Contact Message from ${formData.name} - Unique Techno Mech`,
+        _cc: "dhyeykhanpara21@gmail.com",
         _autoresponse: `Thank you for contacting us, ${formData.name}! We have received your message and our team will get back to you as soon as possible.`
       })
     })

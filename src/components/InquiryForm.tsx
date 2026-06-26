@@ -41,7 +41,7 @@ export default function InquiryForm() {
     
     setLoading(true);
     
-    fetch("https://formsubmit.co/ajax/dhyeykhanpara21@gmail.com", {
+    fetch("https://formsubmit.co/ajax/vaishnani_d@yahoo.in", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -50,6 +50,7 @@ export default function InquiryForm() {
       body: JSON.stringify({
         ...formData,
         _subject: `New Inquiry from ${formData.name} - Unique Techno Mech`,
+        _cc: "dhyeykhanpara21@gmail.com",
         _autoresponse: `Thank you for your inquiry, ${formData.name}! Our team at Unique Techno Mech has received your message and will prepare a formal commercial offer within 12 hours.`
       })
     })
