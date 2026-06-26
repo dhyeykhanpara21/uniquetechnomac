@@ -25,17 +25,17 @@ export default function ContactForm() {
     
     setLoading(true);
     
-    fetch("https://formsubmit.co/ajax/dkninja026@gmail.com", {
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       body: JSON.stringify({
+        access_key: "4a1715cf-f01d-4af8-ae03-b1441f6b480f",
         ...formData,
-        _subject: `New Contact Message from ${formData.name} - Unique Techno Mech`,
-        _cc: "dhyeykhanpara21@gmail.com",
-        _autoresponse: `Thank you for contacting us, ${formData.name}! We have received your message and our team will get back to you as soon as possible.`
+        subject: `New Contact Message from ${formData.name} - Unique Techno Mech`,
+        from_name: formData.name,
       })
     })
     .then(response => response.json())

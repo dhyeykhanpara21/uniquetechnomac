@@ -44,18 +44,18 @@ export default function InquiryForm() {
     const productName = PRODUCTS.find(p => p.id === formData.productId)?.name || formData.productId;
     const { productId, ...submitData } = formData;
     
-    fetch("https://formsubmit.co/ajax/vaishnani_d@yahoo.in", {
+    fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json'
       },
       body: JSON.stringify({
+        access_key: "4a1715cf-f01d-4af8-ae03-b1441f6b480f",
         ...submitData,
         productName: productName,
-        _subject: `New Inquiry from ${formData.name} - Unique Techno Mech`,
-        _cc: "dhyeykhanpara21@gmail.com",
-        _autoresponse: `Thank you for your inquiry, ${formData.name}! Our team at Unique Techno Mech has received your message and will prepare a formal commercial offer within 12 hours.`
+        subject: `New Inquiry from ${formData.name} - Unique Techno Mech`,
+        from_name: formData.name,
       })
     })
     .then(response => response.json())
