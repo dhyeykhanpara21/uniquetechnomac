@@ -48,9 +48,10 @@ export default function Home() {
   // Take the first 3 products for featured listing
   const featuredProducts = PRODUCTS.slice(0, 3);
 
-  // Split gallery items into two distinct rows of 9 unique photos for scrolling
-  const firstRowItems = GALLERY.slice(0, 9);
-  const secondRowItems = GALLERY.slice(9, 18);
+  // Split gallery items into two distinct rows for scrolling
+  const half = Math.ceil(GALLERY.length / 2);
+  const firstRowItems = GALLERY.slice(0, half);
+  const secondRowItems = GALLERY.slice(half);
 
   return (
     <div className="bg-white min-h-screen">
