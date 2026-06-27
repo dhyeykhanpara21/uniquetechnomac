@@ -524,32 +524,32 @@ export const TIMELINE: TimelineItem[] = [
   {
     id: 'time-1',
     year: '2002',
-    title: 'Unique Inception',
-    description: 'Established Unique Techno Mech in Rajkot, Gujarat, beginning custom manual lathe operations with a staff of 4.'
+    title: 'Company Established',
+    description: 'Unique Techno Mech was established in Rajkot, Gujarat, with a vision to manufacture high-precision engineering components and deliver reliable machining solutions.'
   },
   {
     id: 'time-2',
     year: '2008',
-    title: 'CNC Units Commissioned',
-    description: 'Acquired first automatic CNC lathe units and expanded vendor supply to local automobile subcontracts.'
+    title: 'First VMC Machine Installed',
+    description: 'Installed our first Vertical Machining Center (VMC), marking the beginning of advanced precision machining and enhanced manufacturing capabilities.'
   },
   {
     id: 'time-3',
     year: '2014',
-    title: 'GIDC Vavdi Relocation',
-    description: 'Relocated to Vavdi Road Corner, Rajkot, expanding corporate footprint to include S.G. Engineers and Unique Engi Mech.'
+    title: 'New Manufacturing Unit',
+    description: 'Expanded operations to our current 3,600 sq. ft. manufacturing facility near Vavdi Water Tank, Rajkot, Gujarat, providing greater production capacity and room for future growth.'
   },
   {
     id: 'time-4',
-    year: '2020',
-    title: 'Advanced VMC Array',
-    description: 'Commissioned multiple vertical machining centers (VMC BFW/Jyoti) and introduced digital metrology control systems.'
+    year: '2021',
+    title: 'CNC Machining Expansion',
+    description: 'Strengthened our manufacturing infrastructure by installing 2 CNC Turning Centers, enabling faster production, tighter tolerances, and improved machining efficiency.'
   },
   {
     id: 'time-5',
-    year: '2026',
-    title: 'Delta Hydraulics Launch',
-    description: 'Formed Delta Hydrolic division, offering integrated double-action ram pistons and specialized gear shafts.'
+    year: 'Today',
+    title: 'Modern Manufacturing Excellence',
+    description: 'Operating with 4 Vertical Machining Centers (VMCs), 2 CNC Turning Centers, advanced machining technology, skilled professionals, and stringent quality control, we continue to deliver precision-engineered components to the automotive, hydraulic, material handling, and general engineering industries.'
   }
 ];
 

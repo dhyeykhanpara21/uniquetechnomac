@@ -14,47 +14,62 @@ export default function AboutUs() {
   const values = [
     {
       id: 'val-1',
-      title: 'Structural Toughness',
-      desc: 'We enforce raw materials testing, selecting certified high-tensile alloy steels and forgings for every machined component.',
-      icon: <Flame className="w-6 h-6 text-brand-primary" />
+      title: 'Precision Manufacturing',
+      desc: 'Advanced CNC and VMC technology ensures consistent accuracy and superior component quality.',
+      icon: <Settings className="w-6 h-6 text-brand-primary" />
     },
     {
       id: 'val-2',
-      title: 'Precision Cultured',
-      desc: 'Our CNC machining units and robotic assembly drills adhere to precise structural limits, eliminating alignment defects.',
-      icon: <Lightbulb className="w-6 h-6 text-brand-primary" />
+      title: 'Quality Assurance',
+      desc: 'Strict inspection processes and certified materials guarantee reliable and durable products.',
+      icon: <ShieldCheck className="w-6 h-6 text-brand-primary" />
     },
     {
       id: 'val-3',
-      title: 'Co-Operative Trust',
-      desc: 'Our clients are automobile makers, tractor companies, and industrial cooperatives. We align our prices to support them.',
-      icon: <Award className="w-6 h-6 text-brand-primary" />
+      title: 'Innovation & Technology',
+      desc: 'We continuously invest in modern machinery and improved manufacturing techniques.',
+      icon: <Lightbulb className="w-6 h-6 text-brand-primary" />
+    },
+    {
+      id: 'val-4',
+      title: 'Customer Partnership',
+      desc: 'Building long-term relationships through customized solutions, on-time delivery, and dependable service.',
+      icon: <Users className="w-6 h-6 text-brand-primary" />
     }
   ];
 
   const certificates = [
     { 
-      title: 'ISO 9001:2015', 
-      agency: 'International Quality Register', 
-      year: '25-Year Compliance', 
-      code: 'IRQC-M77892',
-      image: 'https://images.unsplash.com/photo-1623227866882-c00592fcfa63?auto=format&fit=crop&w=600&q=80'
+      title: 'GST Certificate', 
+      agency: 'Government of India', 
+      year: 'Active', 
+      code: 'GST-UTM',
+      file: '/images/about us/GST Certificate - 3 Partner UNIQUE TECHNO MECH.pdf'
     },
     { 
-      title: 'CE EU Certificate', 
-      agency: 'European Safety Commission', 
-      year: 'Standard Machinery Compliant', 
-      code: 'EEC-E11409',
-      image: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=600&q=80'
+      title: 'Udyam Registration', 
+      agency: 'Ministry of MSME', 
+      year: 'Active', 
+      code: 'UDYAM-UTM',
+      file: '/images/about us/Udyam Registration Certificate_27.05.2026.pdf'
     },
     { 
-      title: 'ISO 14001:2015', 
-      agency: 'Environmental Systems Bureau', 
-      year: 'Eco-Process Certified', 
-      code: 'ESB-94411',
-      image: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=600&q=80'
+      title: 'Udyog Aadhaar', 
+      agency: 'Ministry of MSME', 
+      year: 'Active', 
+      code: 'AADHAAR-UTM',
+      file: '/images/about us/udyog aadhaar.gov.in_UNIQUE TECHNO MECH_D.pdf'
+    },
+    { 
+      title: 'Bronze Certificate', 
+      agency: 'Industry Award', 
+      year: 'Awarded', 
+      code: 'BRONZE-UTM',
+      file: '/images/about us/UTM Bronze Certificate.pdf'
     }
   ];
+
+  const [selectedPdf, setSelectedPdf] = React.useState<string | null>(null);
 
   const factoryPhotos = [
     "/images/about us/fullphoto.jpeg",
@@ -163,11 +178,11 @@ export default function AboutUs() {
               </div>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Founded in 2002, Unique Techno Mech began with a singular focus: engineer high-precision automobile and transmission gear box components in Rajkot, Gujarat. Over more than two decades, we scaled our vertical machining centers (VMC), CNC lathes, grinding machinery, and casting networks to support major automotive clients globally. Our commitment to perfection drives our continuous evolution and expansion.
+Established in 2002 in Rajkot, Gujarat, Unique Techno Mech has built a strong reputation as a trusted manufacturer of precision-engineered components for the automotive, transmission, hydraulic, agricultural, material handling, and general engineering industries. With over two decades of manufacturing excellence, we specialize in producing high-quality gears, shafts, sleeves, brass parts, hydraulic cylinders, hand pallet truck components, and other custom-machined parts. Our modern manufacturing facility is equipped with advanced CNC Turning Centers, VMC Machines, Centerless Grinding, Thread Rolling, and precision machining equipment, enabling us to deliver components with exceptional dimensional accuracy, consistency, and performance.
               </p>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Today, our components are machined from certified alloy bar steel and robust forgings. We operate multiple VMC BFW/Jyoti units, threading lines, and centreless grinders to supply gears, sleeves, brass parts, and hydraulic cylinders under strict metrology checking protocols. By investing in next-generation automated machinery, we ensure efficiency, cost-effectiveness, and unparalleled accuracy across all our production batches.
+                Quality is the foundation of everything we do. Every component is manufactured from certified raw materials and undergoes stringent quality inspections using advanced measuring instruments to ensure superior durability, precision, and reliability. Supported by a skilled workforce, experienced engineering team, and a customer-centric approach, we provide cost-effective, customized manufacturing solutions that meet the highest industry standards. Driven by continuous innovation, timely delivery, and long-term partnerships, Unique Techno Mech remains committed to becoming one of India's most trusted and preferred precision engineering manufacturers.
               </p>
 
               <div className="p-5.5 bg-blue-50/70 border-l-4 border-brand-primary rounded-r-2xl font-sans mt-4">
@@ -294,12 +309,12 @@ export default function AboutUs() {
                   Our Corporate Vision
                 </h3>
                 <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                  Be recognized as the leading global partner for precision automotive gears, shafts, castings, and hydraulic systems by 2030, operating state-of-the-art VMC and CNC production lines that guarantee supreme structural integrity globally.
+                  To become a globally recognized leader in precision engineering by delivering innovative, high-quality, and reliable mechanical components. We strive to exceed customer expectations through advanced manufacturing, continuous improvement, sustainable growth, and a commitment to engineering excellence.
                 </p>
               </div>
               <ul className="mt-6 space-y-2 text-xs font-semibold text-gray-600 font-sans">
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> State-of-the-art machining centers</li>
-                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Micrometric quality inspection controls</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> Innovation-driven manufacturing</li>
+                <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-brand-secondary" /> World-class quality and precision</li>
               </ul>
             </motion.div>
 
@@ -308,10 +323,10 @@ export default function AboutUs() {
           {/* Core Values Rows */}
           <div className="mt-20">
             <h3 className="text-center text-xl md:text-2xl font-bold font-display text-gray-900 mb-10 tracking-tight">
-              Our Core Philosophical Pillars
+              Our Core Values
             </h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((v) => (
                 <div key={v.id} className="bg-brand-bg/50 p-6 rounded-2xl border border-blue-50/40 text-left space-y-3 hover:shadow-md transition-shadow">
                   <div className="p-3 bg-white rounded-xl shadow-sm border border-blue-50 inline-block">{v.icon}</div>
@@ -395,29 +410,29 @@ export default function AboutUs() {
               <div className="space-y-1.5">
                 <span className="inline-flex items-center gap-1.5 px-2 py-0.5 bg-brand-primary/10 border border-brand-primary/20 rounded-md text-[10px] font-bold tracking-wider text-brand-primary uppercase">
                   <Factory className="w-3.5 h-3.5" />
-                  Machining & Forge Operations
+                  Manufacturing Infrastructure
                 </span>
                 <h2 className="text-3xl font-extrabold font-display text-gray-900 tracking-tight leading-tight">
-                  High-Precision Metallurgy Processing Arrays
+                  Comprehensive Machining Capabilities
                 </h2>
               </div>
               
               <p className="text-sm text-gray-500 font-sans leading-relaxed">
-                Our plant grounds are equipped with precision machining tools, high-speed vertical machining centers (VMCs), and CNC lathes capable of achieving tight tolerances on complex designs.
+                Our facilities are equipped with a diverse range of high-precision machinery, enabling us to manufacture components from alloy bar steel, brass, stainless steel, graded cast iron, and investment castings to exact specifications.
               </p>
 
               <div className="space-y-3 font-sans text-xs sm:text-sm text-gray-600 font-semibold">
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
-                  <span>Alloy steel caliber checks (exact compliance ratios)</span>
+                  <span>Advanced VMC (BFW/Jyoti) and CNC (Super Jobber XL) machining centers</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
-                  <span>Dual Stage Quenching Oil Beds (imparts up to 52 HRC hardness levels)</span>
+                  <span>Extensive shaping, threading, and precision grinding (Cylinder & Centreless) setups</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <div className="w-2.5 h-2.5 bg-brand-secondary rounded-full" />
-                  <span>Calibrated metrology checks using Mitutoyo and Baker instruments</span>
+                  <span>Strict metrology using Mitutoyo and Baker instruments (up to 0.001 mm accuracy)</span>
                 </div>
               </div>
 
@@ -486,7 +501,7 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {certificates.map((cert, index) => (
               <motion.div
                 key={cert.title}
@@ -494,39 +509,64 @@ export default function AboutUs() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.2 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white border border-blue-50 rounded-3xl overflow-hidden shadow-md shadow-blue-900/[0.02] flex flex-col group hover:shadow-xl hover:border-brand-primary/40 transition-all duration-300"
+                onClick={() => setSelectedPdf(cert.file)}
+                className="bg-white border border-blue-50 rounded-3xl overflow-hidden shadow-md shadow-blue-900/[0.02] flex flex-col group hover:shadow-xl hover:border-brand-primary/40 transition-all duration-300 cursor-pointer"
               >
-                {/* Image Section */}
-                <div className="w-full h-56 bg-blue-50 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
-                    <div className="bg-white/90 backdrop-blur-sm p-3 rounded-full text-brand-primary shadow-lg transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
-                      <Eye className="w-6 h-6" />
+                {/* PDF Preview Section */}
+                <div className="w-full h-56 bg-blue-50 relative overflow-hidden flex items-center justify-center p-4">
+                  <div className="absolute inset-0 bg-brand-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20 flex items-center justify-center">
+                    <div className="bg-white/90 backdrop-blur-sm p-3 rounded-full text-brand-primary shadow-lg transform translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center gap-2">
+                      <Eye className="w-5 h-5" />
+                      <span className="text-sm font-bold">View PDF</span>
                     </div>
                   </div>
-                  <img 
-                    src={cert.image} 
-                    alt={`${cert.title} Certificate`}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                  
+                  {/* PDF Preview Wrapper (prevent interactions) */}
+                  <div className="absolute inset-0 z-10 pointer-events-none"></div>
+                  <iframe 
+                    src={`${cert.file}#toolbar=0&navpanes=0&view=FitH`}
+                    className="w-full h-[150%] -mt-10 border-0 pointer-events-none opacity-90 group-hover:scale-105 transition-transform duration-700 origin-top bg-white"
+                    title={cert.title}
+                    scrolling="no"
+                    tabIndex={-1}
                   />
                 </div>
                 
                 {/* Content Section */}
-                <div className="p-8 text-center space-y-4 flex flex-col flex-grow items-center">
-                  <div className="w-12 h-12 bg-brand-bg text-brand-primary border border-blue-100 rounded-full flex items-center justify-center -mt-14 relative z-20 shadow-md">
+                <div className="p-6 text-center space-y-4 flex flex-col flex-grow items-center relative bg-white z-30">
+                  <div className="w-12 h-12 bg-brand-bg text-brand-primary border border-blue-100 rounded-full flex items-center justify-center -mt-12 relative shadow-md">
                     <ShieldCheck className="w-6 h-6 text-brand-primary" />
                   </div>
                   <div className="space-y-1 w-full">
-                    <h3 className="text-[19px] font-extrabold text-gray-900 font-display">{cert.title}</h3>
-                    <p className="text-[11px] text-gray-500 uppercase tracking-widest font-bold">{cert.agency}</p>
+                    <h3 className="text-[17px] font-extrabold text-gray-900 font-display leading-tight">{cert.title}</h3>
+                    <p className="text-[10px] text-gray-500 uppercase tracking-widest font-bold">{cert.agency}</p>
                   </div>
-                  <div className="w-12 h-[2px] bg-brand-secondary/40 mx-auto rounded-full" />
-                  <p className="text-xs text-gray-400 font-mono text-[10px] bg-brand-bg border border-blue-100/40 py-2 px-4 rounded-lg inline-block w-full">
-                    Reg ID: {cert.code}
-                  </p>
+                  <div className="w-10 h-[2px] bg-brand-secondary/40 mx-auto rounded-full" />
                 </div>
               </motion.div>
             ))}
           </div>
+
+          {/* PDF Viewer Modal */}
+          {selectedPdf && (
+            <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm" onClick={() => setSelectedPdf(null)}>
+              <div className="relative w-full max-w-4xl h-[85vh] bg-white rounded-2xl overflow-hidden shadow-2xl flex flex-col" onClick={e => e.stopPropagation()}>
+                <div className="flex items-center justify-between p-4 border-b border-gray-100">
+                  <h3 className="text-lg font-bold font-display text-gray-900">Certificate Viewer</h3>
+                  <button onClick={() => setSelectedPdf(null)} className="p-2 text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full transition-colors">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" /></svg>
+                  </button>
+                </div>
+                <div className="flex-grow w-full h-full bg-gray-100 relative">
+                  <iframe 
+                    src={`${selectedPdf}#toolbar=0&navpanes=0`}
+                    className="w-full h-full border-0"
+                    title="Certificate PDF"
+                  />
+                </div>
+              </div>
+            </div>
+          )}
 
         </div>
       </section>
