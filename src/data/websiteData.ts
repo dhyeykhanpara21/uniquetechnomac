@@ -44,6 +44,9 @@ import is15 from '../../images/infinite scrroll/Pump Piston Hand Pallet 18 x 100
 import is16 from '../../images/infinite scrroll/ROLLER LINKING PLATE Pallet Truck Part.jpeg';
 import is17 from '../../images/infinite scrroll/SS304 M14 Hex Nut.jpeg';
 import is18 from '../../images/infinite scrroll/Stainles Steel Hand Pallet Spring.jpeg';
+import is19 from '../../images/infinite scrroll/laser assembly back.jpeg';
+import is20 from '../../images/infinite scrroll/laser assembly side.jpeg';
+import is21 from '../../images/infinite scrroll/laser assembly.jpeg';
 import client1 from '../../images/client images/client1.jpeg';
 import client2 from '../../images/client images/client2.jpeg';
 import client3 from '../../images/client images/client3.jpeg';
@@ -517,6 +520,24 @@ export const GALLERY = [
     image: is18,
     title: 'Stainless Pallet Spring',
     category: 'Springs'
+  },
+  {
+    id: 'gal-19',
+    image: is19,
+    title: 'Laser Assembly Back',
+    category: 'Laser Assembly'
+  },
+  {
+    id: 'gal-20',
+    image: is20,
+    title: 'Laser Assembly Side',
+    category: 'Laser Assembly'
+  },
+  {
+    id: 'gal-21',
+    image: is21,
+    title: 'Laser Assembly',
+    category: 'Laser Assembly'
   }
 ];
 
