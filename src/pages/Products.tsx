@@ -3,7 +3,7 @@ import { useSearchParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { PRODUCTS } from '../data/websiteData';
 import { Product } from '../types';
-import { Search, SlidersHorizontal, Grid3X3, ArrowRight, CornerDownRight, Settings2, Sparkles, Settings } from 'lucide-react';
+import { Search, SlidersHorizontal, Grid3X3, ArrowRight, CornerDownRight, Settings2, Sparkles, Settings, ChevronDown } from 'lucide-react';
 
 import Breadcrumbs from '../components/Breadcrumbs';
 import ProductCard from '../components/ProductCard';
@@ -16,8 +16,7 @@ export default function Products() {
   
   // Extract category from search query params (?category=Tillage)
   const categoryFilter = searchParams.get('category') || 'All';
-
-  const categories = ['All', 'Tillage', 'Seeding', 'Crop Protection'];
+  const categories = ['All', 'Pallet Truck Parts', 'Hand Pallet Truck', 'Pallet Truck Wheel', 'Pallet Truck', 'Hydraulic Hand Pallet Trucks', 'Roller Wheel'];
 
   const handleSetCategory = (cat: string) => {
     if (cat === 'All') {
@@ -112,25 +111,26 @@ export default function Products() {
           {/* Filters controls bar */}
           <div className="flex flex-col lg:flex-row items-center justify-between gap-6 mb-12 bg-brand-bg/60 rounded-3xl p-6 border border-blue-50/50">
             
-            {/* Category Filter Buttons */}
-            <div className="flex items-center gap-2 overflow-x-auto w-full lg:w-auto pb-2 lg:pb-0 scrollbar-none whitespace-nowrap">
-              <span className="text-gray-400 font-bold text-xs uppercase tracking-widest mr-2 flex items-center gap-1">
+            {/* Category Filter Dropdown */}
+            <div className="flex items-center gap-3 w-full lg:w-auto pb-2 lg:pb-0">
+              <span className="text-gray-400 font-bold text-xs uppercase tracking-widest flex items-center gap-1 shrink-0">
                 <SlidersHorizontal className="w-4 h-4 text-brand-primary" />
                 Category:
               </span>
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => handleSetCategory(cat)}
-                  className={`px-4.5 py-2 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all duration-250 cursor-pointer ${
-                    categoryFilter.toLowerCase() === cat.toLowerCase()
-                      ? 'bg-brand-primary text-white shadow-md shadow-brand-primary/20 scale-[1.03]'
-                      : 'bg-white hover:bg-blue-50/70 border border-blue-100/40 text-gray-500 hover:text-brand-primary'
-                  }`}
+              <div className="relative w-full sm:w-64">
+                <select
+                  value={categoryFilter}
+                  onChange={(e) => handleSetCategory(e.target.value)}
+                  className="w-full appearance-none bg-white border border-blue-150 rounded-2xl pl-4 pr-10 py-2.5 text-xs font-semibold uppercase tracking-wider text-gray-700 focus:outline-none focus:border-brand-primary cursor-pointer shadow-sm shadow-blue-50/50"
                 >
-                  {cat}
-                </button>
-              ))}
+                  {categories.map((cat) => (
+                    <option key={cat} value={cat}>
+                      {cat}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="absolute right-3.5 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4 pointer-events-none" />
+              </div>
             </div>
 
             {/* Live Search Field */}

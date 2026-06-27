@@ -282,16 +282,16 @@ export default function Footer() {
           </h4>
           <ul className="space-y-2.5 text-xs text-blue-100">
             <li>
-              <Link to="/products?category=Tillage" className="hover:text-white transition-colors">Primary & Secondary Tillage</Link>
+              <Link to="/products?category=Pallet%20Truck%20Parts" className="hover:text-white transition-colors">Pallet Truck Parts</Link>
             </li>
             <li>
-              <Link to="/products?category=Seeding" className="hover:text-white transition-colors">Precision Seeding & Planting</Link>
+              <Link to="/products?category=Hand%20Pallet%20Truck" className="hover:text-white transition-colors">Hand Pallet Truck</Link>
             </li>
             <li>
-              <Link to="/products?category=Crop%20Protection" className="hover:text-white transition-colors">Crop Sprayers & Protection</Link>
+              <Link to="/products?category=Pallet%20Truck%20Wheel" className="hover:text-white transition-colors">Pallet Truck Wheel</Link>
             </li>
             <li>
-              <Link to="/products" className="hover:text-white transition-colors">Bespoke Hydraulic Assemblies</Link>
+              <Link to="/products?category=Hydraulic%20Hand%20Pallet%20Trucks" className="hover:text-white transition-colors">Hydraulic Hand Pallet Trucks</Link>
             </li>
           </ul>
         </div>
