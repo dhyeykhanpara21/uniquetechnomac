@@ -234,14 +234,16 @@ export default function ProductDetailModal({ product, onClose, onSelectProduct }
                 Close Sheets
               </button>
               
-              <Link
-                to={`/inquiry?product=${product.id}`}
+              <a
+                href={`https://wa.me/919173159016?text=${encodeURIComponent(product.name + '\n\nI have a requirement for this product.')}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onClose}
-                className="flex-grow sm:flex-none bg-brand-primary hover:bg-brand-accent text-white px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-widest shadow-md flex items-center justify-center gap-2 group"
+                className="flex-grow sm:flex-none bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-2.5 rounded-lg font-bold text-xs uppercase tracking-widest shadow-md flex items-center justify-center gap-2 group"
               >
-                <span>Request Custom Quote</span>
+                <span>WhatsApp</span>
                 <Send className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1 group-hover:-translate-y-0.5" />
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>

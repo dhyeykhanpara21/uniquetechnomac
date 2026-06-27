@@ -78,16 +78,18 @@ export default function ProductCard({ product, onViewDetails }: ProductCardProps
             <ChevronRight className="w-3.5 h-3.5" />
           </button>
           
-          <Link
-            to={`/inquiry?product=${product.id}`}
+          <a
+            href={`https://wa.me/919173159016?text=${encodeURIComponent(product.name + '\n\nI have a requirement for this product.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={(e) => {
               e.stopPropagation();
             }}
-            className="w-full py-2.5 px-3 bg-brand-primary hover:bg-brand-accent text-white font-bold text-xs rounded-lg shadow-sm hover:shadow-brand-primary/20 transition-all duration-200 uppercase tracking-wider text-center flex items-center justify-center gap-1 group"
+            className="w-full py-2.5 px-3 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-xs rounded-lg shadow-sm hover:shadow-[#25D366]/20 transition-all duration-200 uppercase tracking-wider text-center flex items-center justify-center gap-1 group"
           >
-            <span>Inquire Now</span>
+            <span>WhatsApp</span>
             <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5" />
-          </Link>
+          </a>
         </div>
       </div>
     </motion.div>
