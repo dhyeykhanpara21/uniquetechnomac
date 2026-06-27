@@ -18,20 +18,11 @@ export default function ContactUs() {
 
   const contactDetails = [
     {
-      title: 'Global Export Headquarters',
-      city: 'Frankfurt Export Office',
-      address: 'Lyoner Strasse 15, 60528 Frankfurt am Main, Germany',
-      phone: '+49 (69) 1124-001 / +49 (69) 1124-002',
-      email: 'trade@uniquetechnomech.com',
-      hours: 'Mon - Fri: 08:00 - 18:00 CET',
-      icon: <Globe2 className="w-5 h-5 text-brand-primary" />
-    },
-    {
-      title: 'Manufacturing & Casting Plant',
+      title: 'Headquarters & Manufacturing Plant',
       city: 'Rajkot Plant, India',
-      address: 'Plot No. 42-A, GIDC Industrial Estate, Rajkot, Gujarat 360021, India',
-      phone: '+91 9173159016 / +91 281 2410-002',
-      email: 'plant@uniquetechnomech.in',
+      address: 'UNIQUE TECHNO MECH, Nr.150 ft Ring road & Vavdi road corner, Opp. Punit Nagar Water Tank, B/h. Vavdi Health Center and word Office, Opp. Jio Mobile Tower, Vavdi, Rajkot - 360004',
+      phone: '+91 9173159016',
+      email: 'vaishnani_d@yahoo.in',
       hours: 'Mon - Sat: 08:00 - 19:30 IST',
       icon: <Landmark className="w-5 h-5 text-brand-primary" />
     }
@@ -97,7 +88,7 @@ export default function ContactUs() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-6 text-sm sm:text-base md:text-lg text-blue-100/90 max-w-2xl mx-auto font-sans font-medium leading-relaxed"
           >
-            Ready to scale up your agricultural machinery efficiency? Reach our German trade desk or our Indian production facilities.
+            Ready to scale up your agricultural machinery efficiency? Reach out to our manufacturing facility for high-precision engineering solutions.
           </motion.p>
         </div>
       </section>
@@ -205,25 +196,20 @@ export default function ContactUs() {
                 <Compass className="w-8 h-8 text-brand-primary" />
               </div>
               <h3 className="text-xl font-bold font-display text-gray-900 tracking-tight">
-                Unique Techno Mech Facilities Map
+                Unique Techno Mech Facility Map
               </h3>
-              <p className="text-xs text-gray-400 font-sans max-w-sm mx-auto leading-relaxed">
-                Export trade desk: Lyoner Strasse 15, Frankfurt am Main.<br />
-                Fabrication smelting yards & CNC bays: GIDC Estate, Rajkot, Gujarat.
+              <p className="text-xs text-gray-500 font-sans max-w-md mx-auto leading-relaxed">
+                <strong>UNIQUE TECHNO MECH</strong><br />
+                Nr.150 ft Ring road & Vavdi road corner,
+                Opp. Punit Nagar Water Tank, <br />
+                B/h. Vavdi Health Center and word Office <br />
+                Opp. Jio Mobile Tower, Vavdi, 
+                Rajkot - 360004.
               </p>
               
               <div className="flex gap-4 justify-center items-center pt-2">
                 <a
-                  href="https://maps.google.com/?q=Frankfurt+am+Main+Lyoner+Strasse"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 bg-white hover:bg-blue-50 text-brand-primary font-bold text-[10px] uppercase tracking-wider rounded-lg border border-blue-100 shadow-sm transition-all inline-flex items-center gap-1.5 cursor-pointer pointer-events-auto"
-                >
-                  <Map className="w-3.5 h-3.5" />
-                  Frankfurt Coordinates
-                </a>
-                <a
-                  href="https://maps.google.com/?q=GIDC+Estate+Rajkot+Gujarat"
+                  href="https://maps.google.com/?q=Unique+Techno+Mech,+Vavdi,+Rajkot+-+360004"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-white hover:bg-blue-50 text-brand-primary font-bold text-[10px] uppercase tracking-wider rounded-lg border border-blue-100 shadow-sm transition-all inline-flex items-center gap-1.5 cursor-pointer pointer-events-auto"
