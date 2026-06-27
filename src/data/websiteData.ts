@@ -52,6 +52,7 @@ import client2 from '../../images/client images/client2.jpeg';
 import client3 from '../../images/client images/client3.jpeg';
 import client4 from '../../images/client images/client4.jpeg';
 import client5 from '../../images/client images/client5.jpeg';
+import alicon from '../../images/client images/alicon.jpeg';
 
 export const HERO_SLIDES = [
   {
@@ -358,57 +359,45 @@ export const PRODUCTS: Product[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
-    name: 'Amit Patel',
-    role: 'Procurement Specialist',
-    company: 'AgriDrive Tractor Parts Ltd',
+    company: 'Jyoti CNC',
     rating: 5,
-    comment: 'Unique Techno Mech has been our on-line vendor for tractor gear sleeves for 4 years. Their rating on delivery and quality is excellent. Mahindra subcontractor specs are always matched perfectly.',
+    comment: 'Unique Techno Mech has consistently delivered precision-machined components that meet our quality standards. Their commitment to timely delivery and reliable manufacturing has made them a dependable business partner.',
     avatar: client1
   },
   {
     id: 'test-2',
-    name: 'Heinrich Schmidt',
-    role: 'Lead Project Engineer',
-    company: 'EuroMech Gear Systems GmbH',
+    company: 'Uniparts group',
     rating: 5,
-    comment: 'Exceptional precision on case carburized worm gears. Standard alignment check results have been flawless. The cylindrical ground surfaces are within specified ISO limits.',
+    comment: 'The machining quality, dimensional accuracy, and professional support provided by Unique Techno Mech have been excellent. We appreciate their attention to detail and consistent performance.',
     avatar: client2
   },
   {
     id: 'test-3',
-    name: 'Dileep Sanghani',
-    role: 'Foundry Director',
-    company: 'Saurashtra Castings & Forgings',
+    company: 'Captain Tech',
     rating: 5,
-    comment: 'We outsource VMC finish machining to Unique Techno Mech. Their BFW VMC machines handle high-density carbon steel blocks easily, delivering precise alignments on every consignment.',
+    comment: 'We value our association with Unique Techno Mech for their precision engineering expertise and dependable service. Their team understands technical requirements and always delivers quality products on schedule.',
     avatar: client3
   },
   {
     id: 'test-4',
-    name: 'Rajesh Kumar',
-    role: 'Plant Manager',
-    company: 'Shriram Automotives',
+    company: 'Silpon',
     rating: 5,
-    comment: 'The custom slow speed shafts and gear sleeves from Unique Techno Mech have drastically reduced our assembly line rejection rates. Exceptional precision!',
+    comment: 'From prototype development to regular production, Unique Techno Mech has demonstrated strong manufacturing capabilities, excellent workmanship, and a customer-focused approach.',
     avatar: client4
   },
   {
     id: 'test-5',
-    name: 'Sarah Jenkins',
-    role: 'Operations Director',
-    company: 'Apex Hydraulic Machinery',
+    company: 'Sahajanand Laser Technology',
     rating: 5,
-    comment: "We've been sourcing double-action hydraulic rams from their Delta division. The hard chrome plating and seal quality are top-notch.",
+    comment: 'Unique Techno Mech provides high-quality machined components with consistent accuracy and competitive pricing. Their responsiveness and commitment to customer satisfaction make them a trusted supplier.',
     avatar: client5
   },
   {
     id: 'test-6',
-    name: 'Mansukh Bhai',
-    role: 'Founder',
-    company: 'Rajkot Gear Tech',
+    company: 'alicon',
     rating: 5,
-    comment: 'Their VMC and CNC subcontracting services are highly reliable. Having group companies with deep industry expertise under one roof is a massive advantage.',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=120&h=120&q=80'
+    comment: 'Their advanced machining capabilities, skilled workforce, and strict quality control have helped us receive reliable components that perform as expected. We look forward to continuing our business relationship.',
+    avatar: alicon
   }
 ];
 

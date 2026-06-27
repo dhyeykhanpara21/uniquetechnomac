@@ -64,7 +64,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <div>
           <img
             src={testimonial.avatar}
-            alt={testimonial.name}
+            alt={testimonial.company}
             className="mb-4 h-14 w-24 bg-white p-1 object-contain object-center rounded-md"
             style={{
               boxShadow: isCenter ? "3px 3px 0px #1E88E5" : "3px 3px 0px #e5e7eb"
@@ -83,14 +83,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
             "text-xs sm:text-sm font-bold uppercase tracking-wider",
             isCenter ? "text-white" : "text-brand-primary"
           )}>
-            {testimonial.name}
+            {testimonial.company}
           </h4>
-          <p className={cn(
-            "text-[10px] sm:text-xs font-sans leading-tight mt-0.5",
-            isCenter ? "text-blue-100/90" : "text-gray-400"
-          )}>
-            {testimonial.role} at <span className="font-semibold">{testimonial.company}</span>
-          </p>
         </div>
       </div>
     </div>

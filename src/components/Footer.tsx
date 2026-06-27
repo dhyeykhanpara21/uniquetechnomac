@@ -371,7 +371,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6 text-[11px] text-blue-200">
           <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> Rajkot, Gujarat, India</span>
           <span className="flex items-center gap-1.5"><Phone className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> +91 9173159016</span>
-          <span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-brand-secondary shrink-0" /> trade@uniquetechnomech.com</span>
+          <span className="flex items-center gap-1.5"><Mail className="w-3.5 h-3.5 text-brand-secondary shrink-0" />vaishnani_d@yahoo.in</span>
         </div>
 
         {/* Copyright claims */}

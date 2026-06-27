@@ -12,8 +12,6 @@ export interface Product {
 
 export interface Testimonial {
   id: string;
-  name: string;
-  role: string;
   company: string;
   rating: number;
   comment: string;
