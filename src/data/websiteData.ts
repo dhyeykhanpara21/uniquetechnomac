@@ -104,6 +104,30 @@ import rollerBracketHpt2 from '../../images/website produc photo/ROLLER BRACKET 
 import mainShaft1 from '../../images/website produc photo/Hand Pallet Spares Part Main saft 35 x 285   (1).png';
 import mainShaft2 from '../../images/website produc photo/Hand Pallet Spares Part Main saft 35 x 285   (2).png';
 import mainShaft3 from '../../images/website produc photo/Hand Pallet Spares Part Main saft 35 x 285   (3).png';
+import leverPlate1 from '../../images/website produc photo/Hand Pallet Lever Plates(1).png';
+import leverPlate2 from '../../images/website produc photo/Hand Pallet Lever Plates(2).png';
+import handPalletPin16x41_1 from '../../images/website produc photo/Hand Pallet Spares Part Pin 16 x 41(1).png';
+import handPalletPin16x41_2 from '../../images/website produc photo/Hand Pallet Spares Part Pin 16 x 41(2).png';
+import handPalletPin16x41_3 from '../../images/website produc photo/Hand Pallet Spares Part Pin 16 x 41(3).png';
+import handPalletPin25x176_1 from '../../images/website produc photo/Hand Pallet Spares Part Pin 25X176(1).png';
+import handPalletPin25x176_2 from '../../images/website produc photo/Hand Pallet Spares Part Pin 25X176(2).png';
+import handPalletPin25x176_3 from '../../images/website produc photo/Hand Pallet Spares Part Pin 25X176(3).png';
+import heavyDutyPalletTruck1 from '../../images/website produc photo/Heavy Duty Hand Pallet Truck(1).png';
+import heavyDutyPalletTruck2 from '../../images/website produc photo/Heavy Duty Hand Pallet Truck(2).png';
+import heavyDutyPalletTruck3 from '../../images/website produc photo/Heavy Duty Hand Pallet Truck(3).png';
+import nylonWheel70x80_1 from '../../images/website produc photo/Nylon Wheel 70x80 Pallet Truck Part(1).png';
+import nylonWheel70x80_2 from '../../images/website produc photo/Nylon Wheel 70x80 Pallet Truck Part(2).png';
+import nylonWheel70x80_3 from '../../images/website produc photo/Nylon Wheel 70x80 Pallet Truck Part(3).png';
+import puPalletWheel1 from '../../images/website produc photo/Pu Hand Pallet Truck Wheels(!).png';
+import puPalletWheel2 from '../../images/website produc photo/Pu Hand Pallet Truck Wheels(2).png';
+import puPalletWheel3 from '../../images/website produc photo/Pu Hand Pallet Truck Wheels(3).png';
+import rollerBracketNylonWheel1 from '../../images/website produc photo/Roller Bracket Set Nylon Pallet Truck Wheel(!).png';
+import rollerBracketNylonWheel2 from '../../images/website produc photo/Roller Bracket Set Nylon Pallet Truck Wheel(2).png';
+import rollerBracketNylonWheel3 from '../../images/website produc photo/Roller Bracket Set Nylon Pallet Truck Wheel(3).png';
+import rollerBracketPuWheel1 from '../../images/website produc photo/Roller Bracket Set PU Wheel(1).png';
+import rollerBracketPuWheel2 from '../../images/website produc photo/Roller Bracket Set PU Wheel(2).png';
+import rollerBracketPuWheel3 from '../../images/website produc photo/Roller Bracket Set PU Wheel(3).png';
+import rollerBracketPuWheel4 from '../../images/website produc photo/Roller Bracket Set PU Wheel(4).png';
 
 export const HERO_SLIDES = [
   {
@@ -692,6 +716,172 @@ export const PRODUCTS: Product[] = [
       'Finish Type': 'Chrome Plated'
     },
     relatedProductIds: ['prod-roller-bracket-hpt', 'prod-paddle-pin-shaft']
+  },
+  {
+    id: 'prod-lever-plates',
+    name: 'Hand Pallet Lever Plates',
+    category: 'Pallet Truck Parts',
+    image: leverPlate1,
+    images: [leverPlate1, leverPlate2],
+    shortDesc: 'The Hand Pallet Truck Lever Plate connects the handle to the hydraulic system, ensuring smooth and efficient lifting operation. Made from high-strength steel, it provides precise alignment, excellent durability, and reliable long-lasting performance.',
+    longDesc: 'Hand Pallet Truck Lever Plates are durable metal components that form a crucial part of the pallet truck’s lifting mechanism. They connect the handle and hydraulic system, transmitting the operator’s force to raise and lower loads efficiently. Made from high-strength steel, these plates ensure precise alignment, smooth operation, and long-lasting performance, making them essential replacement parts for maintaining the reliability, safety, and efficiency of hand pallet trucks in warehouses, factories, and material-handling environments.',
+    specifications: {
+      'Part Type': 'Pump',
+      'Material': 'Mild Steel',
+      'Brand': 'UTM',
+      'Capacity': '3 ton',
+      'Hardness': '52 hrc',
+      'Tensile Strength': '205 mpa',
+      'Grade': 'EN8',
+      'Colour': 'Silver',
+      'Finish Type': 'Galvanized'
+    },
+    relatedProductIds: ['prod-main-shaft-35x285', 'prod-roller-bracket-hpt']
+  },
+  {
+    id: 'prod-hand-pallet-pin-16x41',
+    name: 'Hand Pallet Spares Part Pin 16 x 41',
+    category: 'Pallet Truck Parts',
+    image: handPalletPin16x41_1,
+    images: [handPalletPin16x41_1, handPalletPin16x41_2, handPalletPin16x41_3],
+    shortDesc: 'The Hand Pallet Truck Pin (16 × 47) securely connects moving parts, ensuring smooth operation and stable load handling. Made from high-strength steel, it offers a precise fit, excellent durability, and long-lasting performance.',
+    longDesc: 'The Hand Pallet Truck Spare Part Pin (16 × 47) is a high-strength, precision-engineered component designed to securely connect and align moving parts within the pallet truck mechanism. Made from durable steel, it provides excellent shear resistance and ensures stable operation, smooth movement, and reliable load handling. Accurately sized for a perfect fit, this pin is an essential replacement part for maintaining the safety, efficiency, and long service life of hand pallet trucks in industrial and warehouse material-handling applications.',
+    specifications: {
+      'Part Type': 'Pin',
+      'Material': 'Mild Steel',
+      'Brand': 'UTM',
+      'Diameter': '16MM',
+      'Capacity': '3 ton',
+      'Hardness': '52 hrc',
+      'Tensile Strength': '305 mpa',
+      'Grade': 'EN8',
+      'Colour': 'Silver',
+      'Finish Type': 'Galvanized'
+    },
+    relatedProductIds: ['prod-lever-plates', 'prod-pallet-pin-16x155']
+  },
+  {
+    id: 'prod-hand-pallet-pin-25x176',
+    name: 'Hand Pallet Spares Part Pin 25X176',
+    category: 'Pallet Truck Parts',
+    image: handPalletPin25x176_1,
+    images: [handPalletPin25x176_1, handPalletPin25x176_2, handPalletPin25x176_3],
+    shortDesc: 'The Hand Pallet Truck Pin (25 × 176) securely connects key moving parts, ensuring smooth operation and stable load handling. Made from high-strength steel, it provides superior durability, a precise fit, and reliable long-lasting performance.',
+    longDesc: 'The Hand Pallet Truck Pin (25 × 176) is a heavy-duty, precision-engineered component designed to securely connect and align major moving parts of the pallet truck. Made from high-strength steel, it provides excellent durability, shear resistance, and reliable performance under heavy loads. This pin is an essential replacement part for ensuring smooth operation, structural stability, and safe handling in hand pallet trucks used in warehouses, factories, and industrial material-handling applications.',
+    specifications: {
+      'Part Type': 'Pin',
+      'Material': 'Mild Steel',
+      'Brand': 'UTM',
+      'Diameter': '25MM',
+      'Capacity': '3 ton',
+      'Hardness': '52 hrc',
+      'Tensile Strength': '305 mpa',
+      'Grade': 'EN8',
+      'Colour': 'Silver',
+      'Finish Type': 'Galvanized'
+    },
+    relatedProductIds: ['prod-hand-pallet-pin-16x41', 'prod-main-shaft-35x285']
+  },
+  {
+    id: 'prod-heavy-duty-pallet-truck',
+    name: 'Heavy Duty Hand Pallet Truck',
+    category: 'Hand Pallet Truck',
+    image: heavyDutyPalletTruck1,
+    images: [heavyDutyPalletTruck1, heavyDutyPalletTruck2, heavyDutyPalletTruck3],
+    shortDesc: 'The Heavy Duty Hand Pallet Truck is built for lifting and transporting heavy palletized loads with ease and safety. Its rugged steel construction ensures smooth operation, high durability, and reliable performance in demanding industrial environments.',
+    longDesc: 'A Heavy Duty Hand Pallet Truck is a robust material-handling tool designed to lift and transport very heavy pallets and goods with ease. It features a strong steel frame, durable forks, and high-capacity wheels for smooth and safe movement. Ideal for warehouses, factories, and workshops, it reduces manual effort, improves efficiency, and ensures safe handling of large and heavy loads.',
+    specifications: {
+      'Load Capacity': '5000 kg',
+      'Fork Length': '1150mm',
+      'Fork Width': '550mm',
+      'Material': 'Mild Steel',
+      'Brand': 'UTM',
+      'Capacity': '5 Ton',
+      'Wheel Material': 'Nylon'
+    },
+    relatedProductIds: ['prod-hand-pallet-pin-25x176', 'prod-main-shaft-35x285']
+  },
+  {
+    id: 'prod-nylon-wheel-70x80',
+    name: 'Nylon Wheel 70x80 Pallet Truck Part',
+    category: 'Pallet Truck Wheel',
+    image: nylonWheel70x80_1,
+    images: [nylonWheel70x80_1, nylonWheel70x80_2, nylonWheel70x80_3],
+    shortDesc: 'The Nylon Load Roller (70 × 80 mm) ensures smooth, quiet movement and reliable support for heavy pallet loads. Made from high-quality impact-resistant nylon, it offers excellent durability, low wear, and long-lasting performance.',
+    longDesc: 'This spare part is a durable 70x80 millimeter load roller wheel made from tough, impact-resistant nylon. It is installed at the very front of the forks on a manual hand pallet truck to support and transport the lifted weight. Over time, dragging heavy pallets across rough warehouse floors causes the original wheels to chip, flatten, or jam. Replacing damaged rollers with these smooth nylon wheels restores effortless movement, allowing the truck to glide easily across the floor once again.',
+    specifications: {
+      'Diameter': '80 mm',
+      'Wheel Type': 'Hand Pallet Truck Wheel',
+      'Material': 'Nylon',
+      'Width': '70 mm',
+      'Load Capacity': '5000 kg',
+      'Brand': 'Utm',
+      'Color': 'white'
+    },
+    relatedProductIds: ['prod-heavy-duty-pallet-truck', 'prod-ppcp-wheel']
+  },
+  {
+    id: 'prod-pu-pallet-wheel',
+    name: 'Pu Hand Pallet Truck Wheels',
+    category: 'Pallet Truck Wheel',
+    image: puPalletWheel1,
+    images: [puPalletWheel1, puPalletWheel2, puPalletWheel3],
+    shortDesc: 'The PU (Polyurethane) Hand Pallet Truck Wheel ensures smooth, quiet movement and reliable handling of heavy loads. Made from high-quality polyurethane, it offers excellent wear resistance, floor protection, and long-lasting performance.',
+    longDesc: 'PU (Polyurethane) Hand Pallet Truck Wheels are durable replacement wheels designed for smooth and efficient movement of hand pallet trucks. They are wear-resistant, provide low rolling resistance, and protect floors from damage while carrying heavy loads. Ideal for warehouses, factories, and workshops, these wheels enhance the performance, safety, and lifespan of pallet trucks.',
+    specifications: {
+      'Material': 'casting and pu',
+      'Type': 'Support Wheel',
+      'Diameter': '180 mm',
+      'Usage/Application': 'industrial',
+      'Width': '70x80',
+      'Load Capacity': '3000kg',
+      'Brand': 'UTM',
+      'Country of Origin': 'Made in India'
+    },
+    relatedProductIds: ['prod-nylon-wheel-70x80', 'prod-ppcp-wheel']
+  },
+  {
+    id: 'prod-roller-bracket-nylon-wheel',
+    name: 'Roller Bracket Set Nylon Pallet Truck Wheel',
+    category: 'Pallet Truck Wheel',
+    image: rollerBracketNylonWheel1,
+    images: [rollerBracketNylonWheel1, rollerBracketNylonWheel2, rollerBracketNylonWheel3],
+    shortDesc: 'The Roller Bracket Set with Nylon Wheel provides smooth, stable movement and secure support for pallet truck operations. Its durable steel bracket and high-quality nylon wheel ensure reliable performance, low wear, and long service life.',
+    longDesc: 'The Roller Bracket Set with Nylon Wheel is a robust and reliable assembly designed to provide smooth, stable movement in sliding and guiding applications. It features a strong metal bracket that securely supports a high-quality nylon wheel, offering excellent load-bearing capacity, low friction, and good resistance to wear and impact. The nylon wheel ensures quiet operation and reduced surface abrasion, making this roller bracket set ideal for industrial machinery, conveyors, racks, and material-handling systems where durability, efficiency, and consistent performance are required.',
+    specifications: {
+      'Material': 'Nylon',
+      'Construction Type': 'Solid',
+      'Type': 'Load Wheel',
+      'Bearing Type': 'Roller Bearing',
+      'Diameter': '80 mm',
+      'Caster Option': 'Swivel',
+      'Size': '70X80',
+      'Width': '97MM',
+      'Brand': 'UTM',
+      'Load Capacity': '3000 kg',
+      'Wheel Material': 'Nylon',
+      'Hardness': '70 hrc',
+      'Weight': '20 g'
+    },
+    relatedProductIds: ['prod-pu-pallet-wheel', 'prod-nylon-wheel-70x80']
+  },
+  {
+    id: 'prod-roller-bracket-pu-wheel',
+    name: 'Roller Bracket Set PU Wheel',
+    category: 'Roller Wheel',
+    image: rollerBracketPuWheel1,
+    images: [rollerBracketPuWheel1, rollerBracketPuWheel2, rollerBracketPuWheel3, rollerBracketPuWheel4],
+    shortDesc: 'The Roller Bracket Assembly with PU Wheels provides smooth, quiet movement and stable support for heavy pallet loads. Its durable steel bracket and polyurethane wheels ensure reliable performance, excellent wear resistance, and long service life.',
+    longDesc: 'This is a complete roller bracket assembly pre-fitted with durable dual polyurethane (PU) load wheels. It mounts underneath the front forks of a manual hand pallet truck to support and guide heavy loads. Replacing a bent bracket or worn-out wheels with this ready-to-install set quickly restores smooth, quiet rolling and perfect load alignment.',
+    specifications: {
+      'Wheel Size': '80 × 70 mm (or as per model)',
+      'Wheel Material': 'Polyurethane (PU)',
+      'Load Capacity': 'Up to 2.5 Ton (depending on pallet truck model)',
+      'Bearing Type': 'Precision Ball Bearing',
+      'Wheel Type': 'Dual PU Load Roller',
+      'Body Material': 'Heavy-Duty Cast Steel / Forged Steel Bracket'
+    },
+    relatedProductIds: ['prod-roller-bracket-nylon-wheel', 'prod-pu-pallet-wheel']
   }
 ];
 
