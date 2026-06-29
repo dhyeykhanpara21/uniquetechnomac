@@ -232,6 +232,16 @@ export default function Home() {
             ))}
           </div>
 
+          <div className="mt-12 flex justify-center">
+            <Link
+              to="/products"
+              className="px-8 py-4 rounded-full bg-brand-primary text-white font-bold tracking-widest text-sm uppercase shadow-lg shadow-brand-primary/30 hover:bg-brand-secondary hover:shadow-brand-secondary/40 transition-all flex items-center justify-center gap-2 group"
+            >
+              <span>View All Products</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
+
         </div>
       </section>
 
