@@ -322,89 +322,11 @@ export const PRODUCTS: Product[] = [
     },
     relatedProductIds: ['prod-alloy-bars', 'prod-stainless-sleeve']
   },
-  {
-    id: 'prod-textile-gear',
-    name: 'Textile Parts Main Drive Gear',
-    category: 'Gears',
-    image: cncDetail,
-    shortDesc: 'High durability main drive spur gears and slow-speed shafts optimized for spinning machinery.',
-    longDesc: 'Designed to handle continuous multi-shift operations in textile mills, these main drive spur gears provide uniform rotational speeds. Machined using precision shapers and CNC threaders to eliminate structural vibration and drag.',
-    specifications: {
-      'Machinery': 'Ring Spinning & Carding Frames',
-      'Type': 'Spur / Helical Gears',
-      'Material': 'Medium Carbon Alloy Steel / Brass',
-      'Outer Diameter': 'Up to 250 mm',
-      'Keyway': 'CNC Broached / Slotted',
-      'Teeth Profile': 'Involute (DIN 3967)'
-    },
-    relatedProductIds: ['prod-worm-gear', 'prod-brass-parts']
-  },
-  {
-    id: 'prod-hydraulic-coupling',
-    name: 'Delta Hydraulic Ram Piston',
-    category: 'Hydraulics',
-    image: hydraulicMain,
-    shortDesc: 'Double-action hydraulic cylinder couplings and ram pistons with polished chrome shafts.',
-    longDesc: 'Delta Hydrolic cylinder rams are built to provide consistent load lift capacities. Features mirror-polished hard chrome-plated steel rods and high-durability double-lip rubber seals, eliminating hydraulic fluid leaks under extreme pressure cycles.',
-    specifications: {
-      'Operation': 'Double-Action / Single-Action Ram',
-      'Working Pressure': '160 - 250 Bar',
-      'Rod Treatment': 'Hard Chrome Plated (25-30 Micron)',
-      'Seal Matrix': 'Polyurethane Double Lip',
-      'Bore Diameter': 'Dia. 40mm - 120mm',
-      'End Fitting': 'Threaded / Swivel Eye joint'
-    },
-    relatedProductIds: ['prod-tractor-parts', 'prod-stainless-sleeve']
-  },
-  {
-    id: 'prod-alloy-bars',
-    name: 'Machined Alloy Bar Components',
-    category: 'CNC Machining',
-    image: cncMain,
-    shortDesc: 'Precision shafts, spindles, and custom spacing sleeves machined from graded carbon bar steel.',
-    longDesc: 'Our Machined Alloy Bar Components are manufactured on multiple vertical machining centers. Excellent dimensional stability makes them suitable for direct assembly configurations in pump housings and engine blocks.',
-    specifications: {
-      'Machine Made': 'BFW VMC / Super Jobber CNC',
-      'Capacity': 'Dia. up to 300mm x L 450mm',
-      'Material': 'En8 / En9 / En24 Graded Steel Bars',
-      'Thread Class': 'ISO Metric M3 to M24 (Threading Machine)',
-      'Alignment Limit': 'Parallelism within 15 Microns',
-      'Least Count': 'Mitutoyo Digitally Verified'
-    },
-    relatedProductIds: ['prod-stainless-sleeve', 'prod-brass-parts']
-  },
-  {
-    id: 'prod-brass-parts',
-    name: 'Precision Lathe Brass Fitting',
-    category: 'CNC Machining',
-    image: cncDetail,
-    shortDesc: 'Threaded brass sleeves, bushings, and fluid couplers turned on high speed automatic lathes.',
-    longDesc: 'We manufacture customized brass bushings and couplers for fluid lines and mechanical joints. Made from premium free-cutting brass bar stock, ensuring smooth threads and high corrosion resistance.',
-    specifications: {
-      'Material': 'Free Cutting Brass Grade I / II',
-      'Threads': 'BSP, NPT, Metric (M03 to M24)',
-      'Tolerance': 'Linear within 0.02 mm',
-      'Finishing': 'Natural / Acid Washed / Nickel Plated',
-      'Machining': 'High-Speed Automatic Lathe'
-    },
-    relatedProductIds: ['prod-alloy-bars', 'prod-stainless-sleeve']
-  },
-  {
-    id: 'prod-stainless-sleeve',
-    name: 'Stainless Steel Bar Sleeve',
-    category: 'CNC Machining',
-    image: hydraulicDetail,
-    shortDesc: 'Corrosion resistant stainless steel sleeves and spacers ground on centreless grinders.',
-    longDesc: 'Our Stainless Steel Bar Sleeves are ground using advanced centreless grinding setups to ensure precise concentricity. Extremely smooth surface finish reduces friction on rotating shafts, extending bearing lifespans.',
-    specifications: {
-      'Material': 'SS 304 / SS 316 / SS 410',
-      'Outside Diameter': 'Ground up to Dia. 100.00 mm',
-      'Concentricity': 'Within 8 Microns',
-      'Surface Roughness': 'Ra 0.4 Micron or better',
-      'Grinder Unit': 'Centreless Grinding Machine (Scarlo)'
-    },
-    relatedProductIds: ['prod-alloy-bars', 'prod-brass-parts']
-  },
+  
+ 
+  
+  
+  
   {
     id: 'prod-oil-seal-kit',
     name: 'Hand Pallet Truck Oil Seal Kit and Parts , 35 mm',
