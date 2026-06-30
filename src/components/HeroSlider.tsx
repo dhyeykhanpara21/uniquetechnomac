@@ -200,17 +200,10 @@ export default function HeroSlider() {
               <button
                 key={slide.id}
                 onClick={() => setActiveIndex(index)}
-                className="group text-left focus:outline-none transition-all duration-300 cursor-pointer"
+                className="group text-left focus:outline-none transition-all duration-300 cursor-pointer py-3"
               >
-                <span className="text-[10px] font-bold tracking-widest text-slate-400 group-hover:text-blue-300 transition-colors block uppercase">
-                  0{index + 1}
-                </span>
-                <span className={`text-[11px] sm:text-xs font-bold mt-0.5 hidden sm:block transition-colors ${isActive ? 'text-white' : 'text-slate-500 group-hover:text-slate-300'} truncate`}>
-                  {slide.tabLabel}
-                </span>
-                
                 {/* Horizontal Progress Bar */}
-                <div className="relative w-full h-[3px] bg-white/10 rounded-full mt-2.5 overflow-hidden">
+                <div className="relative w-full h-[3px] bg-white/10 rounded-full overflow-hidden">
                   {isActive ? (
                     <motion.div
                       key={`progress-${activeIndex}`}
